@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'paper.blg'
+[104] biber-MSWIN64:322> INFO - === 
+[126] Biber.pm:415> INFO - Reading 'paper.bcf'
+[295] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[306] Utils.pm:304> WARN - The file 'paper.bcf' does not contain any citations!
+[320] bbl.pm:652> INFO - Writing 'paper.bbl' with encoding 'ascii'
+[320] bbl.pm:755> INFO - Output to paper.bbl
+[322] Biber.pm:128> INFO - WARNINGS: 1

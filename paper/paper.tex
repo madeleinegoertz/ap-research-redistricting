@@ -1,0 +1,39 @@
+\documentclass[stu, floatsintext]{apa7}
+
+\UseRawInputEncoding
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{threeparttable}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa, sortcites=true, sorting=nyt, backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\MakeSentenceCase
+\addbibresource{paper.bib}
+\includeonly{method}
+
+\title{I need to come up with a title!}
+\author{Madeleine Goertz}
+\affiliation{International Community School}
+\course{AP Research}
+\professor{Randall S. Huberman}
+\duedate{May 20th, 2021}
+
+\begin{document}
+\maketitle
+
+\include{intro}
+
+\include{lit-review}
+
+\include{method}
+
+\include{results}
+
+\include{disc}
+
+\include{conc}
+
+%\printbibliography
+
+\end{document}
