@@ -1,2 +1,3 @@
-Data in this repository is made available by MGGG under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/.
-Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+version https://git-lfs.github.com/spec/v1
+oid sha256:122eeeecd323b6c6537c055a6706bb4ef4899dc30d7669fa0eb04872b9e19673
+size 276
