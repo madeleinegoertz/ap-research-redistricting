@@ -1,0 +1,288 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0001_ds171_2010_block_750'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2010
+Geographic level: Block [2000 & 2010 PL 94-171 datasets] (by State--County--Voting District/Remainder--County Subdivision--Place/Remainder--Census Tract--Block Group [2000 & 2010 PL 94-171 partition])
+Extent:           Virginia
+Dataset:          2010 Census: PL 94-171 Redistricting File
+   NHGIS code:    2010_PL94171
+   NHGIS ID:      ds171
+ 
+Tables:
+ 
+1. Race
+   Universe:    Persons
+   Source code: NP001
+   NHGIS code:  H7Q
+ 
+2. Race for the Population 18 Years and Over
+   Universe:    Persons 18 years and over
+   Source code: NP003
+   NHGIS code:  H7S
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+    GISJOIN:     GIS Join Match Code
+    YEAR:        Data File Year
+    REGIONA:     Region Code
+    DIVISIONA:   Division Code
+    STATE:       State Name
+    STATEA:      State Code
+    COUNTY:      County Name
+    COUNTYA:     County Code
+    COUSUB:      County Subdivision Name
+    COUSUBA:     County Subdivision Code
+    PLACE:       Place Name
+    PLACEA:      Place Code
+    TRACTA:      Census Tract Code
+    BLKGRPA:     Block Group Code
+    BLOCKA:      Block Code
+    CONCITA:     Consolidated City Code
+    AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+    AIANHHRA:    American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+    AIANHHTA:    American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+    AITSA:       Tribal Subdivision/Remainder Code
+    ANRCA:       Alaska Native Regional Corporation Code
+    CSAA:        Combined Statistical Area Code
+    NECTAA:      New England City and Town Area Code
+    NECTADIVA:   NECTA Division Code
+    CNECTAA:     Combined New England City and Town Area Code
+    CDA:         Congressional District (111th Congress) Code
+    SLDUA:       State Legislative District (Upper Chamber) Code
+    SLDLA:       State Legislative District (Lower Chamber) Code
+    VTDA:        Voting District/Remainder Code
+    SUBMCDA:     Subminor Civil Division Code
+    SDELMA:      School District (Elementary)/Remainder Code
+    SDSECA:      School District (Secondary)/Remainder Code
+    SDUNIA:      School District (Unified)/Remainder Code
+    NAME:        Area Name-Legal/Statistical Area Description (LSAD) Term-Part Indicator
+    SABINSA:     School Attendance Area Code
+ 
+Table 1:     Race
+Universe:    Persons
+Source code: NP001
+NHGIS code:  H7Q
+    H7Q001:      Total
+    H7Q002:      Population of one race
+    H7Q003:      White alone
+    H7Q004:      Black or African American alone
+    H7Q005:      American Indian and Alaska Native alone
+    H7Q006:      Asian alone
+    H7Q007:      Native Hawaiian and Other Pacific Islander alone
+    H7Q008:      Some Other Race alone
+    H7Q009:      Population of two or more races
+    H7Q010:      Population of two races
+    H7Q011:      Population of Two Races: White; Black or African American
+    H7Q012:      Population of Two Races: White; American Indian and Alaska Native
+    H7Q013:      Population of Two Races: White; Asian
+    H7Q014:      Population of Two Races: White; Native Hawaiian and Other Pacific Islander
+    H7Q015:      Population of Two Races: White; some other race
+    H7Q016:      Population of Two Races: Black or African American; American Indian and Alaska Native
+    H7Q017:      Population of Two Races: Black or African American; Asian
+    H7Q018:      Population of Two Races: Black or African American; Native Hawaiian and Other Pacific Islander
+    H7Q019:      Population of Two Races: Black or African American; some other race
+    H7Q020:      Population of Two Races: American Indian and Alaska Native; Asian
+    H7Q021:      Population of Two Races: American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7Q022:      Population of Two Races: American Indian and Alaska Native; some other race
+    H7Q023:      Population of Two Races: Asian; Native Hawaiian and Other Pacific Islander
+    H7Q024:      Population of Two Races: Asian; some other race
+    H7Q025:      Population of Two Races: Native Hawaiian and Other Pacific Islander; some other race
+    H7Q026:      Population of three races
+    H7Q027:      Population of Three Races: White; Black or African American; American Indian and Alaska Native
+    H7Q028:      Population of Three Races: White; Black or African American; Asian
+    H7Q029:      Population of Three Races: White; Black or African American; Native Hawaiian and Other Pacific Islander
+    H7Q030:      Population of Three Races: White; Black or African American; some other race
+    H7Q031:      Population of Three Races: White; American Indian and Alaska Native; Asian
+    H7Q032:      Population of Three Races: White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7Q033:      Population of Three Races: White; American Indian and Alaska Native; some other race
+    H7Q034:      Population of Three Races: White; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q035:      Population of Three Races: White; Asian; some other race
+    H7Q036:      Population of Three Races: White; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q037:      Population of Three Races: Black or African American; American Indian and Alaska Native; Asian
+    H7Q038:      Population of Three Races: Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7Q039:      Population of Three Races: Black or African American; American Indian and Alaska Native; some other race
+    H7Q040:      Population of Three Races: Black or African American; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q041:      Population of Three Races: Black or African American; Asian; some other race
+    H7Q042:      Population of Three Races: Black or African American; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q043:      Population of Three Races: American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q044:      Population of Three Races: American Indian and Alaska Native; Asian; some other race
+    H7Q045:      Population of Three Races: American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q046:      Population of Three Races: Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q047:      Population of four races
+    H7Q048:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; Asian
+    H7Q049:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7Q050:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; some other race
+    H7Q051:      Population of Four Races: White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q052:      Population of Four Races: White; Black or African American; Asian; some other race
+    H7Q053:      Population of Four Races: White; Black or African American; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q054:      Population of Four Races: White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q055:      Population of Four Races: White; American Indian and Alaska Native; Asian; some other race
+    H7Q056:      Population of Four Races: White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q057:      Population of Four Races: White; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q058:      Population of Four Races: Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q059:      Population of Four Races: Black or African American; American Indian and Alaska Native; Asian; some other race
+    H7Q060:      Population of Four Races: Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q061:      Population of Four Races: Black or African American; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q062:      Population of Four Races: American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q063:      Population of five races
+    H7Q064:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7Q065:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Asian; some other race
+    H7Q066:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q067:      Population of Five Races: White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q068:      Population of Five Races: White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q069:      Population of Five Races: Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7Q070:      Population of six races
+    H7Q071:      Population of Six Races: White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+ 
+Table 2:     Race for the Population 18 Years and Over
+Universe:    Persons 18 years and over
+Source code: NP003
+NHGIS code:  H7S
+    H7S001:      Total
+    H7S002:      Population of one race
+    H7S003:      White alone
+    H7S004:      Black or African American alone
+    H7S005:      American Indian and Alaska Native alone
+    H7S006:      Asian alone
+    H7S007:      Native Hawaiian and Other Pacific Islander alone
+    H7S008:      Some Other Race alone
+    H7S009:      Population of two or more races
+    H7S010:      Population of two races
+    H7S011:      Population of Two Races: White; Black or African American
+    H7S012:      Population of Two Races: White; American Indian and Alaska Native
+    H7S013:      Population of Two Races: White; Asian
+    H7S014:      Population of Two Races: White; Native Hawaiian and Other Pacific Islander
+    H7S015:      Population of Two Races: White; some other race
+    H7S016:      Population of Two Races: Black or African American; American Indian and Alaska Native
+    H7S017:      Population of Two Races: Black or African American; Asian
+    H7S018:      Population of Two Races: Black or African American; Native Hawaiian and Other Pacific Islander
+    H7S019:      Population of Two Races: Black or African American; some other race
+    H7S020:      Population of Two Races: American Indian and Alaska Native; Asian
+    H7S021:      Population of Two Races: American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7S022:      Population of Two Races: American Indian and Alaska Native; some other race
+    H7S023:      Population of Two Races: Asian; Native Hawaiian and Other Pacific Islander
+    H7S024:      Population of Two Races: Asian; some other race
+    H7S025:      Population of Two Races: Native Hawaiian and Other Pacific Islander; some other race
+    H7S026:      Population of three races
+    H7S027:      Population of Three Races: White; Black or African American; American Indian and Alaska Native
+    H7S028:      Population of Three Races: White; Black or African American; Asian
+    H7S029:      Population of Three Races: White; Black or African American; Native Hawaiian and Other Pacific Islander
+    H7S030:      Population of Three Races: White; Black or African American; some other race
+    H7S031:      Population of Three Races: White; American Indian and Alaska Native; Asian
+    H7S032:      Population of Three Races: White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7S033:      Population of Three Races: White; American Indian and Alaska Native; some other race
+    H7S034:      Population of Three Races: White; Asian; Native Hawaiian and Other Pacific Islander
+    H7S035:      Population of Three Races: White; Asian; some other race
+    H7S036:      Population of Three Races: White; Native Hawaiian and Other Pacific Islander; some other race
+    H7S037:      Population of Three Races: Black or African American; American Indian and Alaska Native; Asian
+    H7S038:      Population of Three Races: Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7S039:      Population of Three Races: Black or African American; American Indian and Alaska Native; some other race
+    H7S040:      Population of Three Races: Black or African American; Asian; Native Hawaiian and Other Pacific Islander
+    H7S041:      Population of Three Races: Black or African American; Asian; some other race
+    H7S042:      Population of Three Races: Black or African American; Native Hawaiian and Other Pacific Islander; some other race
+    H7S043:      Population of Three Races: American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7S044:      Population of Three Races: American Indian and Alaska Native; Asian; some other race
+    H7S045:      Population of Three Races: American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7S046:      Population of Three Races: Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S047:      Population of four races
+    H7S048:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; Asian
+    H7S049:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander
+    H7S050:      Population of Four Races: White; Black or African American; American Indian and Alaska Native; some other race
+    H7S051:      Population of Four Races: White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander
+    H7S052:      Population of Four Races: White; Black or African American; Asian; some other race
+    H7S053:      Population of Four Races: White; Black or African American; Native Hawaiian and Other Pacific Islander; some other race
+    H7S054:      Population of Four Races: White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7S055:      Population of Four Races: White; American Indian and Alaska Native; Asian; some other race
+    H7S056:      Population of Four Races: White; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7S057:      Population of Four Races: White; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S058:      Population of Four Races: Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7S059:      Population of Four Races: Black or African American; American Indian and Alaska Native; Asian; some other race
+    H7S060:      Population of Four Races: Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7S061:      Population of Four Races: Black or African American; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S062:      Population of Four Races: American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S063:      Population of five races
+    H7S064:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander
+    H7S065:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Asian; some other race
+    H7S066:      Population of Five Races: White; Black or African American; American Indian and Alaska Native; Native Hawaiian and Other Pacific Islander; some other race
+    H7S067:      Population of Five Races: White; Black or African American; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S068:      Population of Five Races: White; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S069:      Population of Five Races: Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+    H7S070:      Population of six races
+    H7S071:      Population of Six Races: White; Black or African American; American Indian and Alaska Native; Asian; Native Hawaiian and Other Pacific Islander; some other race
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, Tracy Kugler, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 15.0 
+        [dataset]. Minneapolis, MN: IPUMS. 2020. 
+        http://doi.org/10.18128/D050.V15.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
