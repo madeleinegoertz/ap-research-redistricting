@@ -6,14 +6,14 @@
 \usepackage{threeparttable}
 \usepackage[american]{babel}
 \usepackage{csquotes}
-\usepackage[style=apa, sortcites=true, sorting=nyt, backend=biber]{biblatex}
+\usepackage[style=apa, sortcites=true, sorting=nyt, bibencoding=utf8, backend=biber]{biblatex}
+\DeclareFieldFormat{apacase}{#1}
 \DeclareLanguageMapping{american}{american-apa}
-\MakeSentenceCase
 \addbibresource{paper.bib}
 
 \title{Empirical Validation of Automated Redistricting Algorithms on the Virginia House of Delegates District Map}
-\author{Madeleine Goertz}
-\affiliation{International Community School}
+\authorsnames{Madeleine Goertz}
+\authorsaffiliations{{International Community School}}
 \course{AP Research}
 \professor{Randall S. Huberman}
 \duedate{May 20th, 2021}
@@ -41,7 +41,7 @@ The experimental units for this study are the complete datasets for each electio
 
 \subsubsection{Treatments}
 
-The treatments for this study are the three different redistricting algorithm that I'm comparing: Markov chain Monte Carlo \parencite{fifield2020}, Sequential Monte Carlo \parencite{mccartan2020}, and Random Seed Growth \parencite{chen2013}.
+The treatments for this study are the three different redistricting algorithm that I'm comparing: Markov chain Monte Carlo \parencite{fifield2020}, Sequential Monte Carlo \parencite{mccartan2020}, and Random Seed Growth \parencite{chen2013}. I'm using the implementations in the R programming language "redist" package \parencite{fifield2020d}
 
 \section{Results}
 
