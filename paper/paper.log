@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.6)  6 JAN 2021 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.6)  28 JAN 2021 18:33
 entering extended mode
 **c:/Users/madie/ap-research-redistricting/paper/paper.tex
 (c:/Users/madie/ap-research-redistricting/paper/paper.tex
@@ -804,25 +804,25 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count439
 \l__pdf_internal_box=\box60
-) (c:/Users\madie\ap-research-redistricting\paper\paper.aux (c:/Users\madie\ap-research-redistricting\paper\intro.aux) (c:/Users\madie\ap-research-redistricting\paper\lit-review.aux) (c:/Users\madie\ap-research-redistricting\paper\method.aux) (c:/Users\madie\ap-research-redistricting\paper\results.aux) (c:/Users\madie\ap-research-redistricting\paper\disc.aux) (c:/Users\madie\ap-research-redistricting\paper\conc.aux))
+) (c:/Users\madie\ap-research-redistricting\paper\paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -882,7 +882,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 504.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 21.
  ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
@@ -892,9 +892,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count446
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (c:/Users\madie\ap-research-redistricting\paper\paper.out) (c:/Users\madie\ap-research-redistricting\paper\paper.out)
 \@outlinefile=\write7
 \openout7 = `paper.out'.
@@ -948,41 +948,59 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'paper.bbl' found.
  (c:/Users\madie\ap-research-redistricting\paper\paper.bbl)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
  [1{C:/Users/madie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-] [2]
-\openout2 = `method.aux'.
+] [2] [3]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 51.
+ ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 51.
+ ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 51.
+ ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 51.
+ ("C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 51.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 51.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 51.
+ AED endfloat: Processing end Figures and Tables [4
 
- (c:/Users\madie\ap-research-redistricting\paper\method.tex) [5
-
-
-
-] AED endfloat: Processing end Figures and Tables
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
- (c:/Users\madie\ap-research-redistricting\paper\paper.aux (c:/Users\madie\ap-research-redistricting\paper\intro.aux) (c:/Users\madie\ap-research-redistricting\paper\lit-review.aux) (c:/Users\madie\ap-research-redistricting\paper\method.aux) (c:/Users\madie\ap-research-redistricting\paper\results.aux) (c:/Users\madie\ap-research-redistricting\paper\disc.aux) (c:/Users\madie\ap-research-redistricting\paper\conc.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+ (c:/Users\madie\ap-research-redistricting\paper\paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: DEDA6775AC832EC68D3C7B923EBED5F9;109.
+(rerunfilecheck)             Checksum: 7D39DAAB936FD8682B372804F72A1D27;563.
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27364 strings out of 480797
- 527690 string characters out of 2895576
- 1293711 words of memory out of 3000000
- 42880 multiletter control sequences out of 15000+200000
- 538633 words of font info for 27 fonts, out of 3000000 for 9000
+ 27649 strings out of 480797
+ 532885 string characters out of 2895576
+ 1279631 words of memory out of 3000000
+ 43152 multiletter control sequences out of 15000+200000
+ 568993 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,68p,819b,4925s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on c:/Users\madie\ap-research-redistricting\paper\paper.pdf (3 pages, 54080 bytes).
+ 68i,11n,68p,1800b,4925s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb>
+Output written on c:/Users\madie\ap-research-redistricting\paper\paper.pdf (4 pages, 103835 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

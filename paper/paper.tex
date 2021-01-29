@@ -10,9 +10,8 @@
 \DeclareLanguageMapping{american}{american-apa}
 \MakeSentenceCase
 \addbibresource{paper.bib}
-\includeonly{method}
 
-\title{I need to come up with a title!}
+\title{Empirical Validation of Automated Redistricting Algorithms on the Virginia House of Delegates District Map}
 \author{Madeleine Goertz}
 \affiliation{International Community School}
 \course{AP Research}
@@ -22,18 +21,33 @@
 \begin{document}
 \maketitle
 
-\include{intro}
+ % Introduction goes here
 
-\include{lit-review}
+\section{Literature Review}
 
-\include{method}
+Get writing!
 
-\include{results}
+\section{Method}
 
-\include{disc}
+Notes, this is still a rough draft. 
 
-\include{conc}
+\subsection{Choice of Research Method}
 
-%\printbibliography
+For this study, I chose to use the experimental design method because it will allow me to isolate the hypothetical impact of the redistricting algorithm from other possible confounding variables. This method also includes the use of a control group, which allows the researcher to establish causation. 
+
+\subsubsection{Experimental Units}
+
+The experimental units for this study are the complete datasets for each election year in Viriginia. I have one dataset for each of these years: 2015, 2017, 2019. Every row in each dataset corresponds to a precinct, the smallest geographical unit by which votes are tabulated in Virginia. For each precinct, I have the following attributes: total population, population by race, total voting-age population (VAP)(population over the age of 18), VAP by race, total votes for the democratic House of Delegates (HOD) candidate, total votes for the Republican HOD candidate, and the total votes for any other HOD candidate. Additionally, each precinct has a polgon associated with it that represents its geographical shape. 
+
+\subsubsection{Treatments}
+
+The treatments for this study are the three different redistricting algorithm that I'm comparing: Markov chain Monte Carlo \parencite{fifield2020}, Sequential Monte Carlo \parencite{mccartan2020}, and Random Seed Growth \parencite{chen2013}.
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Conclusion}
+\printbibliography
 
 \end{document}
