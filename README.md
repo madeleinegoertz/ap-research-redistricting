@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f136c740381009494a21f675280b0cea79c09c7d3004a8048ecc57383dddeadf
-size 126
+View the project dashboard [here](https://www.notion.so/AP-Research-Redistricting-Project-e065fd900cd747e4b692e51b6a6584b3).
