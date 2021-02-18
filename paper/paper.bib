@@ -251,19 +251,6 @@
 % == BibTeX quality report for bureau:
 % ? Title looks like it was stored in title-case in Zotero
 
-@misc{bureaua,
-  title = {Citizen {{Voting Age Population}} by {{Race}} and {{Ethnicity}}},
-  author = {Bureau, US Census},
-  url = {https://www.census.gov/programs-surveys/decennial-census/about/voting-rights/cvap.html},
-  urldate = {2021-02-02},
-  abstract = {View and download Citizen Voting Age Population by Race and Ethnicity (CVAP) datasets and supporting documentation.},
-  chapter = {Government},
-  journal = {The United States Census Bureau},
-  language = {EN-US}
-}
-% == BibTeX quality report for bureaua:
-% ? Title looks like it was stored in title-case in Zotero
-
 @techreport{cain2007,
   title = {The {{Implications}} of {{Nesting}} in {{California Redistricting}}},
   author = {Cain, Bruce E. and MacDonald, Karin},
@@ -590,6 +577,15 @@
 % == BibTeX quality report for hu1995:
 % ? Title looks like it was stored in title-case in Zotero
 
+@misc{hully,
+  title = {Maup: {{The}} Geospatial Toolkit for Redistricting Data},
+  shorttitle = {Maup},
+  author = {Hully, Max},
+  url = {https://github.com/mggg/maup},
+  urldate = {2021-02-18},
+  copyright = {MIT License}
+}
+
 @misc{imai2020,
   title = {Kosukeimai/Redist},
   author = {Imai, Kosuke},
@@ -761,6 +757,7 @@
 }
 
 @misc{mansonsteven2020,
+  ids = {mansonsteven2020a},
   title = {National {{Historical Geographic Information System}}: {{Version}} 15.0},
   shorttitle = {National {{Historical Geographic Information System}}},
   author = {Manson, Steven and Schroeder, Jonathan and Van Riper, David and Kugler, Tracy and Ruggles, Steven},
@@ -776,7 +773,8 @@
 % == BibTeX quality report for mansonsteven2020:
 % ? Title looks like it was stored in title-case in Zotero
 
-@article{mccartan2020,
+@article{mccartan2020b,
+  ids = {mccartan2020a},
   title = {Sequential {{Monte Carlo}} for {{Sampling Balanced}} and {{Compact Redistricting Plans}}},
   author = {McCartan, Cory and Imai, Kosuke},
   year = {2020},
@@ -787,65 +785,13 @@
   archivePrefix = {arXiv},
   eprint = {2008.06131},
   eprinttype = {arxiv},
-  journal = {arXiv:2008.06131 [cs, math, stat]},
-  keywords = {algorithm,Computer Science - Computers and Society,Mathematics - Probability,Statistics - Applications},
-  language = {en},
-  primaryClass = {cs, math, stat}
-}
-% == BibTeX quality report for mccartan2020:
-% ? Possibly abbreviated journal title arXiv:2008.06131 [cs, math, stat]
-% ? Title looks like it was stored in title-case in Zotero
-
-@article{mccartan2020,
-  title = {Sequential Monte Carlo for Sampling Balanced and Compact Redistricting Plans},
-  author = {McCartan, Cory and Imai, Kosuke},
-  year = {2020},
-  archivePrefix = {arXiv},
-  eprint = {2008.06131},
-  eprinttype = {arxiv},
-  keywords = {algorithm},
-  primaryClass = {stat.AP}
-}
-% == BibTeX quality report for mccartan2020:
-% Missing required field 'journal'
-
-@article{mccartan2020,
-  title = {Sequential {{Monte Carlo}} for Sampling Balanced and Compact Redistricting Plans},
-  author = {McCartan, Cory and Imai, Kosuke},
-  year = {2020},
-  month = dec,
-  url = {http://arxiv.org/abs/2008.06131},
-  urldate = {2021-01-28},
-  abstract = {Random sampling of graph partitions under constraints has become a popular tool for evaluating legislative redistricting plans. Analysts detect partisan gerrymandering by comparing a proposed redistricting plan with an ensemble of sampled alternative plans. For successful application, sampling methods must scale to large maps with many districts, incorporate realistic legal constraints, and accurately and efficiently sample from a selected target distribution. Unfortunately, most existing methods struggle in at least one of these three areas. We present a new Sequential Monte Carlo (SMC) algorithm that draws representative redistricting plans from a realistic target distribution of choice. Because it samples directly, the SMC algorithm can efficiently explore the relevant space of redistricting plans better than the existing Markov chain Monte Carlo algorithms that yield dependent samples. Our algorithm can simultaneously incorporate several constraints commonly imposed in real-world redistricting problems, including equal population, compactness, and preservation of administrative boundaries. We validate the accuracy of the proposed algorithm by using a small map where all redistricting plans can be enumerated. We then apply the SMC algorithm to evaluate the partisan implications of several maps submitted by relevant parties in a recent high-profile redistricting case in the state of Pennsylvania. We find that the proposed algorithm is roughly 40 times more efficient in sampling from the target distribution than a state-of-the-art MCMC algorithm. Open-source software is available for implementing the proposed methodology.},
-  archivePrefix = {arXiv},
-  eprint = {2008.06131},
-  eprinttype = {arxiv},
   file = {C\:\\Users\\madie\\Zotero\\storage\\KRI32QBN\\McCartan and Imai - 2020 - Sequential Monte Carlo for Sampling Balanced and C.pdf},
   journal = {arXiv:2008.06131 [cs, math, stat]},
   keywords = {algorithm,Computer Science - Computers and Society,Mathematics - Probability,Statistics - Applications},
   language = {en},
   primaryClass = {cs, math, stat}
 }
-% == BibTeX quality report for mccartan2020:
-% ? Possibly abbreviated journal title arXiv:2008.06131 [cs, math, stat]
-
-@article{mccartan2020a,
-  title = {Sequential {{Monte Carlo}} for {{Sampling Balanced}} and {{Compact Redistricting Plans}}},
-  author = {McCartan, Cory and Imai, Kosuke},
-  year = {2020},
-  month = dec,
-  url = {http://arxiv.org/abs/2008.06131},
-  urldate = {2021-01-28},
-  abstract = {Random sampling of graph partitions under constraints has become a popular tool for evaluating legislative redistricting plans. Analysts detect partisan gerrymandering by comparing a proposed redistricting plan with an ensemble of sampled alternative plans. For successful application, sampling methods must scale to large maps with many districts, incorporate realistic legal constraints, and accurately and efficiently sample from a selected target distribution. Unfortunately, most existing methods struggle in at least one of these three areas. We present a new Sequential Monte Carlo (SMC) algorithm that draws representative redistricting plans from a realistic target distribution of choice. Because it samples directly, the SMC algorithm can efficiently explore the relevant space of redistricting plans better than the existing Markov chain Monte Carlo algorithms that yield dependent samples. Our algorithm can simultaneously incorporate several constraints commonly imposed in real-world redistricting problems, including equal population, compactness, and preservation of administrative boundaries. We validate the accuracy of the proposed algorithm by using a small map where all redistricting plans can be enumerated. We then apply the SMC algorithm to evaluate the partisan implications of several maps submitted by relevant parties in a recent high-profile redistricting case in the state of Pennsylvania. We find that the proposed algorithm is roughly 40 times more efficient in sampling from the target distribution than a state-of-the-art MCMC algorithm. Open-source software is available for implementing the proposed methodology.},
-  archivePrefix = {arXiv},
-  eprint = {2008.06131},
-  eprinttype = {arxiv},
-  journal = {arXiv:2008.06131 [cs, math, stat]},
-  keywords = {Computer Science - Computers and Society,Mathematics - Probability,Statistics - Applications},
-  language = {en},
-  primaryClass = {cs, math, stat}
-}
-% == BibTeX quality report for mccartan2020a:
+% == BibTeX quality report for mccartan2020b:
 % ? Possibly abbreviated journal title arXiv:2008.06131 [cs, math, stat]
 % ? Title looks like it was stored in title-case in Zotero
 
@@ -1001,9 +947,29 @@
 % == BibTeX quality report for tamcho2016:
 % ? Title looks like it was stored in title-case in Zotero
 
-@misc{team2019,
+@misc{uscensusbureau,
+  title = {Citizen {{Voting Age Population}} by {{Race}} and {{Ethnicity}}},
+  author = {US Census Bureau},
+  url = {https://www.census.gov/programs-surveys/decennial-census/about/voting-rights/cvap.html},
+  urldate = {2021-02-02},
+  abstract = {View and download Citizen Voting Age Population by Race and Ethnicity (CVAP) datasets and supporting documentation.},
+  chapter = {Government},
+  journal = {The United States Census Bureau},
+  language = {EN-US}
+}
+% == BibTeX quality report for uscensusbureau:
+% ? Title looks like it was stored in title-case in Zotero
+
+@misc{virginiadepartmentofelections,
+  title = {Results/{{Reports}}},
+  author = {{Virginia Department of Elections}},
+  url = {https://www.elections.virginia.gov/resultsreports/},
+  urldate = {2021-01-13}
+}
+
+@misc{votingandelectionscienceteam2019,
   title = {2015 {{Precinct}}-{{Level Election Results}}},
-  author = {Team, Voting {and} Election Science},
+  author = {{Voting {and} Election Science Team}},
   year = {2019},
   month = oct,
   publisher = {{Harvard Dataverse}},
@@ -1014,12 +980,12 @@
   keywords = {data_source,precinct_voting_results},
   language = {en}
 }
-% == BibTeX quality report for team2019:
+% == BibTeX quality report for votingandelectionscienceteam2019:
 % ? Title looks like it was stored in title-case in Zotero
 
-@misc{team2019a,
+@misc{votingandelectionscienceteam2019a,
   title = {2017 {{Precinct}}-{{Level Election Results}}},
-  author = {Team, Voting {and} Election Science},
+  author = {{Voting {and} Election Science Team}},
   year = {2019},
   month = oct,
   publisher = {{Harvard Dataverse}},
@@ -1030,12 +996,12 @@
   keywords = {data_source,precinct_voting_results},
   language = {en}
 }
-% == BibTeX quality report for team2019a:
+% == BibTeX quality report for votingandelectionscienceteam2019a:
 % ? Title looks like it was stored in title-case in Zotero
 
-@misc{team2019c,
+@misc{votingandelectionscienceteam2019b,
   title = {2019 {{Precinct Shapefiles}}},
-  author = {Team, Voting {and} Election Science},
+  author = {{Voting {and} Election Science Team}},
   year = {2019},
   month = dec,
   publisher = {{Harvard Dataverse}},
@@ -1045,7 +1011,7 @@
   abstract = {ESRI shapefiles of precinct maps to be used in the 2019 elections.},
   language = {en}
 }
-% == BibTeX quality report for team2019c:
+% == BibTeX quality report for votingandelectionscienceteam2019b:
 % ? Title looks like it was stored in title-case in Zotero
 
 @article{weaver1963,
@@ -1133,14 +1099,6 @@
 % == BibTeX quality report for zotero-551:
 % ? Title looks like it was stored in title-case in Zotero
 
-@misc{zotero-562,
-  title = {Results/{{Reports}} - {{Virginia Department}} of {{Elections}}},
-  url = {https://www.elections.virginia.gov/resultsreports/},
-  urldate = {2021-01-13}
-}
-% == BibTeX quality report for zotero-562:
-% ? Title looks like it was stored in title-case in Zotero
-
 @misc{zotero-584,
   title = {Pscl Package | {{R Documentation}}},
   url = {https://www.rdocumentation.org/packages/pscl/versions/1.5.5},
@@ -1153,7 +1111,4 @@
   urldate = {2021-01-31}
 }
 
-
-% == Citekey duplicates in this file:
-% mccartan2020 duplicates: 3
 

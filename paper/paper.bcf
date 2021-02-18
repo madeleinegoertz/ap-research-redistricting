@@ -2825,6 +2825,13 @@
     <bcf:citekey order="12">katz2020</bcf:citekey>
     <bcf:citekey order="13">katz2020</bcf:citekey>
     <bcf:citekey order="14">katz2020</bcf:citekey>
+    <bcf:citekey order="15">mansonsteven2020</bcf:citekey>
+    <bcf:citekey order="16">hully</bcf:citekey>
+    <bcf:citekey order="17">uscensusbureau</bcf:citekey>
+    <bcf:citekey order="18">votingandelectionscienceteam2019a</bcf:citekey>
+    <bcf:citekey order="18">votingandelectionscienceteam2019</bcf:citekey>
+    <bcf:citekey order="18">votingandelectionscienceteam2019b</bcf:citekey>
+    <bcf:citekey order="19">virginiadepartmentofelections</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
