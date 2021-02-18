@@ -26,7 +26,7 @@ A legislative is said to have partisan symmetry if both parties can receive $m$ 
 
 \begin{figure}
     \includegraphics[width=\linewidth]{method/seatsvotes.png}
-    \caption{Figure 1: Types of Seats-Votes Curves. Left panel: Symmetric (fair) curves with differing
+    \caption{Types of Seats-Votes Curves. Left panel: Symmetric (fair) curves with differing
     levels of electoral responsiveness. Right panel: Asymmetric (biased) curves, including
     one consistently biased toward the Democrats (blue) and one with biases favoring different
     parties depending on V (red); the inset graph is for (V ) for V 2 [0:5; 1] with the vertical
@@ -38,11 +38,21 @@ Partisan symmetry is usually observed by plotting a "seats-votes curve." This pl
 
 Naturally, it's very rare to observe the necessary electoral outcomes under the same electoral system in order to determine partisan symmetry. (ie., it's very rare for two parties to tie one year, have one win 51\% of the total votes the next year, and then win 49\% of the votes the following year.)
 
+In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing.
 
+\subparagraph{Uniform Partisan Swing}
 
-\subparagraph{Efficiency Gap}
+Uniform partisan swing is the principle that when the overall vote share $V$ changes by some amount $dV$ between different elections under the same electoral system, the vote share at the district level also usually changes by the same $dV$. \textcite{katz2020} Empirically verified this to be true in 646 different elections. 
 
-Still need to read about this. 
+Thus, given a list of vote proportions per district ${v_1, v_2, v_3, ...}$ from one election, one can adjust each vote proportion by an arbitrarily small $dV$ until the seats share $S(V)$ is covered from 0 to 1. \parencite{katz2020}.
+
+\begin{figure}
+    \includegraphics[width=0.5\linewidth]{method/seatsvotesups.png}
+    \caption{Sample seats-votes curve generated using uniform partisan swing. Ignore title. \parencite[175]{katz2020}}
+    \label{fig:seatsvotesups1}
+\end{figure}
+
+An example of such a curve is shown in \ref{fig:seatsvotesups1}
 
 \subparagraph{Chamber Power Balance}
 
