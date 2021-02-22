@@ -1,4 +1,4 @@
-\documentclass[stu, floatsintext]{apa7}
+\documentclass[stu, floatsintext, donotrepeattitle]{apa7}
 
 \UseRawInputEncoding
 \usepackage{booktabs}
@@ -13,7 +13,7 @@
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{paper.bib}
 
-\includeonly{method/method}
+\includeonly{lit-review/lit-review, method/method}
 
 \title{Empirical Validation of Automated Redistricting Algorithms on the Virginia House of Delegates District Map}
 \authorsnames{Madeleine Goertz}
@@ -26,7 +26,8 @@
 \begin{document}
 \maketitle
 
-\include{intro/intro}
+% using input not include so that starts on same page
+\input{intro/intro}
 
 \include{lit-review/lit-review}
 
