@@ -75,12 +75,12 @@
   url = {http://arxiv.org/abs/1710.04193},
   urldate = {2020-10-08},
   abstract = {The U.S. Supreme Court is currently deliberating over whether a proposed mathematical formula should be used to detect unconstitutional partisan gerrymandering. We show that in some cases, this formula will only flag bizarrely shaped districts as potentially constitutional.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1710.04193},
   eprinttype = {arxiv},
   journal = {arXiv:1710.04193 [physics]},
   keywords = {Mathematics - Combinatorics,Mathematics - Metric Geometry,measure,Physics - Physics and Society},
-  primaryClass = {physics}
+  primaryclass = {physics}
 }
 % == BibTeX quality report for alexeev2017:
 % ? Possibly abbreviated journal title arXiv:1710.04193 [physics]
@@ -378,12 +378,12 @@
   url = {http://arxiv.org/abs/1801.02064},
   urldate = {2020-10-09},
   abstract = {This note outlines three intellectually distinct but not mutually exclusive strategies for measuring partisan gerrymandering: partisan symmetry, efficiency gap, and algorithmic sampling.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1801.02064},
   eprinttype = {arxiv},
   journal = {arXiv:1801.02064 [physics]},
   keywords = {60J10; 91F10,measure,Physics - Physics and Society},
-  primaryClass = {physics}
+  primaryclass = {physics}
 }
 % == BibTeX quality report for duchin2018:
 % ? Possibly abbreviated journal title arXiv:1801.02064 [physics]
@@ -501,6 +501,20 @@
   number = {6}
 }
 % == BibTeX quality report for foster2018:
+% ? Title looks like it was stored in title-case in Zotero
+
+@article{fryer2007,
+  title = {Measuring the {{Compactness}} of {{Political Districting Plans}}},
+  author = {Fryer, Jr and Holden, Richard},
+  year = {2007},
+  month = nov,
+  volume = {54},
+  doi = {10.1086/661511},
+  abstract = {The United States Supreme Court has long recognized compactness as an important principle in assessing the constitutionality of political districting plans. We propose a measure of compactness based on the distance between voters within the same district relative to the minimum distance achievable -- which we coin the relative proximity index. We prove that any compactness measure which satisfies three desirable properties (anonymity of voters, efficient clustering, and invariance to scale, population density, and number of districts) ranks districting plans identically to our index. We then calculate the relative proximity index for the 106th Congress, requiring us to solve for each state's maximal compactness; an NP-hard problem. Using two properties of maximally compact districts, we prove they are power diagrams and develop an algorithm based on these insights. The correlation between our index and the commonly-used measures of dispersion and perimeter is -.22 and -.06, respectively. We conclude by estimating seat-vote curves under maximally compact districts for several large states. The fraction of additional seats a party obtains when their average vote increases is significantly greater under maximally compact districting plans, relative to the existing plans.},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\AK5SEWSI\\fryer_2007_.pdf},
+  journal = {The Journal of Law and Economics}
+}
+% == BibTeX quality report for fryer2007:
 % ? Title looks like it was stored in title-case in Zotero
 
 @article{gardner2006,
@@ -782,14 +796,14 @@
   url = {http://arxiv.org/abs/2008.06131},
   urldate = {2021-01-18},
   abstract = {Random sampling of graph partitions under constraints has become a popular tool for evaluating legislative redistricting plans. Analysts detect partisan gerrymandering by comparing a proposed redistricting plan with an ensemble of sampled alternative plans. For successful application, sampling methods must scale to large maps with many districts, incorporate realistic legal constraints, and accurately and efficiently sample from a selected target distribution. Unfortunately, most existing methods struggle in at least one of these three areas. We present a new Sequential Monte Carlo (SMC) algorithm that draws representative redistricting plans from a realistic target distribution of choice. Because it samples directly, the SMC algorithm can efficiently explore the relevant space of redistricting plans better than the existing Markov chain Monte Carlo algorithms that yield dependent samples. Our algorithm can simultaneously incorporate several constraints commonly imposed in real-world redistricting problems, including equal population, compactness, and preservation of administrative boundaries. We validate the accuracy of the proposed algorithm by using a small map where all redistricting plans can be enumerated. We then apply the SMC algorithm to evaluate the partisan implications of several maps submitted by relevant parties in a recent high-profile redistricting case in the state of Pennsylvania. We find that the proposed algorithm is roughly 40 times more efficient in sampling from the target distribution than a state-of-the-art MCMC algorithm. Open-source software is available for implementing the proposed methodology.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {2008.06131},
   eprinttype = {arxiv},
   file = {C\:\\Users\\madie\\Zotero\\storage\\KRI32QBN\\McCartan and Imai - 2020 - Sequential Monte Carlo for Sampling Balanced and C.pdf},
   journal = {arXiv:2008.06131 [cs, math, stat]},
   keywords = {algorithm,Computer Science - Computers and Society,Mathematics - Probability,Statistics - Applications},
   language = {en},
-  primaryClass = {cs, math, stat}
+  primaryclass = {cs, math, stat}
 }
 % == BibTeX quality report for mccartan2020b:
 % ? Possibly abbreviated journal title arXiv:2008.06131 [cs, math, stat]
@@ -893,6 +907,18 @@
 }
 % == BibTeX quality report for sanchez2018:
 % ? Title looks like it was stored in title-case in Zotero
+
+@misc{semecurbe2016,
+  title = {Gwfa: {{Geographically Weighted Fractal Analysis}}},
+  shorttitle = {Gwfa},
+  author = {Semecurbe, Francois and Roux, Stephane G. and Tannier, {and} Cecile},
+  year = {2016},
+  month = nov,
+  url = {https://CRAN.R-project.org/package=gwfa},
+  urldate = {2021-02-25},
+  abstract = {Performs Geographically Weighted Fractal Analysis (GWFA) to calculate the local fractal dimension of a set of points. GWFA mixes the Sandbox multifractal algorithm and the Geographically Weighted Regression. Unlike fractal box-counting algorithm, the sandbox algorithm avoids border effects because the boxes are adjusted on the set of points. The Geographically Weighted approach consists in applying a kernel that describes the way the neighbourhood of each estimated point is taken into account to estimate its fractal dimension. GWFA can be used to discriminate built patterns of a city, a region, or a whole country.},
+  copyright = {GPL-2 | GPL-3 [expanded from: GPL ({$\geq$} 2)]}
+}
 
 @misc{shen2018,
   title = {Exploring the {{Seats}}-{{Votes Curve}}},
