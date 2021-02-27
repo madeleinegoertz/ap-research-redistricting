@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber paper"] 1614300766 "paper.bcf" "paper.bbl" "paper" 1614300777
+["biber paper"] 1614300766 "paper.bcf" "paper.bbl" "paper" 1614454747
   "paper.bcf" 1614300669 124775 8aeb4776c680f851931e12ac10e958ce "pdflatex"
-  "paper.bib" 1614300763 78165 06a9668659dff1792b60f9405648d99a ""
+  "paper.bib" 1614454744 78165 06a9668659dff1792b60f9405648d99a ""
   (generated)
-  "paper.bbl"
   "paper.blg"
-["pdflatex"] 1614300646 "c:/Users/madie/ap-research-redistricting/paper/paper.tex" "c:/Users/madie/ap-research-redistricting/paper/paper.pdf" "paper" 1614300777
+  "paper.bbl"
+["pdflatex"] 1614300646 "c:/Users/madie/ap-research-redistricting/paper/paper.tex" "c:/Users/madie/ap-research-redistricting/paper/paper.pdf" "paper" 1614454747
   "C:/Users/madie/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1613672636 9296110 adf85dbdfa62411aec79d2baad0254ff ""
   "C:/Users/madie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1614231899 86819 54a932805ea653b6831ce661023d7475 ""
   "C:/Users/madie/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc" 1254935040 2375 baa924870cfb487815765f9094cf3728 ""
@@ -240,12 +240,12 @@
   "results/results.aux" 1614020970 4426 4a36dc684c55b26ed5faa3e23bcf670f ""
   "results/results.tex" 1611903416 6 74b3389dc4a9455ad94eedaa46542735 ""
   (generated)
-  "paper.log"
-  "lit-review/lit-review.aux"
   "c:/Users/madie/ap-research-redistricting/paper/paper.log"
-  "paper.run.xml"
   "paper.aux"
+  "paper.pdf"
   "paper.out"
   "paper.bcf"
-  "paper.pdf"
   "c:/Users/madie/ap-research-redistricting/paper/paper.pdf"
+  "lit-review/lit-review.aux"
+  "paper.log"
+  "paper.run.xml"
