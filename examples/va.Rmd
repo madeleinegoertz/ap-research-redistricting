@@ -69,3 +69,121 @@ mcmc.out.st <- redist.mcmc(adjobj = adjlist,
 end.time <- Sys.time()
 print(end.time - start.time)
 ```
+```{r}
+# optimal color palette 
+colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#A87ADA", "#DAB8D3", "#C843DB", "#329349", "#78A5D5")
+```
+
+```{r}
+# add row_n as unique precinct identifier to join on
+precinct$row_n <- seq.int(nrow(precinct))
+```
+
+```{r}
+cd_1 <- 
+    mcmc.out.st$partitions %>%
+        as_tibble() %>%
+        mutate(row_n = row_number()) %>%
+        rowwise() %>%
+        mutate(p_cd = sum(c_across(V1:V1000) == 1)/1000) %>%
+        nest(cols = starts_with("V")) %>%
+        inner_join(precinct, by = "row_n") %>%
+        st_as_sf() 
+
+cd_1 %>%        
+    ggplot(aes(fill = p_cd)) +
+        geom_sf(size = 0, color = NA) +
+        scale_fill_gradient2(low = "#cccce5", high = "#000080", midpoint = .5) +
+        coord_sf(datum = NA) +
+        theme_void() + 
+        labs(
+            title = "Hypothetical first district",
+            fill = "Assignment\nprobability"
+        )
+```
+```{r}
+cd_2 <- 
+    mcmc.out.st$partitions %>%
+        as_tibble() %>%
+        mutate(row_n = row_number()) %>%
+        rowwise() %>%
+        mutate(p_cd = sum(c_across(V1:V1000) == 2)/1000) %>%
+        nest(cols = starts_with("V")) %>%
+        inner_join(precinct, by = "row_n") %>%
+        st_as_sf() 
+
+cd_2 %>%        
+    ggplot(aes(fill = p_cd)) +
+        geom_sf(size = 0, color = NA) +
+        scale_fill_gradient2(low = "#cccce5", high = "#000080", midpoint = .5) +
+        coord_sf(datum = NA) +
+        theme_void() + 
+        labs(
+            title = "Hypothetical second district",
+            fill = "Assignment\nprobability"
+        )
+```
+```{r}
+plot_dist <- function(i) {
+  mcmc.out.st$partitions %>%
+    as_tibble() %>%
+    mutate(row_n = row_number()) %>%
+    rowwise() %>%
+    mutate(p_cd = sum(c_across(V1:V1000) == i)/1000) %>%
+    nest(cols = starts_with("V")) %>%
+    inner_join(precinct, by = "row_n") %>%
+    st_as_sf() %>%        
+    ggplot(aes(fill = p_cd)) +
+      geom_sf(size = 0, color = NA) +
+      scale_fill_gradient2(low = "#cccce5", high = "#000080", midpoint = .5) +
+      coord_sf(datum = NA) +
+      theme_void() + 
+      labs(
+          title = paste0("Hypothetical district #", toString(i)),
+          fill = "Assignment\nprobability"
+      )
+}
+```
+
+```{r}
+plot_dist(1)
+```
+```{r}
+plot_dist(2)
+```
+
+```{r}
+plot_dist(3)
+```
+
+```{r}
+plot_dist(4)
+```
+
+```{r}
+plot_dist(5)
+```
+
+```{r}
+plot_dist(6)
+```
+
+```{r}
+plot_dist(7)
+```
+
+```{r}
+plot_dist(8)
+```
+
+```{r}
+plot_dist(9)
+```
+
+```{r}
+plot_dist(10)
+```
+
+```{r}
+plot_dist(0)
+```
