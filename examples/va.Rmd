@@ -149,13 +149,13 @@ mcmc.out.st$partitions %>%
   as_tibble() %>%
   mutate(row_n = row_number()) %>%
   rowwise() %>%
-  mutate(p_cd = round(mean(c_across(V1:V1000))), digits = 0) %>%
+  mutate(p_cd = as.integer(round(mean(c_across(V1:V1000))))) %>%
   nest(cols = starts_with("V")) %>%
   inner_join(precinct, by = "row_n") %>%
   st_as_sf() %>%        
-  ggplot(aes(fill = p_cd)) +
+  ggplot(aes(fill = factor(p_cd))) +
     geom_sf(size = 0, color = NA) +
-    scale_color_manual(values = rainbow(11)) +
+    scale_fill_manual(values = colors) +
     coord_sf(datum = NA) +
     theme_void() + 
     labs(
