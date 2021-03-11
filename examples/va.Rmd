@@ -1,0 +1,71 @@
+---
+title: "VA"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(tidyverse)
+library(sf)
+library(redist)
+library(sp)
+library(spData)
+library(spdep)
+```
+
+
+```{r}
+precinct <- st_read("C:/Users/madie/OneDrive/data/pre-redist/VA_precinct_2018/VA_precinct_2018.shp")
+```
+```{r}
+precinct %>% 
+  ggplot(aes(fill = pop)) + 
+  geom_sf(size = 0, show.legend = FALSE, color = NA) + 
+  scale_fill_viridis_c(option = "magma") + 
+  coord_sf(datum = NA) +
+  theme_void() + 
+  labs(title = "Population map of Virginia, by precinct", caption = "2018 ACS estimates")
+```
+```{r}
+head(precinct)
+```
+```{r}
+precinct$CON_DIST <- as.numeric(precinct$CON_DIST)
+```
+
+```{r}
+head(precinct$CON_DIST)
+```
+```{r}
+adjlist <- spdep::poly2nb(precinct, queen = FALSE)
+```
+
+```{r}
+centroid <- st_centroid(precinct$geometry)
+distancemat <- st_distance(centroid, centroid)
+```
+
+10 precincts are, for some reason, missing population data. They'll get set to NA for now. 
+```{r}
+# replace NA populations with 0
+precinct$pop[is.na(precinct$pop)] <- 0
+```
+
+```{r}
+# try to redistrict!
+start.time <- Sys.time()
+mcmc.out.st <- redist.mcmc(adjobj = adjlist,
+                           popvec = precinct$pop,
+                           initcds = precinct$CON_DIST,
+                           nsims = 1000,
+                           #constraint = c("population", "compact"),
+                           #constraintweights = c(1, 1),
+                           #popcons = .1,
+                           #ssdmat = distancemat,
+                           savename = "mcmc_vac_2018_initcds_rstudio")
+end.time <- Sys.time()
+print(end.time - start.time)
+```
