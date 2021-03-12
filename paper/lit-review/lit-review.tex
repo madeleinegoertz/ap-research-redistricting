@@ -1,13 +1,5 @@
 \section{Literature Review}
 
-\subsection{Detection of Gerrymandering}
-
-- Explain existing research that focuses on whether or not existing maps are gerrymandered
-
-- This is good, but given the move to nonpartisan commissions/collaborations within the state legislatures, it's necessary to have fair methods to generate the districts in the first place. 
-
-- This is why we need.......
-
 \subsection{Automated Redistricting Algorithms}
 
 - Explain purpose of these
@@ -72,17 +64,7 @@ To satisfy the population parity requirements, CRSG does the following. First, i
 
 One run of CRSG will produce one set of districts, but separate runs of CRSG with the same input data may produce slightly different districts given the random choice of districts to merge in the first pass of the algorithm. 
 
-
-
-\subsection{Empirical Validation}
-
-- Usually small-scale validation within the papers that propose these Algorithms
-
-- Needed to see how well the algorithms scale
-
-- For a commission, it's helpful to be able to compare the results of several different leading algorithms. 
-
-\subsection{Evaluation of Redistricting Plans}
+\subsection{Measures of Partisan Fairness}
 
 \textcite{katz2020} brings mathematical rigor to the various proposed metrics for measuring partisan symmetry. 
 
@@ -106,7 +88,7 @@ Naturally, it's very rare to observe the necessary electoral outcomes under the 
 
 In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing.
 
-\subsubsection{Uniform Partisan Swing}
+\paragraph{Uniform Partisan Swing}
 
 Uniform partisan swing is the principle that when the overall vote share $V$ changes by some amount $dV$ between different elections under the same electoral system, the vote share at the district level also usually changes by the same $dV$. \textcite{katz2020} Empirically verified this to be true in 646 different elections. 
 
@@ -120,3 +102,21 @@ An example of such a curve is shown in Figure \ref{fig:seatsvotesups1}
     \label{fig:seatsvotesups1}
 \end{figure}
 
+
+\subsubsection{Efficiency Gap}
+\paragraph{Efficiency Gap under Equal Population}
+\subsubsection{Tau Gap}
+\subsubsection{Mean-Median Difference}
+\subsubsection{Partisan Bias}
+\subsubsection{Lopsided Outcomes}
+
+\subsection{Measures of Compactness}
+\subsubsection{Polsby-Popper}
+\subsubsection{Schwartzberg}
+\subsubsection{Length Width}
+\subsubsection{Convex Hull}
+\subsubsection{Reock}
+\subsubsection{Boyce Clark}
+\subsubsection{Fryer Holden}
+\subsubsection{Edges Removed}
+\subsubsection{Log Spanning Tree}
