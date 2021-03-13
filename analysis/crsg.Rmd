@@ -1,0 +1,14 @@
+---
+title: "CRSG"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(sf)
+library(redist)
+library(sp)
+library(spData)
+library(spdep)
+```
+

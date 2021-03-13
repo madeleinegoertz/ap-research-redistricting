@@ -1,0 +1,171 @@
+---
+title: "MCMC"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(sf)
+library(redist)
+library(sp)
+library(spData)
+library(spdep)
+```
+
+```{r}
+precinct <- st_read("C:/Users/madie/OneDrive/data/pre-redist/VA_precinct_2018/VA_precinct_2018.shp")
+```
+
+```{r}
+precinct$CON_DIST <- as.numeric(precinct$CON_DIST)
+adjlist <- spdep::poly2nb(precinct, queen = FALSE)
+centroid <- st_centroid(precinct$geometry)
+distancemat <- st_distance(centroid, centroid)
+
+# replace NA populations with 0
+precinct$pop[is.na(precinct$pop)] <- 0
+```
+
+```{r}
+# try to redistrict!
+start.time <- Sys.time()
+mcmc.out.st <- redist.mcmc(adjobj = adjlist,
+                           popvec = precinct$pop,
+                           initcds = precinct$CON_DIST,
+                           nsims = 1000,
+                           constraint = c("population", "compact"),
+                           constraintweights = c(1, 1),
+                           #popcons = .1,
+                           ssdmat = distancemat,
+                           savename = "mcmc_vac_2018_initcds_const")
+end.time <- Sys.time()
+print(end.time - start.time)
+```
+
+```{r}
+# optimal color palette 
+colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#A87ADA", "#DAB8D3", "#C843DB", "#329349", "#78A5D5")
+```
+
+```{r}
+# add row_n as unique precinct identifier to join on
+precinct$row_n <- seq.int(nrow(precinct))
+```
+
+```{r}
+plot_dist <- function(i) {
+  mcmc.out.st$partitions %>%
+    as_tibble() %>%
+    mutate(row_n = row_number()) %>%
+    rowwise() %>%
+    mutate(p_cd = sum(c_across(V1:V1000) == i)/1000) %>%
+    nest(cols = starts_with("V")) %>%
+    inner_join(precinct, by = "row_n") %>%
+    st_as_sf() %>%        
+    ggplot(aes(fill = p_cd)) +
+      geom_sf(size = 0, color = NA) +
+      scale_fill_gradient2(low = "#cccce5", high = "#000080", midpoint = .5) +
+      coord_sf(datum = NA) +
+      theme_void() + 
+      labs(
+          title = paste0("Hypothetical district #", toString(i)),
+          fill = "Assignment\nprobability"
+      )
+}
+```
+
+```{r}
+plot_dist(1)
+```
+```{r}
+# transpose partitions (one row is one map) and turn into data frame
+maps <- as.data.frame(t(mcmc.out.st$partitions))
+# add column representing the distance parity (how far off the population is)
+maps$pop_parity = mcmc.out.st$distance_parity
+# filter out all maps (rows) that are over the parity of 20%
+maps <- maps %>% filter(pop_parity <= 0.1)
+# remove pop_parity and transpose back
+partitions_valid_pop <- t(data.matrix(subset(maps, select = -pop_parity)))
+```
+```{r}
+print(mcmc.out.st$distance_parity)
+```
+```{r}
+# try to redistrict!
+start.time <- Sys.time()
+mcmc.out.st.pop <- redist.mcmc(adjobj = adjlist,
+                           popvec = precinct$pop,
+                           initcds = precinct$CON_DIST,
+                           nsims = 1000,
+                           constraint = c("population", "compact"),
+                           constraintweights = c(2, 1),
+                           #popcons = .1,
+                           ssdmat = distancemat,
+                           savename = "mcmc_vac_2018_initcds_const_pop")
+end.time <- Sys.time()
+print(end.time - start.time)
+```
+
+```{r}
+print(mcmc.out.st.pop$distance_parity)
+```
+
+```{r}
+plot_dist(2)
+```
+
+```{r}
+plot_dist(3)
+```
+
+```{r}
+plot_dist(4)
+```
+
+```{r}
+plot_dist(5)
+```
+
+```{r}
+plot_dist(6)
+```
+
+```{r}
+plot_dist(7)
+```
+
+```{r}
+plot_dist(8)
+```
+
+```{r}
+plot_dist(9)
+```
+
+```{r}
+plot_dist(10)
+```
+
+```{r}
+plot_dist(0)
+```
+
+```{r}
+mcmc.out.st$partitions %>%
+  as_tibble() %>%
+  mutate(row_n = row_number()) %>%
+  rowwise() %>%
+  mutate(p_cd = as.integer(round(mean(c_across(V1:V1000))))) %>%
+  nest(cols = starts_with("V")) %>%
+  inner_join(precinct, by = "row_n") %>%
+  st_as_sf() %>%        
+  ggplot(aes(fill = factor(p_cd))) +
+    geom_sf(size = 0, color = NA) +
+    scale_fill_manual(values = colors) +
+    coord_sf(datum = NA) +
+    theme_void() + 
+    labs(
+        title = "Hypothetical districts",
+        fill = "Assignment\nprobability"
+    )
+```
