@@ -111,8 +111,30 @@ An example of such a curve is shown in Figure \ref{fig:seatsvotesups1}
 \subsubsection{Lopsided Outcomes}
 
 \subsection{Measures of Compactness}
-\subsubsection{Polsby-Popper}
-\subsubsection{Schwartzberg}
+\subsubsection{Polsby-Popper Score}
+
+Our first measure of district compactness is the Polsby-Popper score. \textcite{polsby1991} introduces this measure of compactness first development in paleontology to the problem of gerrymandering. It calculates the ratio of the area of the district to the area of the circle with the same perimeter as the district. It is calculated as follows.
+
+\begin{equation}
+    PP(d) = \frac{4 \pi A(d)}{P(d)^2}
+\end{equation}
+
+where $d$ is the district, $A(d)$ is the area of the districts, $P(d)$ is the perimeter of the districts, and $PP(d)$ is the Polsby-Popper score \parencite{cox1927,polsby1991}. The score will range from 0 to 1, where 0 is a lack of compactness and 1 is the most-compact district \parencite{polsby1991}.
+
+Limitations and criticisms of this measure include that it is very sensitive to both geography and map resolution. Particularly near coastlines, even the most compact districts can have Polsby-Popper scores that are lower than gerrymandered districts which don't border coastlines. At finer resolutions, the same district will have a lower Polsby-Popper score as the perimeter increases. \parencite[12]{mccartan2020}.
+
+\subsubsection{Schwartzberg Score}
+
+The Schwartzberg score is very similar to the Polsboy-Popper Score, but it calculates the ratio of of the perimeter of the district to the perimeter of a circle with the same area as the district \parencite{schwartzberg1966}. It is calculated as follows. 
+
+\begin{equation}
+    S(d) = \frac{P(d)}{2 \pi \sqrt{\frac{A(d)}{\pi}}}
+\end{equation}
+
+where $S(d)$ is the Schwartzberg score. $S(d)$ ranges from 0 to 1, with 0 again being the least compact and 1 being the most compact district. 
+
+While the Schwartzberg measure is very sensitive to almost all forms of noncompactness (eg. spikes, cross-shapes, etc) \parencite[301]{polsby1991}, it is hampered by the same issues as the Polsby-Popper score, namely that it incorrectly characterizes coastal districts as gerrymandered and is sensitive to resolution. 
+
 \subsubsection{Length Width}
 \subsubsection{Convex Hull}
 \subsubsection{Reock}

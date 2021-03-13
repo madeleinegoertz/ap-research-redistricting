@@ -2843,17 +2843,14 @@
     <bcf:citekey order="30">katz2020</bcf:citekey>
     <bcf:citekey order="31">katz2020</bcf:citekey>
     <bcf:citekey order="32">katz2020</bcf:citekey>
-    <bcf:citekey order="33">fifield2020</bcf:citekey>
-    <bcf:citekey order="34">mccartan2020</bcf:citekey>
-    <bcf:citekey order="35">chen2013</bcf:citekey>
-    <bcf:citekey order="36">fifield2020d</bcf:citekey>
-    <bcf:citekey order="37">mansonsteven2020</bcf:citekey>
-    <bcf:citekey order="38">hully</bcf:citekey>
-    <bcf:citekey order="39">uscensusbureau</bcf:citekey>
-    <bcf:citekey order="40">votingandelectionscienceteam2019a</bcf:citekey>
-    <bcf:citekey order="40">votingandelectionscienceteam2019</bcf:citekey>
-    <bcf:citekey order="40">votingandelectionscienceteam2019b</bcf:citekey>
-    <bcf:citekey order="41">virginiadepartmentofelections</bcf:citekey>
+    <bcf:citekey order="33">polsby1991</bcf:citekey>
+    <bcf:citekey order="34">polsby1991</bcf:citekey>
+    <bcf:citekey order="35">cox1927</bcf:citekey>
+    <bcf:citekey order="35">polsby1991</bcf:citekey>
+    <bcf:citekey order="36">polsby1991</bcf:citekey>
+    <bcf:citekey order="37">mccartan2020</bcf:citekey>
+    <bcf:citekey order="38">schwartzberg1966</bcf:citekey>
+    <bcf:citekey order="39">polsby1991</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
