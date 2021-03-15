@@ -31,13 +31,15 @@ precinct$pop[is.na(precinct$pop)] <- 0
 start.time <- Sys.time()
 mcmc.out.st <- redist.mcmc(adjobj = adjlist,
                            popvec = precinct$pop,
-                           initcds = precinct$CON_DIST,
+                           ndists = 11,
+                           #initcds = precinct$CON_DIST,
                            nsims = 1000,
                            constraint = c("population", "compact"),
                            constraintweights = c(1, 1),
-                           #popcons = .1,
+                           popcons = .01,
                            ssdmat = distancemat,
-                           savename = "mcmc_vac_2018_initcds_const")
+                           
+                           savename = "mcmc_vac_2018_initcds_0.01")
 end.time <- Sys.time()
 print(end.time - start.time)
 ```

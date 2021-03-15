@@ -13,7 +13,7 @@ library(spdep)
 ```
 
 ```{r}
-df <- st_read("C:/Users/madie/OneDrive/data/pre-redist/VA_precinct_2018/VA_precinct_2018.shp")
+precinct <- st_read("C:/Users/madie/OneDrive/data/pre-redist/VA_precinct_2018/VA_precinct_2018.shp")
 ```
 ```{r}
 precinct$CON_DIST <- as.numeric(precinct$CON_DIST)
@@ -32,13 +32,12 @@ smc.out <- redist.smc(
   popvec = precinct$pop,
   ndists = 11,
   nsims = 1000,
-  popcons = 0.1
+  popcons = 0.01
 )
 end.time <- Sys.time()
-save(smc.out, file = "C:/Users/madie/ap-research-redistricting/analysis/mcmc_vac_2018_smc_rstudio.RData")
+save(smc.out, file = "C:/Users/madie/ap-research-redistricting/analysis/mcmc_vac_2018_smc_0.01.RData")
 print(end.time - start.time)
 ```
-
 ```{r}
 # optimal color palette 
 colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#A87ADA", "#DAB8D3", "#C843DB", "#329349", "#78A5D5")
@@ -46,18 +45,46 @@ colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#
 precinct$row_n <- seq.int(nrow(precinct))
 
 
-precinct %>%        
-  ggplot(aes(fill = factor(smc.out$cdvec[,1]))) +
-    geom_sf(size = 0, color = NA) +
-    scale_color_manual(values = colors) +
-    coord_sf(datum = NA) +
-    theme_void() + 
-    labs(
-        title = "Hypothetical districts - SMC",
-        fill = "Assignment\nprobability"
-    )
-```
-```{r}
-smc.out$cdvec
+plot_plan <- function(i) {
+  precinct %>%        
+    ggplot(aes(fill = factor(smc.out$cdvec[,i]))) +
+      geom_sf(size = 0, color = NA) +
+      scale_fill_manual(values = colors) +
+      coord_sf(datum = NA) +
+      theme_void() + 
+      labs(
+          title = "Hypothetical districts - SMC - 0.01 pop parity",
+          fill = "Assignment\nprobability"
+      )
+}
 ```
 
+```{r}
+
+```
+
+```{r}
+plot_dist <- function(i) {
+  smc.out$cdvec %>%
+    as_tibble() %>%
+    mutate(row_n = row_number()) %>%
+    rowwise() %>%
+    mutate(p_cd = sum(c_across(V1:V1000) == i)/1000) %>%
+    nest(cols = starts_with("V")) %>%
+    inner_join(precinct, by = "row_n") %>%
+    st_as_sf() %>%        
+    ggplot(aes(fill = p_cd)) +
+      geom_sf(size = 0, color = NA) +
+      scale_fill_gradient2(low = "#cccce5", high = "#000080") +
+      coord_sf(datum = NA) +
+      theme_void() + 
+      labs(
+          title = paste0("Hypothetical district #", toString(i)),
+          fill = "Assignment\nprobability"
+      )
+}
+```
+
+```{r}
+plot_dist(1)
+```
