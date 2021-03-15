@@ -26,6 +26,8 @@ area <- sf::st_area(df)
 centers <- sf::st_coordinates(centroids)
 # add row_n as unique precinct identifier to join on for plots
 df$row_n <- seq.int(nrow(df))
+# CRSG requires integer population
+df$pop_int <- round(df$pop)
 colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#A87ADA", "#DAB8D3", "#C843DB", "#329349", "#78A5D5")
 
-save.image(file = "data.RData")
+save.image(file = "results/data.RData")
