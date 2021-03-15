@@ -21,7 +21,7 @@ The first automated redistricting algorithm that I'm going to discuss in detail 
 MCMC conceptualizes the problem of redistricting precincts as a graph-cutting problem. For the uninitiated, a graph is a network of different interconnected points, where the points are called "nodes" and the lines connecting them are called "edges" \parencite{fifield2020}. MCMC represents every precinct as a node, and it draws an edge between nodes where the corresponding precincts are adjacent. Since the goal of redistricting is to assign every precinct a district, MCMC imagines that edges between nodes are "cut" until "islands" (known as "sub graphs") are formed, which each is disconnected from the rest. The disconnected "sub graphs" then become the districts. Figure \ref{fig:graphcut} provides a nice visualization of this representation with a sample set of 50 precincts. \parencite{fifield2020}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{img/swaps.png}
+    \includegraphics[width=0.75\linewidth]{img/swaps.png}
     \caption{Representation of MCMC algorithm. \parencite[4]{fifield2020}}
     \label{fig:swaps}
 \end{figure}
@@ -73,7 +73,7 @@ One run of CRSG will produce one set of districts, but separate runs of CRSG wit
 A legislative is said to have partisan symmetry if both parties can receive $m$ proportion of the overall votes and therefore have $n$ proportion of the seats in the legislative body.An example would be that if Republicans win 60\% of the votes but control 65\% of the seats, then in a symmetrical system, Democrats should also be able to control 65\% of the seats by winning 60\% of the votes. \textcite{katz2020}
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{img/seatsvotes.png}
+    \includegraphics[width=0.8\linewidth]{img/seatsvotes.png}
     \caption{Types of Seats-Votes Curves. Left panel: Symmetric (fair) curves with differing
     levels of electoral responsiveness. Right panel: Asymmetric (biased) curves, including
     one consistently biased toward the Democrats (blue) and one with biases favoring different
@@ -84,13 +84,13 @@ A legislative is said to have partisan symmetry if both parties can receive $m$ 
 
 Partisan symmetry is usually observed by plotting a "seats-votes curve." This plot has $V$, the proportion of the overall votes won by the party, on the x-axis, and $S(V)$, the proportion of the seats won by the party, on the y-axis. Figure \ref{fig:seatsvotes1} \parencite[175]{katz2020} illustrates several hypothetical seats-votes curves.
 
-Naturally, it's very rare to observe the necessary electoral outcomes under the same electoral system in order to determine partisan symmetry. (ie., it's very rare for two parties to tie one year, have one win 51\% of the total votes the next year, and then win 49\% of the votes the following year.)
+Naturally, it's very rare to observe the necessary electoral outcomes under the same electoral system in order to determine partisan symmetry. (i.e., it's very rare for two parties to tie one year, have one win 51\% of the total votes the next year, and then win 49\% of the votes the following year.)
 
 In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing.
 
 \paragraph{Uniform Partisan Swing}
 
-Uniform partisan swing is the principle that when the overall vote share $V$ changes by some amount $dV$ between different elections under the same electoral system, the vote share at the district level also usually changes by the same $dV$. \textcite{katz2020} Empirically verified this to be true in 646 different elections. 
+Uniform partisan swing is the principle that when the overall vote between different elections under the same electoral system, the vote share at the district level also usually changes by the same $dV$. \textcite{katz2020} Empirically verified this to be true in 646 different elections. 
 
 Thus, given a list of vote proportions per district ${v_1, v_2, v_3, ...}$ from one election, one can adjust each vote proportion by an arbitrarily small $dV$ until the seats share $S(V)$ is covered from 0 to 1. \parencite{katz2020}.
 
