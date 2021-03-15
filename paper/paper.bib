@@ -205,6 +205,25 @@
 % == BibTeX quality report for bernstein2017:
 % ? Title looks like it was stored in title-case in Zotero
 
+@article{boyce1964,
+  title = {The {{Concept}} of {{Shape}} in {{Geography}}},
+  author = {Boyce, Ronald R. and Clark, W. A. V.},
+  year = {1964},
+  month = oct,
+  volume = {54},
+  pages = {561},
+  issn = {00167428},
+  doi = {10.2307/212982},
+  url = {https://www.jstor.org/stable/212982?origin=crossref},
+  urldate = {2021-03-15},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\WTUGT7QC\\Boyce and Clark - 1964 - The Concept of Shape in Geography.pdf},
+  journal = {Geographical Review},
+  language = {en},
+  number = {4}
+}
+% == BibTeX quality report for boyce1964:
+% ? Title looks like it was stored in title-case in Zotero
+
 @misc{brownlee2019,
   title = {A {{Gentle Introduction}} to {{Markov Chain Monte Carlo}} for {{Probability}}},
   author = {Brownlee, Jason},
@@ -403,6 +422,18 @@
 % Missing required field 'journal'
 % ? Title looks like it was stored in title-case in Zotero
 
+@inproceedings{dube2016,
+  title = {Beyond the {{Circle}}: {{Measuring District Compactness}} Using {{Graph Theory}}},
+  shorttitle = {Beyond the {{Circle}}},
+  author = {Dube, Matthew and Clark, Jesse},
+  year = {2016},
+  month = nov,
+  abstract = {For decades, legislative districts have been drawn with two general mandates, contiguity and compactness. While contiguity is easily discernible, a single accepted measure of district compactness has not been found. Due to the various effects that gerrymandering and noncompact districts have on the aggregation of voter preferences, questions surrounding district compactness have direct implications of representation in democratic theory. Empirical political science has attempted on numerous occasions to formulate a single method by which to measure district compactness. These include various geometric measures such as circularity, convex hulls, and path connectedness, as well as methods that attempt to encompass voter dispersion. The real-world implementation of these compactness measures has been fraught with issues, however. Most apparent among these are natural and state boundaries, which greatly interfere with the implementation of geometric compactness measures. Examples of noncompactness induced by natural boundaries can be seen in the coast of Maine and the Chesapeake Bay in Maryland, while noncompactness induced by state boundaries can be seen in West Virginia and Louisiana. Further implementation issues may be found in methods that rely on voter dispersion. This is due to the boundaries that are used to collect apportionment data, namely census tracts, blocks, and precincts. U.S. Census Bureau delineations (tracts, blocks, and precincts) are the spatial granularity by which legislative districts are drawn, and have rigid boundaries. These boundaries not only proscribe the full use of most voter dispersion metrics of compactness, but also lead districts to be naturally conducive to irregular geometry. In this paper, we seek to overcome these geometric issues by using a different discipline of mathematics\textemdash graph theory\textemdash to formulate a new metric of district compactness. This method utilizes graph partitioning with the established goal of balancing the population while minimizing the number of shapes that share an edge with one another. In doing so we formulate a new approach to compactness that is more reflective of the redistricting process, and overcomes traditional issues surrounding natural boundaries, disconnects, and population distribution.},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\BMSQAJ22\\dube_2016_.pdf}
+}
+% == BibTeX quality report for dube2016:
+% Missing required field 'booktitle'
+
 @article{duchin2018,
   title = {Gerrymandering Metrics: {{How}} to Measure? {{What}}'s the Baseline?},
   shorttitle = {Gerrymandering Metrics},
@@ -456,11 +487,13 @@
 }
 
 @article{fifield2020,
+  ids = {fifield2020f},
   title = {Automated Redistricting Simulation Using {{Markov}} Chain {{Monte Carlo}}},
   author = {Fifield, Benjamin and Higgins, Michael and Imai, Kosuke and Tarr, Alexander},
   year = {2020},
   volume = {0},
   pages = {1--14},
+  publisher = {{Taylor \& Francis}},
   doi = {10.1080/10618600.2020.1739532},
   abstract = {Legislative redistricting is a critical element of representative democracy. A number of political scientists have used simulation methods to sample redistricting plans under various constraints to assess their impact on partisanship and other aspects of representation. However, while many optimization algorithms have been proposed, surprisingly few simulation methods exist in the published scholarship. Furthermore, the standard algorithm has no theoretical justification, scales poorly, and is unable to incorporate fundamental constraints required by redistricting processes in the real world. To fill this gap, we formulate redistricting as a graph-cut problem and for the first time in the literature propose a new automated redistricting simulator based on Markov chain Monte Carlo. The proposed algorithm can incorporate contiguity and equal population constraints at the same time. We apply simulated and parallel tempering to improve the mixing of the resulting Markov chain. Through a small-scale validation study, we show that the proposed algorithm can approximate a target distribution more accurately than the standard algorithm. We also apply the proposed methodology to data from Pennsylvania to demonstrate the applicability of our algorithm to real-world redistricting problems. The open-source software package is available so that researchers and practitioners can implement the proposed methodology. Supplementary materials for this article are available online.},
   file = {C\:\\Users\\madie\\Zotero\\storage\\ESXR4TCI\\fifield_2020_.pdf},
@@ -500,6 +533,7 @@
 % ? Title looks like it was stored in title-case in Zotero
 
 @misc{fifield2020c,
+  ids = {fifield2020e},
   title = {Replication {{Data}} for: {{The Essential Role}} of {{Empirical Validation}} in {{Legislative Redistricting Simulation}}},
   shorttitle = {Replication {{Data}} For},
   author = {Fifield, Benjamin and Imai, Kosuke and Kawahara, Jun and Kenny, Christopher T.},
@@ -526,39 +560,6 @@
   abstract = {Enables researchers to sample redistricting plans from a pre-specified target distribution using Sequential Monte Carlo and Markov Chain Monte Carlo algorithms. The package allows for the implementation of various constraints in the redistricting process such as geographic compactness and population parity requirements. Tools for analysis such as computation of various summary statistics and plotting functionality are also included. The package implements methods described in Fifield, Higgins, Imai and Tarr (2020) {$<$}doi:10.1080/10618600.2020.1739532{$>$}, Fifield, Imai, Kawahara, and Kenny (2020) {$<$}doi:10.1080/2330443X.2020.1791773{$>$}, and McCartan and Imai (2020) {$<$}arXiv: 2008.06131{$>$}.},
   copyright = {GPL-2 | GPL-3 [expanded from: GPL ({$\geq$} 2)]}
 }
-
-@misc{fifield2020e,
-  title = {Replication {{Data}} for: {{The Essential Role}} of {{Empirical Validation}} in {{Legislative Redistricting Simulation}}},
-  shorttitle = {Replication {{Data}} For},
-  author = {Fifield, Benjamin and Imai, Kosuke and Kawahara, Jun and Kenny, Christopher T.},
-  year = {2020},
-  month = jul,
-  publisher = {{Harvard Dataverse}},
-  doi = {10.7910/DVN/NH4CRS},
-  url = {https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NH4CRS},
-  urldate = {2021-03-08},
-  abstract = {As granular data about elections and voters become available, redistricting simulation methods are playing an increasingly important role when legi...},
-  language = {en}
-}
-% == BibTeX quality report for fifield2020e:
-% ? Title looks like it was stored in title-case in Zotero
-
-@article{fifield2020f,
-  title = {Automated {{Redistricting Simulation Using Markov Chain Monte Carlo}}},
-  author = {Fifield, Benjamin and Michael Higgins and Imai, Kosuke and Tarr, Alexander},
-  year = {2020},
-  month = may,
-  publisher = {{Taylor \& Francis}},
-  issn = {1061-8600},
-  url = {https://www.tandfonline.com/doi/full/10.1080/10618600.2020.1739532},
-  urldate = {2021-03-08},
-  abstract = {Legislative redistricting is a critical element of representative democracy. A number of political scientists have used simulation methods to sample redistricting plans under various constraints to...},
-  copyright = {\textcopyright{} 2020 American Statistical Association, Institute of Mathematical Statistics, and Interface Foundation of North America},
-  journal = {Journal of Computational and Graphical Statistics},
-  language = {en}
-}
-% == BibTeX quality report for fifield2020f:
-% ? Title looks like it was stored in title-case in Zotero
 
 @article{foster2018,
   title = {"{{Gobbledygook}}" or {{Unconstitutional Redistricting}}?: {{Floterial Districts}} and {{Partisan Gerrymandering}}},
@@ -646,6 +647,22 @@
   journal = {PLoS ONE},
   keywords = {algorithm,ALGORITHMS,AMERICAN Community Survey,CONSTRAINT satisfaction,DELIBERATION,DESCRIPTIVE statistics,MOTIVATIONAL interviewing,PENNSYLVANIA,seed_fill_shift_repair},
   number = {9}
+}
+
+@article{harris1964,
+  title = {A Scientific Method of Districting},
+  author = {Harris, Curtis C.},
+  year = {1964},
+  volume = {9},
+  pages = {219--225},
+  issn = {00057940, 10991743},
+  doi = {10.1002/bs.3830090303},
+  url = {http://doi.wiley.com/10.1002/bs.3830090303},
+  urldate = {2021-03-13},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\SA3753Z3\\harris_1964_.pdf},
+  journal = {Behavioral Science},
+  language = {en},
+  number = {3}
 }
 
 @article{hu1995,
@@ -829,6 +846,29 @@
   journal = {Swarm and Evolutionary Computation}
 }
 
+@article{maceachren1985,
+  ids = {maceachren1985a},
+  title = {Compactness of {{Geographic Shape}}: {{Comparison}} and {{Evaluation}} of {{Measures}}},
+  shorttitle = {Compactness of {{Geographic Shape}}},
+  author = {Maceachren, Alan M.},
+  year = {1985},
+  month = apr,
+  volume = {67},
+  pages = {53--67},
+  publisher = {{Routledge}},
+  issn = {0435-3684},
+  doi = {10.1080/04353684.1985.11879515},
+  url = {https://doi.org/10.1080/04353684.1985.11879515},
+  urldate = {2021-03-15},
+  abstract = {Geographic shape compactness is of concern in such contexts as urban morphology, political districting, and accuracy of enumeration unit values. The purpose of the present paper is to compare, categorize, and evaluate the various methods suggested for measuring compactness. Review of suggested compactness indices resulted in the identification of four categories, based upon: 1) perimeter-area measurement, 2) single parameters of related circles, 3) direct comparison to a standard shape, and 4) dispersion of elements of a shape's area. In all, eleven indices were calculated for a sample of U.S. counties and their frequency distributions were compared. Additionally, similarities and differences in the units of high, median, and low compactness were identified. Within each category, indices exhibited considerable similarity while significant differences were evident from category to category. These differences suggested variation in accuracy with which the indices measure compactness. It was hypothesized that measures based upon dispersion of elements of a shape's area would provide the most accurate measure because they consider the shape as a whole while the other indices do not. Determination of the accuracy with which each index measures compactness supported this hypothesis. Indices based upon direct comparison to a standard shape were found to be of similar accuracy and, therefore, also judged to be suitable compactness measures. Those measures based upon perimeter-area measurement and single parameters of related circles were determined to be considerably less accurate measures of compactness.},
+  annotation = {\_eprint: https://doi.org/10.1080/04353684.1985.11879515},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\FEWBQ4HA\\maceachren_1985_.pdf},
+  journal = {Geografiska Annaler: Series B, Human Geography},
+  number = {1}
+}
+% == BibTeX quality report for maceachren1985:
+% ? Title looks like it was stored in title-case in Zotero
+
 @article{macmillan2001,
   title = {Redistricting in a {{GIS}} Environment: {{An}} Optimisation Algorithm Using Switching-Points},
   shorttitle = {Redistricting in a {{GIS}} Environment},
@@ -985,6 +1025,26 @@
   number = {2}
 }
 % == BibTeX quality report for polsby1991:
+% ? Title looks like it was stored in title-case in Zotero
+
+@article{reock1961,
+  ids = {reock1961a},
+  title = {A {{Note}}: {{Measuring Compactness}} as a {{Requirement}} of {{Legislative Apportionment}}},
+  shorttitle = {A {{Note}}},
+  author = {Reock, Ernest C.},
+  year = {1961},
+  volume = {5},
+  pages = {70--74},
+  publisher = {{[Wiley, Midwest Political Science Association]}},
+  issn = {0026-3397},
+  doi = {10.2307/2109043},
+  url = {http://www.jstor.org/stable/2109043},
+  urldate = {2021-03-15},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\FAUHA78A\\Reock - 1961 - A Note Measuring Compactness as a Requirement of .pdf},
+  journal = {Midwest Journal of Political Science},
+  number = {1}
+}
+% == BibTeX quality report for reock1961:
 % ? Title looks like it was stored in title-case in Zotero
 
 @article{sanchez2018,
@@ -1219,6 +1279,7 @@
 % ? Title looks like it was stored in title-case in Zotero
 
 @article{young1988,
+  ids = {young1988a},
   title = {Measuring the {{Compactness}} of {{Legislative Districts}}},
   author = {Young, H. P.},
   year = {1988},
@@ -1228,6 +1289,7 @@
   issn = {0362-9805},
   doi = {10.2307/439947},
   abstract = {About half of the states currently impose some form of compactness standard on their districting plans. Yet there is no commonly accepted definition of how compactness is to be measured. This paper surveys some of the principal compactness measures gleaned from the literature in political science, geography, law, and mathematics. Although some of these measures are better than others, all are defective in some crucial respect; that is, they fail to give satisfactory results on certain types of geographical configurations. The conclusion is that "compactness" is not a sufficiently precise concept to be used as a legal standard for districting plans.},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\8XJDC9DM\\Young - 1988 - Measuring the Compactness of Legislative Districts.pdf},
   journal = {Legislative studies quarterly},
   keywords = {Topological compactness ; Legislative districts ; Moments of inertia ; Census tracts ; Triangles ; Center of gravity ; Gerrymandering ; Research Articles ; Intuition ; Congressional districts ; Fairness},
   language = {eng},
@@ -1283,6 +1345,15 @@
   urldate = {2021-03-10}
 }
 % == BibTeX quality report for zotero-629:
+% ? Title looks like it was stored in title-case in Zotero
+
+@misc{zotero-638,
+  title = {Measuring {{Compactness}}},
+  url = {https://fisherzachary.github.io/public/r-output.html},
+  urldate = {2021-03-13},
+  file = {C\:\\Users\\madie\\Zotero\\storage\\9F6HIIIY\\r-output.html}
+}
+% == BibTeX quality report for zotero-638:
 % ? Title looks like it was stored in title-case in Zotero
 
 

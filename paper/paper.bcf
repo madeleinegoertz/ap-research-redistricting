@@ -2851,6 +2851,18 @@
     <bcf:citekey order="37">mccartan2020</bcf:citekey>
     <bcf:citekey order="38">schwartzberg1966</bcf:citekey>
     <bcf:citekey order="39">polsby1991</bcf:citekey>
+    <bcf:citekey order="40">harris1964</bcf:citekey>
+    <bcf:citekey order="41">polsby1991</bcf:citekey>
+    <bcf:citekey order="42">maceachren1985</bcf:citekey>
+    <bcf:citekey order="43">reock1961</bcf:citekey>
+    <bcf:citekey order="44">maceachren1985</bcf:citekey>
+    <bcf:citekey order="45">boyce1964</bcf:citekey>
+    <bcf:citekey order="45">fifield2020d</bcf:citekey>
+    <bcf:citekey order="46">boyce1964</bcf:citekey>
+    <bcf:citekey order="47">fryer2007</bcf:citekey>
+    <bcf:citekey order="48">fryer2007</bcf:citekey>
+    <bcf:citekey order="49">dube2016</bcf:citekey>
+    <bcf:citekey order="50">mccartan2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

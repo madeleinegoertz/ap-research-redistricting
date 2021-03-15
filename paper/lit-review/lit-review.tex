@@ -111,6 +111,9 @@ An example of such a curve is shown in Figure \ref{fig:seatsvotesups1}
 \subsubsection{Lopsided Outcomes}
 
 \subsection{Measures of Compactness}
+
+A universal requirement of districts is that they be "reasonably compact." There is no legally accepted universal definition of compactness, and the scholarship is not united behind one measure either. The following is a brief overview of several different, commonly-used compactness measures that vary in approach, benefits, and weaknesses. 
+
 \subsubsection{Polsby-Popper Score}
 
 Our first measure of district compactness is the Polsby-Popper score. \textcite{polsby1991} introduces this measure of compactness first development in paleontology to the problem of gerrymandering. It calculates the ratio of the area of the district to the area of the circle with the same perimeter as the district. It is calculated as follows.
@@ -125,7 +128,7 @@ Limitations and criticisms of this measure include that it is very sensitive to 
 
 \subsubsection{Schwartzberg Score}
 
-The Schwartzberg score is very similar to the Polsboy-Popper Score, but it calculates the ratio of of the perimeter of the district to the perimeter of a circle with the same area as the district \parencite{schwartzberg1966}. It is calculated as follows. 
+The Schwartzberg score is very similar to the Polsby-Popper Score, but it calculates the ratio of of the perimeter of the district to the perimeter of a circle with the same area as the district \parencite{schwartzberg1966}. It is calculated as follows. 
 
 \begin{equation}
     S(d) = \frac{P(d)}{2 \pi \sqrt{\frac{A(d)}{\pi}}}
@@ -133,12 +136,46 @@ The Schwartzberg score is very similar to the Polsboy-Popper Score, but it calcu
 
 where $S(d)$ is the Schwartzberg score. $S(d)$ ranges from 0 to 1, with 0 again being the least compact and 1 being the most compact district. 
 
-While the Schwartzberg measure is very sensitive to almost all forms of noncompactness (eg. spikes, cross-shapes, etc) \parencite[301]{polsby1991}, it is hampered by the same issues as the Polsby-Popper score, namely that it incorrectly characterizes coastal districts as gerrymandered and is sensitive to resolution. 
+While the Schwartzberg measure is very sensitive to almost all forms of noncompactness (eg. spikes, cross-shapes, etc.) \parencite[301]{polsby1991}, it is hampered by the same issues as the Polsby-Popper score, namely that it incorrectly characterizes coastal districts as gerrymandered and is sensitive to resolution. 
 
-\subsubsection{Length Width}
-\subsubsection{Convex Hull}
-\subsubsection{Reock}
-\subsubsection{Boyce Clark}
-\subsubsection{Fryer Holden}
-\subsubsection{Edges Removed}
-\subsubsection{Log Spanning Tree}
+\subsubsection{Length-Width Score}
+
+The Length-Width score requires a minimum-bounding rectangle to be drawn around the district. The length-width score is the ratio of the shorter side of the rectangle to the longer side (i.e. a district encapsulated by a square would have a score of 1) \parencite{harris1964}. Just like the previous two measures, the Length-Width score ranges from 0 to 1, with a score of 1 indicating the most compact district. 
+
+Criticisms of this measure include that it is not sensitive to perimeter changes, meaning that a square district and a square district of the same size with many indentations would have the same compactness score \parencite{polsby1991}.
+
+\subsubsection{Convex Hull Score}
+
+The Convex Hull score calculates the ratio between the area of the district and the area of the convex hull of the district. A convex hull is the smallest possible polygon with entirely acute interior angles that contains the desired points. It again ranges from 0 to 1, with 1 being the most compact district. \parencite{maceachren1985}
+
+Criticism of the Convex Hull score primarily address that coastal districts may have lower scores even though they may be as compact as possible given their geographic constraints.
+
+\subsubsection{Reock Score}
+
+The Reock Score is the ratio between the area of the district and the area of the smallest possible circle that encloses it, known as the minimum bounding circle. It is very similar to the Length-Width score and the Convex-Hull score, and it also ranges from 0 to 1, with 1 indicating the most compact district, a circle. \parencite{reock1961}
+
+Criticism of the Reock Score include that it does not account for internal indentations associated with "salamander-like" districts, just like the Length-Width score \parencite{maceachren1985}. 
+
+\subsubsection{Boyce-Clark Index}
+
+The Boyce-Clark Index scores the compactness of districts using the length of the radii from the geometric centroid, or "center of mass", of the district. It is computed as 
+
+\begin{equation}
+    1 - \sum_{1}^{16}\{\frac{|\frac{r_i}{\sum_ir_i}*100-6.25 |\}}{200}
+\end{equation},
+
+where $r_i$ are the 16 individual radii. A perfect circle will have a Boyce-Clark index of 1. \parencite{boyce1964,fifield2020d}
+
+Criticisms of this measure include that it would score districts that must naturally be concave, possibly due to coastal geography, lower than is fair. Since the resolution is 16 radii, it is also sensitive to the orientation of the district \parencite{boyce1964}.
+
+\subsubsection{Fryer-Holden Score}
+
+The Fryer-Holden score takes a different approach to quantifying compactness, as it takes the population of each precinct into account. This score is "based on the distance between voters within the same political district in a state relative to the minimum such distance achievable by any districting plan in that state" \parencite[2]{fryer2007}. A score of 1 indicates a compact district. 
+
+This measure is robust to some of the weaknesses of the previous measures, namely that it isn't affected by coastal geography, map resolution, or population density. It can also be compared across states. \parencite{fryer2007}
+
+\subsubsection{Edge-Cut Compactness}
+
+Edge-Cut Compactness takes a graph-theory perspective to district compactness. Imagine a graph where each precinct is a node, some vertex of the graph, and every adjacent precinct shares an edge, a line connecting the points. The Edge-Cut compactness score is the number of edges that must be "cut" (removed) from the original graph to form subgraphs, or districts. The theory is that compacter districts will require fewer edges to be cut. \parencite{dube2016} If normalized to the number of edges and subtracted from 1, a score of 1 indicates the most compact district. 
+
+Benefits of this measure include that it is unaffected by political or natural geography and map resolution, as well as population density \parencite[11]{mccartan2020}. 
