@@ -72,6 +72,8 @@ One run of CRSG will produce one set of districts, but separate runs of CRSG wit
 
 A legislative is said to have partisan symmetry if both parties can receive $m$ proportion of the overall votes and therefore have $n$ proportion of the seats in the legislative body.An example would be that if Republicans win 60\% of the votes but control 65\% of the seats, then in a symmetrical system, Democrats should also be able to control 65\% of the seats by winning 60\% of the votes. \textcite{katz2020}
 
+Partisan Bias is any deviation from partisan symmetry. If partisan bias is greater than 0, it is biased towards Democrats, and it's biased towards Republicans if less than 0. \parencite{katz2020}
+
 \begin{figure}
     \includegraphics[width=0.8\linewidth]{img/seatsvotes.png}
     \caption{Types of Seats-Votes Curves. Left panel: Symmetric (fair) curves with differing
@@ -102,13 +104,11 @@ An example of such a curve is shown in Figure \ref{fig:seatsvotesups1}
     \label{fig:seatsvotesups1}
 \end{figure}
 
-
-\subsubsection{Efficiency Gap}
-\paragraph{Efficiency Gap under Equal Population}
-\subsubsection{Tau Gap}
 \subsubsection{Mean-Median Difference}
-\subsubsection{Partisan Bias}
-\subsubsection{Lopsided Outcomes}
+
+The mean-median difference $MM$ is defined as the difference between the mean Democratic vote share (DVS) of each district and median democratic vote share of each district (first proposed by \textcite{mcdonald2015}). If $MM = 0$, the districts are said to be fair. 
+
+\textcite{katz2020} finds that the mean-median difference is a reliable estimator of partisan bias when the average DVS is 0.5. In the language of seats-votes curves, this means it can detect partisan bias at the average DVS = 0.5 level, but not at any other. Essentially, they find that mean-median difference is a reliable estimate of partisan bias as the average DVS changes, but not as the seat share changes (i.e. can measure bias along x-axis but not y-axis of seats-votes curve). \parencite[27-9]{katz2020}
 
 \subsection{Measures of Compactness}
 
