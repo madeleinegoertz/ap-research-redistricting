@@ -2811,17 +2811,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">paper.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">fifield2020</bcf:citekey>
-    <bcf:citekey order="2">mccartan2020</bcf:citekey>
-    <bcf:citekey order="3">chen2013</bcf:citekey>
-    <bcf:citekey order="4">fifield2020d</bcf:citekey>
-    <bcf:citekey order="5">mansonsteven2020</bcf:citekey>
-    <bcf:citekey order="6">hully</bcf:citekey>
-    <bcf:citekey order="7">uscensusbureau</bcf:citekey>
-    <bcf:citekey order="8">votingandelectionscienceteam2019a</bcf:citekey>
-    <bcf:citekey order="8">votingandelectionscienceteam2019</bcf:citekey>
-    <bcf:citekey order="8">votingandelectionscienceteam2019b</bcf:citekey>
-    <bcf:citekey order="9">virginiadepartmentofelections</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
