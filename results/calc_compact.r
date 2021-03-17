@@ -153,7 +153,7 @@ longtbl <-
   table %>%
   pivot_longer(
     !c(alg, nloop),
-    names_to = "measures",
+    names_to = "measure",
     values_to = "value"
   )
 # R doesn't set me use multiindex so I have to send this to python.
