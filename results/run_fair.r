@@ -51,7 +51,7 @@ control.fair <-
   )
 control.fair$alg <- "control"
 
-raw.compact <-
+raw.fair <-
   list(
     mcmc = mcmc.fair,
     smc = smc.fair,
@@ -59,4 +59,4 @@ raw.compact <-
     control = control.fair
   )
 
-save(raw.compact, file = "results/raw.fair.RData")
+save(raw.fair, file = "results/raw.fair.RData")
