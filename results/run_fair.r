@@ -51,19 +51,12 @@ control.fair <-
   )
 control.fair$alg <- "control"
 
-table <-
-  bind_rows(
-    mcmc.fair, smc.fair, crsg.fair, control.fair
+raw.compact <-
+  list(
+    mcmc = mcmc.fair,
+    smc = smc.fair,
+    crsg = crsg.fair,
+    control = control.fair
   )
 
-save(table, file = "results/calc.fair.RData")
-
-longtbl <-
-  table %>%
-  pivot_longer(
-    !c(alg, nloop),
-    names_to = "measure",
-    values_to = "value"
-  )
-
-write.csv(longtbl, file = "results/fair.csv")
+save(table, file = "results/raw.fair.RData")
