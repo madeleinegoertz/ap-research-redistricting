@@ -59,4 +59,4 @@ raw.compact <-
     control = control.fair
   )
 
-save(table, file = "results/raw.fair.RData")
+save(raw.compact, file = "results/raw.fair.RData")
