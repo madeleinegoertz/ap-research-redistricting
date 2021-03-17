@@ -13,6 +13,5 @@ longtbl <-
     names_to = "measures",
     values_to = "value"
   )
-
 # R doesn't set me use multiindex so I have to send this to python.
 write.csv(longtbl, file = "results/longtbl.csv")
