@@ -4,33 +4,35 @@
 library(redist)
 library(tidyverse)
 load("results/data.RData")
-load("results/mcmc.RData")
-load("results/smc.RData")
-load("results/crsg.RData")
+load("results/mcmc.100.RData")
+load("results/smc.100.RData")
+#load("results/crsg.RData")
 
 # MCMC
+start.time <- Sys.time()
 mcmc.compact <-
   redist.compactness(
     shp = df,
     district_membership = mcmc.out$partitions,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
-    population = df$pop, 
-    adjacency = adjlist,
-    counties = df$COUNTYFP,
+    measure = c("PolsbyPopper"),
     ncores = 4
   )
+end.time <- Sys.time()
+print(end.time - start.time)
+save(mcmc.compact, file = "results/raw.mcmc.100.compact.RData")
 
 # SMC
+start.time <- Sys.time()
 smc.compact <-
   redist.compactness(
     shp = df,
     district_membership = smc.out$cdvec,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
-    population = df$pop, 
-    adjacency = adjlist,
-    counties = df$COUNTYFP,
+    measure = c("PolsbyPopper"),
     ncores = 4
   )
+end.time <- Sys.time()
+print(end.time - start.time)
+save(smc.compact, file = "results/raw.smc.100.compact.RData")
 
 # CRSG
 crsg.compact <-
