@@ -3,9 +3,9 @@ library(redist)
 library(tidyverse)
 
 load("results/data.RData")
-load("results/mcmc.RData")
-load("results/smc.RData")
-load("results/crsg.RData")
+load("results/mcmc.100.RData")
+load("results/smc.100.RData")
+#load("results/crsg.RData")
 
 # MCMC
 mcmc.fair <-
@@ -16,7 +16,8 @@ mcmc.fair <-
     dvote = df$G18HORDEM,
     ncores = 4
   )
-mcmc.fair$alg <- "mcmc"
+#mcmc.fair$alg <- "mcmc"
+mcmc.fair <- mcmc.fair[-c(1101:1111),]
 
 # SMC
 smc.fair <-
@@ -27,18 +28,18 @@ smc.fair <-
     dvote = df$G18HORDEM,
     ncores = 4
   )
-smc.fair$alg <- "smc"
+#smc.fair$alg <- "smc"
 
 # CRSG
-crsg.fair <-
-  redist.metrics(
-    district_membership = crsg.out$partitions,
-    measure = c("DSeats", "DVS", "Bias"),
-    rvote = df$G18HORREP,
-    dvote = df$G18HORDEM,
-    ncores = 4
-  )
-crsg.fair$alg <- "crsg"
+# crsg.fair <-
+#   redist.metrics(
+#     district_membership = crsg.out$partitions,
+#     measure = c("DSeats", "DVS", "Bias"),
+#     rvote = df$G18HORREP,
+#     dvote = df$G18HORDEM,
+#     ncores = 4
+#   )
+#crsg.fair$alg <- "crsg"
 
 # Control
 control.fair <-
@@ -49,14 +50,14 @@ control.fair <-
     dvote = df$G18HORDEM,
     ncores = 4
   )
-control.fair$alg <- "control"
+#control.fair$alg <- "control"
 
 raw.fair <-
   list(
     mcmc = mcmc.fair,
     smc = smc.fair,
-    crsg = crsg.fair,
+#    crsg = crsg.fair,
     control = control.fair
   )
 
-save(raw.fair, file = "results/raw.fair.RData")
+save(raw.fair, file = "results/raw.fair.100.RData")
