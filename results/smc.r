@@ -11,11 +11,11 @@ smc.out <- redist.smc(
   popvec = df$pop,
   ndists = 11,
  # nsims = 10,
-  nsims = 10000,
+  nsims = 1000,
   popcons = 0.01
 )
 end.time <- Sys.time()
 print(end.time - start.time)
 
 #save(smc.out, file = "results/smc.RData")
-save(smc.out, file = "results/smc.10000.RData")
+save(smc.out, file = "results/smc.1000.RData")
