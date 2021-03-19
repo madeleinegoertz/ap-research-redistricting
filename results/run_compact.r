@@ -19,7 +19,7 @@ mcmc.compact <-
   )
 end.time <- Sys.time()
 print(end.time - start.time)
-save(mcmc.compact, file = "results/raw.mcmc.100.compact.RData")
+#save(mcmc.compact, file = "results/raw.mcmc.100.compact.RData")
 
 # SMC
 start.time <- Sys.time()
@@ -32,29 +32,26 @@ smc.compact <-
   )
 end.time <- Sys.time()
 print(end.time - start.time)
-save(smc.compact, file = "results/raw.smc.100.compact.RData")
+#save(smc.compact, file = "results/raw.smc.100.compact.RData")
 
 # CRSG
-crsg.compact <-
-  redist.compactness(
-    shp = df,
-    district_membership = crsg.out$partitions,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
-    population = df$pop, 
-    adjacency = adjlist,
-    counties = df$COUNTYFP,
-    ncores = 4
-  )
+# crsg.compact <-
+#   redist.compactness(
+#     shp = df,
+#     district_membership = crsg.out$partitions,
+#     measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+#     population = df$pop, 
+#     adjacency = adjlist,
+#     counties = df$COUNTYFP,
+#     ncores = 4
+#   )
 
 # Control
 control.compact <-
   redist.compactness(
     shp = df,
     district_membership = df$CON_DIST,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
-    population = df$pop, 
-    adjacency = adjlist,
-    counties = df$COUNTYFP,
+    measure = c("PolsbyPopper"),
     ncores = 4
   )
 
@@ -62,8 +59,8 @@ raw.compact <-
   list(
     mcmc = mcmc.compact,
     smc = smc.compact,
-    crsg = crsg.compact,
+#    crsg = crsg.compact,
     control = control.compact
   )
 
-save(raw.compact, file = "results/raw.compact.RData")
+save(raw.compact, file = "results/raw.compact.100.RData")
