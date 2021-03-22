@@ -1,12 +1,12 @@
 # This script runs the crsg algorithm and saves the output in this format.
 # crsg.out is a named list, with 
-# partitions, a n precincts x 10 matrix where each col is a map.
+# partitions, a n precincts x 100 matrix where each col is a map.
 
 library(redist)
 
 load("results/data.RData")
 
-nsims <- 10
+nsims <- 100
 crsg <- vector(mode = "list", length = nsims)
 for (i in 1:nsims) {
   crsg[[i]] <- 
@@ -27,4 +27,4 @@ for (i in 2:length(crsg)) { # already included col 1
 
 crsg.out <- list(partitions = partitions)
 
-save(crsg.out, file = "results/crsg.RData")
+save(crsg.out, file = "results/crsg.100.RData")

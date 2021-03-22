@@ -1,6 +1,6 @@
-library(tidyverse)
+library(dplyr)
 
-load("results/raw.fair.RData")
+load("results/raw.fair.100.RData")
 
 ########################## MCMC
 # take mean DSeats
@@ -72,41 +72,6 @@ table.smc$dvs_mean <-
   pull(var = dvs_mean)
 table.smc$alg <- "smc"
 
-########################## CRSG
-# take mean DSeats
-table.crsg <-
-  raw.fair$crsg %>%
-  select(districts, DSeats, nloop) %>%
-  pivot_wider(
-    names_from = districts,
-    values_from = DSeats
-  ) %>%
-  rowwise(nloop) %>%
-  summarise(DSeats = mean(c_across()))
-# add partisan bias
-table.crsg$bias <-
-  raw.fair$crsg %>%
-  select(districts, Bias, nloop) %>%
-  pivot_wider(
-    names_from = districts,
-    values_from = Bias
-  ) %>%
-  rowwise(nloop) %>%
-  summarise(bias = mean(c_across())) %>%
-  pull(var = bias)
-# add dvs_mean
-table.crsg$dvs_mean <-
-  raw.fair$crsg %>%
-  select(districts, DVS, nloop) %>%
-  pivot_wider(
-    names_from = districts,
-    values_from = DVS
-  ) %>%
-  rowwise(nloop) %>%
-  summarise(dvs_mean = mean(c_across())) %>%
-  pull(var = dvs_mean)
-table.crsg$alg <- "crsg"
-
 ########################## Control
 # take mean DSeats
 table.control <-
@@ -144,10 +109,10 @@ table.control$alg <- "control"
 
 table <-
   bind_rows(
-    table.mcmc, table.smc, table.crsg, table.control
+    table.mcmc, table.smc, table.control
   )
 
-save(table, file = "results/calc.fair.RData")
+save(table, file = "results/calc.fair.100.RData")
 
 longtbl <-
   table %>%
@@ -157,4 +122,4 @@ longtbl <-
     values_to = "value"
   )
 # R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "results/fair.csv")
+write.csv(longtbl, file = "results/fair.100.csv")
