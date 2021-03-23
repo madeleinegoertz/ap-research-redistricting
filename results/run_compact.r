@@ -2,7 +2,7 @@
 # all the algorithm and the existing plan.
 
 library(redist)
-library(tidyverse)
+#library(tidyverse)
 load("results/data.RData")
 load("results/mcmc.100.RData")
 load("results/smc.100.RData")
@@ -14,12 +14,15 @@ mcmc.compact <-
   redist.compactness(
     shp = df,
     district_membership = mcmc.out$partitions,
-    measure = c("PolsbyPopper"),
+    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+    population = df$pop,
+    adjacency = adjlist,
+    counties = df$COUNTYFP,
     ncores = 4
   )
 end.time <- Sys.time()
 print(end.time - start.time)
-#save(mcmc.compact, file = "results/raw.mcmc.100.compact.RData")
+#save(mcmc.compact, file = "results/raw.mcmc.100.all.compact.RData")
 
 # SMC
 start.time <- Sys.time()
@@ -27,7 +30,10 @@ smc.compact <-
   redist.compactness(
     shp = df,
     district_membership = smc.out$cdvec,
-    measure = c("PolsbyPopper"),
+    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+    population = df$pop,
+    adjacency = adjlist,
+    counties = df$COUNTYFP,
     ncores = 4
   )
 end.time <- Sys.time()
@@ -47,13 +53,19 @@ print(end.time - start.time)
 #   )
 
 # Control
+start.time <- Sys.time()
 control.compact <-
   redist.compactness(
     shp = df,
     district_membership = df$CON_DIST,
-    measure = c("PolsbyPopper"),
+    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+    population = df$pop,
+    adjacency = adjlist,
+    counties = df$COUNTYFP,
     ncores = 4
   )
+end.time <- Sys.time()
+print(end.time - start.time)
 
 raw.compact <-
   list(
@@ -63,4 +75,4 @@ raw.compact <-
     control = control.compact
   )
 
-save(raw.compact, file = "results/raw.compact.100.RData")
+save(raw.compact, file = "results/raw.compact.100.three.RData")
