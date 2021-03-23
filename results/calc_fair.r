@@ -1,6 +1,6 @@
 library(dplyr)
 
-load("results/raw.fair.100.RData")
+load("results/raw.fair.100.all.RData")
 
 ########################## MCMC
 # take mean DSeats
