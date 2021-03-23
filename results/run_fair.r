@@ -11,24 +11,25 @@ load("results/smc.100.RData")
 mcmc.fair <-
   redist.metrics(
     district_membership = mcmc.out$partitions,
-    measure = c("DSeats", "DVS", "Bias"),
+    measure = "all",
     rvote = df$G18HORREP,
     dvote = df$G18HORDEM,
     ncores = 4
   )
-#mcmc.fair$alg <- "mcmc"
+mcmc.fair$alg <- "mcmc"
+# remove results from last run that always have NaNs
 mcmc.fair <- mcmc.fair[-c(1101:1111),]
 
 # SMC
 smc.fair <-
   redist.metrics(
     district_membership = smc.out$cdvec,
-    measure = c("DSeats", "DVS", "Bias"),
+    measure = "all",
     rvote = df$G18HORREP,
     dvote = df$G18HORDEM,
     ncores = 4
   )
-#smc.fair$alg <- "smc"
+smc.fair$alg <- "smc"
 
 # CRSG
 # crsg.fair <-
@@ -44,13 +45,17 @@ smc.fair <-
 # Control
 control.fair <-
   redist.metrics(
-    district_membership = df$CON_DIST,
-    measure = c("DSeats", "DVS", "Bias"),
+    # mean median function crashes if just pass vector of CON_DIST, so 
+    # I bind a nonsense vector and then delete the data later. Annoying.
+    district_membership = cbind(df$CON_DIST, replicate(length(df$CON_DIST), 1)),
+    measure = "all",
     rvote = df$G18HORREP,
     dvote = df$G18HORDEM,
     ncores = 4
   )
-#control.fair$alg <- "control"
+# delete said nonsense data. 
+control.fair <- control.fair[-c(12:22),]
+control.fair$alg <- "control"
 
 raw.fair <-
   list(
@@ -60,4 +65,4 @@ raw.fair <-
     control = control.fair
   )
 
-save(raw.fair, file = "results/raw.fair.100.RData")
+save(raw.fair, file = "results/raw.fair.100.all.RData")
