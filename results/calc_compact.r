@@ -1,6 +1,6 @@
-library(tidyverse)
+library(dplyr)
 load("results/data.RData")
-load("results/raw.compact.100.RData")
+load("results/raw.compact.100.three.RData")
 
 ########################## MCMC
 # take mean pp score
@@ -13,6 +13,28 @@ table.mcmc <-
   ) %>%
   rowwise(nloop) %>%
   summarise(pp_mean = mean(c_across()))
+# add fh score
+table.mcmc$fh <-
+  raw.compact$mcmc %>%
+  select(districts, FryerHolden, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = FryerHolden
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(fh = mean(c_across())) %>%
+  pull(var = fh)
+# add Edges Removed score
+table.mcmc$ecc <-
+  raw.compact$mcmc %>%
+  select(districts, EdgesRemoved, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = EdgesRemoved
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(ecc = 1 - mean(c_across())/num_edges) %>%
+  pull(var = ecc)
 table.mcmc$alg <- "mcmc"
 
 ########################## SMC
@@ -26,6 +48,28 @@ table.smc <-
   ) %>%
   rowwise(nloop) %>%
   summarise(pp_mean = mean(c_across()))
+# add fh score
+table.smc$fh <-
+  raw.compact$smc %>%
+  select(districts, FryerHolden, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = FryerHolden
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(fh = mean(c_across())) %>%
+  pull(var = fh)
+# add Edges Removed score
+table.smc$ecc <-
+  raw.compact$smc %>%
+  select(districts, EdgesRemoved, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = EdgesRemoved
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(ecc = 1 - mean(c_across())/num_edges) %>%
+  pull(var = ecc)
 table.smc$alg <- "smc"
 
 ########################## Control
@@ -39,6 +83,28 @@ table.control <-
   ) %>%
   rowwise(nloop) %>%
   summarise(pp_mean = mean(c_across()))
+# add fh score
+table.control$fh <-
+  raw.compact$control %>%
+  select(districts, FryerHolden, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = FryerHolden
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(fh = mean(c_across())) %>%
+  pull(var = fh)
+# add Edges Removed score
+table.control$ecc <-
+  raw.compact$control %>%
+  select(districts, EdgesRemoved, nloop) %>%
+  pivot_wider(
+    names_from = districts,
+    values_from = EdgesRemoved
+  ) %>%
+  rowwise(nloop) %>%
+  summarise(ecc = 1 - mean(c_across())/num_edges) %>%
+  pull(var = ecc)
 table.control$alg <- "control"
 
 table <-
