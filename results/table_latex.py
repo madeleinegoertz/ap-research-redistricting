@@ -1,18 +1,13 @@
-# This script creates the data table for my project
+# This script takes the long table raw compactness and fairness measures output as csvs, 
+# and write a latex file of the mean measures for mcmc, smc, and the control. 
+
 import pandas as pd
 
-dfc = pd.read_csv("results/compact.csv", usecols=["nloop","alg","measure","value"])
-dff = pd.read_csv("results/fair.csv", usecols=["nloop","alg","measure","value"])
-
+dfc = pd.read_csv("results/compact.100.csv", usecols=["nloop","alg","measure","value"])
+dff = pd.read_csv("results/fair.100.csv", usecols=["nloop","alg","measure","value"])
 df = pd.concat([dfc, dff])
-print(df)
-# dfc = dfc.rename(columns={"nloop": "map"})
-# dff = dff.rename(columns={"nloop": "map"})
 
-# df = df.set_index(['alg', 'nloop', 'measures'])
-# df = df.unstack(level='measures')
-# df2 = df.mean(level=0)
-# df2['nloop'] = "mean"
-# df2 = df2.set_index('nloop', append=True)
-# df = pd.concat([df, df2])
-# print(df.to_latex())
+df = df.set_index(['alg', 'nloop', 'measure'])
+df = df.unstack(level='measure')
+mean = df.mean(level=0)
+mean.to_latex(buf="paper/results/tbl.tex")
