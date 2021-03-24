@@ -1,7 +1,7 @@
 # This creates the seats votes curves. 
 
 library(tidyverse)
-library(pscl)
+#library(pscl)
 load("results/raw.fair.100.all.RData")
 
 # First need to extract DVS.
@@ -14,28 +14,46 @@ dvs <- function(data) {
     values_from = DVS
   )
 }
+# 
+# summarize_dvs <- function(data) {
+#   data %>%
+#   rowwise(districts) %>%
+#   summarise(
+#     mean = mean(c_across()),
+#     median = median(c_across())
+#   )
+# }
+# 
+# plot_dvs <- function(dvs, alg) {
+#   dvs %>%
+#   seatsVotes(desc=alg) %>%
+#   plot(type="seatsVotes")
+# }
+# 
+# mcmc.raw <- dvs(raw.fair$mcmc)
+# mcmc.sum <- summarize_dvs(mcmc.raw)
+# plot_dvs(mcmc.sum$mean, 'MCMC')
+# 
+# smc.raw <- dvs(raw.fair$smc)
+# smc.sum <- summarize_dvs(smc.raw)
+# plot_dvs(smc.raw[,100], 'SMC')
 
-summarize_dvs <- function(data) {
-  data %>%
-  rowwise(districts) %>%
-  summarise(
-    mean = mean(c_across()),
-    median = median(c_across())
-  )
-}
 
-plot_dvs <- function(dvs, alg) {
-  dvs %>%
-  seatsVotes(desc=alg) %>%
-  plot(type="seatsVotes")
-}
+#multiline experimentation
 
-mcmc.raw <- dvs(raw.fair$mcmc)
-mcmc.sum <- summarize_dvs(mcmc.raw)
-plot_dvs(mcmc.sum$mean, 'MCMC')
+smc <- dvs(raw.fair$smc)
+smc <- smc[,-1]
+smc <- as.matrix(smc, nrow=11, ncol=ncol(smc))
+colnames(smc) <- NULL
+sv.smc <-
+  seatsVotes(smc)
+plot(sv.smc, type="seatsVotes")
 
-smc.raw <- dvs(raw.fair$smc)
-smc.sum <- summarize_dvs(smc.raw)
-plot_dvs(smc.raw[,100], 'SMC')
-
+mcmc <- dvs(raw.fair$mcmc)
+mcmc <- mcmc[,-1]
+mcmc <- as.matrix(mcmc, nrow=11, ncol=ncol(mcmc))
+colnames(mcmc) <- NULL
+sv.mcmc <-
+  seatsVotes(mcmc)
+plot(sv.mcmc, type="seatsVotes")
 
