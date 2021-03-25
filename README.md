@@ -47,7 +47,10 @@ These generated redistricting plans can now be evaluated against the existing pl
 ## Generate Tables & Figures
 
 * `fig_table.py` takes `compact.csv` and `fair.csv` and generates a proper data table in LaTeX. Output written to `paper/results/tbl.tex`.
-* `fig_seatsvotes.r` takes the raw fairness measures and computes seats-votes curves for each proposal. Plots must be manually exported in RStudio. *Generating the seats-votes curves relies on my modified version of the [pscl](https://github.com/madeleinegoertz/pscl/) package for R, which can be installed via `install_github(madeleinegoertz/pscl)` from the `devtools` package.
+
+* `fig_seatsvotes.r` takes the raw fairness measures and computes seats-votes curves for each proposal. Plots must be manually exported in RStudio. Subfigures put together in `paper/results/seatsvotes.tex`.*Generating the seats-votes curves relies on my modified version of the [pscl](https://github.com/madeleinegoertz/pscl/) package for R, which can be installed via `install_github(madeleinegoertz/pscl)` from the `devtools` package.
+
+* `fig_maps.r` takes the raw compactness measures and redistricting output and plots the most compact districts based on Polsby-Popper and Edge-Cut Compactness score. Plots written to `paper/img/maps.<alg>.<measure>.png.` Subfigures put together in `paper/results/maps.tex`.
 
 ## Paper
 
