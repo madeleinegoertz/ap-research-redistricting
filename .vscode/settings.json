@@ -1,6 +1,0 @@
-{
-    "python.linting.enabled": false,
-    "ai.azureml.defaultWorkspaceId": "/subscriptions/61dcd956-d37f-499b-89e5-0bc504573595/resourceGroups/redistricting/providers/Microsoft.MachineLearningServices/workspaces/redistricting",
-    "jupyter.jupyterServerType": "local",
-    "python.pythonPath": "C:\\Users\\madie\\anaconda3\\python.exe"
-}
