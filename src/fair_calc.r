@@ -32,6 +32,13 @@ table.mcmc <- calc_fair(raw.fair$mcmc, "mcmc")
 table.smc <- calc_fair(raw.fair$smc, "smc")
 table.control <- calc_fair(raw.fair$control, "control")
 
+calc.fair <- list(
+  mcmc = table.mcmc, 
+  smc = table.smc,
+  control = table.control
+)
+save(calc.fair, file = "src/fair.calc.RData")
+
 longtbl <-
   bind_rows(table.mcmc, table.smc, table.control) %>%
   pivot_longer(
