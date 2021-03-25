@@ -23,8 +23,15 @@ calc_compact <- function(data, alg) {
 }
 
 table.mcmc <- calc_compact(raw.compact$mcmc, "mcmc")
+table.mcmc <- table.mcmc[-nrow(table.mcmc),] # remove junk row
 table.smc <- calc_compact(raw.compact$smc, "smc")
 table.control <- calc_compact(raw.compact$control, "control")
+calc.compact <- list (
+  mcmc = table.mcmc, 
+  smc = table.smc,
+  control = table.control
+)
+save(calc.compact, file = "src/compact.calc.RData")
 
 longtbl <-
   bind_rows(
