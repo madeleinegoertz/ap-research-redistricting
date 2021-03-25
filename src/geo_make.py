@@ -5,20 +5,16 @@ import geopandas
 import pandas as pd
 import maup
 import warnings
+import shutil
 
 # enable progress bar for all maup operations
 maup.progress.enabled = True
 # turn off annoying geopandas warnings
 warnings.filterwarnings('ignore', 'GeoSeries.isna', UserWarning)
 
-dir = "C:/Users/madie/OneDrive/data/"
-bg_file = dir + "ipums/va_bg_2018_pop/va_bg_2018_pop.shp"
-precincts_file = dir + "vest/va_2018_ushouse/va_2018_ushouse.shp"
-out_file = dir + "pre-redist/VA_precinct_2018_nonan/VA_precinct_2018_nonan.shp"
-
 # read in files
-bg = geopandas.read_file(bg_file)
-precincts = geopandas.read_file(precincts_file)
+bg = geopandas.read_file("zip://data/va_acs_2018_blockgroup.zip")
+precincts = geopandas.read_file("zip://data/va_2018_ushouse_precincts.zip")
 # reproject files to north va CRS
 precincts = precincts.to_crs(epsg=2283)
 bg = bg.to_crs(epsg=2283)
@@ -47,4 +43,6 @@ precincts[columns] = maup.prorate(
     weights=weights
 )
 
+out_file = "data/va_ushouse_2018_precincts_data.shp"
 precincts.to_file(out_file)
+shutil.make_archive(out_file, 'zip', root_dir="data/va_ushouse_2018_precincts_data")
