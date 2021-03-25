@@ -2,7 +2,7 @@
 
 library(tidyverse)
 #library(pscl) # must use my version of pscl via install_github("madeleinegoertz/pscl")
-load("results/fair.raw.RData")
+load("src/fair.raw.RData")
 
 dvs <- function(data) {
   data %>%

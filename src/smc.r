@@ -3,7 +3,7 @@
 
 library(redist)
 
-load("results/data.RData")
+load("src/data.RData")
 
 start.time <- Sys.time()
 smc.out <- redist.smc(
@@ -16,4 +16,4 @@ smc.out <- redist.smc(
 end.time <- Sys.time()
 print(end.time - start.time)
 
-save(smc.out, file = "results/smc.RData")
+save(smc.out, file = "src/smc.RData")

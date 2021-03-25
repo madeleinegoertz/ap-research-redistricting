@@ -30,4 +30,4 @@ df$row_n <- seq.int(nrow(df))
 df$pop_int <- round(df$pop)
 colors <- c("#DA618D", "#85D7D4", "#044b62", "#D5D160", "#e7854b", "#6cc32f", "#A87ADA", "#DAB8D3", "#C843DB", "#329349", "#78A5D5")
 
-save.image(file = "results/data.RData")
+save.image(file = "src/data.RData")

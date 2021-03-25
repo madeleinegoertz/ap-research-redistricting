@@ -2,9 +2,9 @@
 # all the algorithm and the existing plan.
 
 library(redist)
-load("results/data.RData")
-load("results/mcmc.RData")
-load("results/smc.RData")
+load("src/data.RData")
+load("src/mcmc.RData")
+load("src/smc.RData")
 
 # MCMC
 start.time <- Sys.time()
@@ -58,4 +58,4 @@ raw.compact <-
     control = control.compact
   )
 
-save(raw.compact, file = "results/compact.raw.RData")
+save(raw.compact, file = "src/compact.raw.RData")

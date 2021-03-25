@@ -1,12 +1,12 @@
-# This script redistricts using mcmc. Output stored in results/mcmc.RData
+# This script redistricts using mcmc. Output stored in src/mcmc.RData
 # maps in mcmc.out$partitions.
 
 library(redist)
 
-load("results/data.RData")
+load("src/data.RData")
 
 #use results from CRSG to generate starting values
-load("results/crsg.RData")
+load("src/crsg.RData")
 
 mcmc.out <- redist.mcmc(adjobj = adjlist,
                         popvec = df$pop,
@@ -16,4 +16,4 @@ mcmc.out <- redist.mcmc(adjobj = adjlist,
                         constraintweights = c(1, 1),
                         popcons = .01,
                         ssdmat = distancemat)
-save(mcmc.out, file = "results/mcmc.RData")
+save(mcmc.out, file = "src/mcmc.RData")

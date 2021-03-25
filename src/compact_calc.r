@@ -1,6 +1,6 @@
 library(dplyr)
-load("results/data.RData")
-load("results/compact.raw.RData")
+load("src/data.RData")
+load("src/compact.raw.RData")
 
 ########################## MCMC
 calc_compact <- function(data, alg) {
@@ -36,5 +36,5 @@ longtbl <-
     values_to = "value"
   )
 # R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "results/compact.csv")
+write.csv(longtbl, file = "src/compact.csv")
 
