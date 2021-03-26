@@ -56,7 +56,7 @@ This process generates the possible redistricting plans that satisfy the require
 
 \subsubsection{Compact Random Seed Growth}
 
-The final automated redistricting algorithm that I'm utilizing is called Compact Random Seed Growth, henceforth referred to as "CRSG" and was proposed by \textcite{chen2013}. Its objective is to generate a set of districts that fall within a certain population constraint and are reasonably compact using only the geography and total population of each precinct \parencite{chen2013}. The following is a high-level explanation of the algorithm.\footnote{For more details, please refer to \textcite[249-50]{chen2013}.} 
+The final automated redistricting algorithm that I'm utilizing is called Compact Random Seed Growth, henceforth referred to as "CRSG" and was proposed by \textcite{chen2013}. See the Method section for more information on how CRSG generates the starting map for MCMC. Its objective is to generate a set of districts that fall within a certain population constraint and are reasonably compact using only the geography and total population of each precinct \parencite{chen2013}. The following is a high-level explanation of the algorithm.\footnote{For more details, please refer to \textcite[249-50]{chen2013}.} 
 
 CRSG begins with declaring that every precinct is it's own district. A random precinct is then chosen, and then its geographically-closest\footnote{The geographically-closest precinct is the neighboring precinct with the smallest distance from its centroid to the seed precinct's centroid} neighbor is merged with it, creating one fewer district. This process is repeated until you arrive at the desired number of districts. \parencite[249-50]{chen2013}
 
@@ -65,7 +65,7 @@ After this procedure, the districts are somewhat compact due to the geographic p
 To satisfy the population parity requirements, CRSG does the following. First, it identifies the two adjacent districts that have the greatest difference in total population. Then the precinct in the more-populous district that is furthest from the center of said district is reassigned to the less-populous district.\footnote{Provided that this reassignment doesn't break either district into parts.} This process is repeated until all of the districts are within some desired percentage of the mean district population.\textcite[249-50]{chen2013}.
 
 One run of CRSG will produce one set of districts, but separate runs of CRSG with the same input data may produce slightly different districts given the random choice of districts to merge in the first pass of the algorithm. 
-
+p
 \subsection{Measures of Partisan Fairness}
 
 \textcite{katz2020} brings mathematical rigor to the various proposed metrics for measuring partisan symmetry. 
