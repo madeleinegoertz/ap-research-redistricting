@@ -8,7 +8,7 @@ I used Python 3 to aggregate the shapefile data, R to run the redistricting algo
 
 ## Data
 
-The [data](https://github.com/madeleinegoertz/ap-research-redistricting/tree/master/data) directory contains the data for this project.
+The [shp](https://github.com/madeleinegoertz/ap-research-redistricting/tree/master/shp) directory contains the geographic data for this project.
 
 * `va_2018_ushouse_precincts.zip` contains a shapefile of precinct-level election results for the 2019 state-wide elections in Virginia. These were sourced from the [Voting and Election Science Team on the Harvard Dataverse](https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/UBKYRU/K8EV6K&version=34.0).
   
