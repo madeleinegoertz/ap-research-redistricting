@@ -3,10 +3,10 @@
 library(tidyverse)
 library(sf)
 
-load("src/data.RData")
-load("src/mcmc.RData")
-load("src/smc.RData")
-load("src/compact.calc.RData")
+load("data/data.RData")
+load("data/mcmc.RData")
+load("data/smc.RData")
+load("data/compact.calc.RData")
 
 plot_mean_dists <- function(data, alg) {
   data %>%

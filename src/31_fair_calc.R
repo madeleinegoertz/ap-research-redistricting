@@ -1,6 +1,6 @@
 library(tidyverse)
 
-load("src/fair.raw.RData")
+load("data/fair.raw.RData")
 
 calc_fair <- function(data, alg) {
   df <-
@@ -37,7 +37,7 @@ calc.fair <- list(
   smc = table.smc,
   control = table.control
 )
-save(calc.fair, file = "src/fair.calc.RData")
+save(calc.fair, file = "data/fair.calc.RData")
 
 longtbl <-
   bind_rows(table.mcmc, table.smc, table.control) %>%
@@ -47,4 +47,4 @@ longtbl <-
     values_to = "value"
   )
 # R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "src/fair.csv")
+write.csv(longtbl, file = "data/fair.csv")

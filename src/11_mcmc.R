@@ -3,10 +3,10 @@
 
 library(redist)
 
-load("src/data.RData")
+load("data/data.RData")
 
 #use results from CRSG to generate starting values
-load("src/crsg.RData")
+load("data/crsg.RData")
 
 mcmc.out <- redist.mcmc(adjobj = adjlist,
                         popvec = df$pop,
@@ -16,4 +16,4 @@ mcmc.out <- redist.mcmc(adjobj = adjlist,
                         constraintweights = c(1, 1),
                         popcons = .01,
                         ssdmat = distancemat)
-save(mcmc.out, file = "src/mcmc.RData")
+save(mcmc.out, file = "data/mcmc.RData")

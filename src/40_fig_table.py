@@ -3,8 +3,8 @@
 
 import pandas as pd
 
-dfc = pd.read_csv("src/compact.csv", usecols=["nloop","alg","measure","value"])
-dff = pd.read_csv("src/fair.csv", usecols=["nloop","alg","measure","value"])
+dfc = pd.read_csv("data/compact.csv", usecols=["nloop","alg","measure","value"])
+dff = pd.read_csv("data/fair.csv", usecols=["nloop","alg","measure","value"])
 df = pd.concat([dfc, dff])
 
 df = df.set_index(['alg', 'nloop', 'measure'])

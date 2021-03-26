@@ -3,11 +3,11 @@
 library(tidyverse)
 library(sf)
 
-load("src/data.RData")
-load("src/mcmc.RData")
-load("src/smc.RData")
-load("src/fair.calc.RData") # for picking a map
-load("src/fair.raw.RData") # for getting DVS
+load("data/data.RData")
+load("data/mcmc.RData")
+load("data/smc.RData")
+load("data/fair.calc.RData") # for picking a map
+load("data/fair.raw.RData") # for getting DVS
 
 plot_election <- function(fair, raw, maps, alg, savename = NULL) {
   map <- which.min(abs(fair$bias))

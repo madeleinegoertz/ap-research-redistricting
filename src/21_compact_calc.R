@@ -1,6 +1,6 @@
 library(dplyr)
-load("src/data.RData")
-load("src/compact.raw.RData")
+load("data/data.RData")
+load("data/compact.raw.RData")
 
 ########################## MCMC
 calc_compact <- function(data, alg) {
@@ -31,7 +31,7 @@ calc.compact <- list (
   smc = table.smc,
   control = table.control
 )
-save(calc.compact, file = "src/compact.calc.RData")
+save(calc.compact, file = "data/compact.calc.RData")
 
 longtbl <-
   bind_rows(
@@ -43,5 +43,5 @@ longtbl <-
     values_to = "value"
   )
 # R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "src/compact.csv")
+write.csv(longtbl, file = "data/compact.csv")
 
