@@ -68,13 +68,11 @@ One run of CRSG will produce one set of districts, but separate runs of CRSG wit
 p
 \subsection{Measures of Partisan Fairness}
 
-\textcite{katz2020} brings mathematical rigor to the various proposed metrics for measuring partisan symmetry. 
+The following provides an overview of the measures of partisan fairness that exist within the political science literature, as well as their merits and disadvantages. 
 
-\subsubsection{Partisan Symmetry}
+\subsubsection{Seats-Votes Curve}
 
-A legislative is said to have partisan symmetry if both parties can receive $m$ proportion of the overall votes and therefore have $n$ proportion of the seats in the legislative body.An example would be that if Republicans win 60\% of the votes but control 65\% of the seats, then in a symmetrical system, Democrats should also be able to control 65\% of the seats by winning 60\% of the votes. \textcite{katz2020}
-
-Partisan Bias is any deviation from partisan symmetry. If partisan bias is greater than 0, it is biased towards Democrats, and it's biased towards Republicans if less than 0. \parencite{katz2020}
+Seats-votes curves are used to plot the relationship between the population vote and the power balance in a legislature (or delegation). This plot has $V$, the proportion of the overall votes won by the party, on the x-axis, and $S(V)$, the proportion of the seats won by the party, on the y-axis. Figure \ref{fig:seatsvotes1} illustrates several hypothetical seats-votes curves. \textcite{tufte1973} first plotted the vote-seats relationship for elections within one state across time. 
 
 \begin{figure}
     \includegraphics[width=0.8\linewidth]{img/seatsvotes.png}
@@ -86,11 +84,9 @@ Partisan Bias is any deviation from partisan symmetry. If partisan bias is great
     \label{fig:seatsvotes1}
 \end{figure}
 
-Partisan symmetry is usually observed by plotting a "seats-votes curve." This plot has $V$, the proportion of the overall votes won by the party, on the x-axis, and $S(V)$, the proportion of the seats won by the party, on the y-axis. Figure \ref{fig:seatsvotes1} \parencite[175]{katz2020} illustrates several hypothetical seats-votes curves.
-
 Naturally, it's very rare to observe the necessary electoral outcomes under the same electoral system in order to determine partisan symmetry. (i.e., it's very rare for two parties to tie one year, have one win 51\% of the total votes the next year, and then win 49\% of the votes the following year.)
 
-In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing.
+In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing \parencite{tufte1973}.
 
 \paragraph{Uniform Partisan Swing}
 
@@ -105,6 +101,16 @@ An example of such a curve is shown in Figure \ref{fig:seatsvotesups1}
     \caption{Sample seats-votes curve generated using uniform partisan swing. Ignore title. \parencite[175]{katz2020}}
     \label{fig:seatsvotesups1}
 \end{figure}
+
+The benefit of seats-votes curves is that they allow a complete view of the biases of a district map across all possible average district votes \parencite{gelman1994}. Unfortunately, generating these curves for one electoral map requires the use of statistical assumptions such as uniform partisan swing as the number of elections occurring under a since district map is usually prohibitively small \parencite{warrington2018}.
+
+\subsubsection{Partisan Symmetry}
+
+A legislative is said to have partisan symmetry if both parties can receive $m$ proportion of the overall votes and therefore have $n$ proportion of the seats in the legislative body.An example would be that if Republicans win 60\% of the votes but control 65\% of the seats, then in a symmetrical system, Democrats should also be able to control 65\% of the seats by winning 60\% of the votes. \textcite{katz2020}
+
+\subsubsection{Partisan Bias}
+
+Partisan Bias is any deviation from partisan symmetry. If partisan bias is greater than 0, it is biased towards Democrats, and it's biased towards Republicans if less than 0. On a seats-votes curve, partisan bias represents the difference between the curve and the 45-degree proportional line. \parencite{katz2020}
 
 \subsubsection{Declination}
 
