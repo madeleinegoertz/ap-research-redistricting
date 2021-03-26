@@ -22,6 +22,8 @@ I used 2018 data because 2020 redistricting data was not publicly available at t
 
 Running `01_data_prep.R` generates `data.RData`, which holds the shapefile data as well as other helpful prerequisites for redistricting.
 
+All of the intermediate `.RData` files are stored in the `data/` dir.
+
 ## Running Redistricting Algorithms
 
 I compare two different redistricting algorithms, MCMC and SMC, both of which are implemented by the [redist](https://github.com/kosukeimai/redist) R package.
