@@ -15,11 +15,11 @@ library(spData)
 library(spdep)
 
 # unzip zip file that has the shapefiles in into temp directory
-unzip("data/va_ushouse_2018_precincts_data.zip", exdir="data/va_ushouse_2018_precincts_data")
+unzip("src/va_ushouse_2018_precincts_data.zip", exdir="src/va_ushouse_2018_precincts_data")
 # read in the shapefile
-df <- st_read("data/va_ushouse_2018_precincts_data/va_ushouse_2018_precincts_data.shp")
+df <- st_read("src/va_ushouse_2018_precincts_data/va_ushouse_2018_precincts_data.shp")
 # delete the extracted files. 
-unlink("data/va_ushouse_2018_precincts_data", recursive=TRUE)
+unlink("src/va_ushouse_2018_precincts_data", recursive=TRUE)
 
 # convert CON_DIST to integer for initcds
 df$CON_DIST <- as.numeric(df$CON_DIST)

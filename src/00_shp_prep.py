@@ -13,8 +13,8 @@ maup.progress.enabled = True
 warnings.filterwarnings('ignore', 'GeoSeries.isna', UserWarning)
 
 # read in files
-bg = geopandas.read_file("zip://data/va_acs_2018_blockgroup.zip")
-precincts = geopandas.read_file("zip://data/va_2018_ushouse_precincts.zip")
+bg = geopandas.read_file("zip://src/va_acs_2018_blockgroup.zip")
+precincts = geopandas.read_file("zip://src/va_2018_ushouse_precincts.zip")
 # reproject files to north va CRS
 precincts = precincts.to_crs(epsg=2283)
 bg = bg.to_crs(epsg=2283)
@@ -43,6 +43,6 @@ precincts[columns] = maup.prorate(
     weights=weights
 )
 
-out_file = "data/va_ushouse_2018_precincts_data.shp"
+out_file = "src/va_ushouse_2018_precincts_data.shp"
 precincts.to_file(out_file)
-shutil.make_archive(out_file, 'zip', root_dir="data/va_ushouse_2018_precincts_data")
+shutil.make_archive(out_file, 'zip', root_dir="src/va_ushouse_2018_precincts_data")
