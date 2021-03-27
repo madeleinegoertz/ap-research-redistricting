@@ -97,6 +97,7 @@ Naturally, it's very rare to observe the necessary electoral outcomes under the 
 In practice, one can estimate a seats-votes curve using the principle of uniform partisan swing \parencite{tufte1973}.
 
 \paragraph{Uniform Partisan Swing}
+\label{sec:ups}
 
 Uniform partisan swing is the principle that when the overall vote between different elections under the same electoral system, the vote share at the district level also usually changes by the same $dV$. \textcite{katz2020} Empirically verified this to be true in 646 different elections. 
 
@@ -119,7 +120,7 @@ A legislative is said to have partisan symmetry if both parties can receive $m$ 
 
 \subsubsection{Partisan Bias}
 
-Partisan Bias is any deviation from partisan symmetry. If partisan bias is greater than 0, it is biased towards Democrats, and it's biased towards Republicans if less than 0. On a seats-votes curve, partisan bias represents the difference between the curve and the 45-degree proportional line. \parencite{katz2020}
+Partisan Bias is the deviation from partisan symmetry at a vote proportion of 0.5. If Democrats with 50\% of the average district vote but only win 40\% of the seats, there is a partisan bias of -0.1. In elections where the average vote proportion does not equal 0.5, partisan bias must be computed using the \hyperref[sec:ups]{Uniform Partisan Swing} assumption. \parencite{katz2020}
 
 \subsubsection{Declination}
 
@@ -154,7 +155,22 @@ Declination is another proposed measure of partisan asymmetry that "...relies on
 
 \subsubsection{Efficiency Gap} 
 
-\paragraph{Equal Population Efficiency Gap}
+The efficiency gap is the difference between the number of wasted votes for each party, normalized to the total number of votes, where "wasted votes" are all votes for losing candidates and all votes for winning candidates over the 50\%-plus-one threshold. The idea is that wasted votes are a sign of "packing" or "cracking," where a gerrymander has intentionally grouped voters together into the same district or diluted their political power across several districts. \parencite{stephanopoulos2014}
+
+\textcite{veomett2018} found that the efficiency gap is not a measure of partisan symmetry, as the measure becomes confused in highly non-competitive elections (e.g. party wins 80\% of the vote and 100\% of the seats). 
+
+\subsubsection{Equal Population Efficiency Gap}
+
+After proving that the efficiency gap is not a measure of partisan symmetry, \textcite{katz2020} suggests a \emph{equal population efficiency gap}, which is the efficiency gap calculated under an assumption of equal population in each district, rather than total votes cast irrespective of district. This measure produces a linear seats-votes curve with a slope of 2, which does represent partisan symmetry, but it only captures one specific case of symmetry. 
+
+Figure \ref{fig:ceg} illustrates how the equal population efficiency gap could deem a map to be fair, but the complete seats-votes curve reveals the strong partisan bias towards Republicans. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\textwidth{img/ceg.sv.PNG}
+    \caption{Seats-votes curve of the equal population efficiency gap and the Kansas House Election results of 1996, estimated using Uniform Partisan Swing.}
+    \label{fig:ceg}
+\end{figure}
 
 \subsubsection{Lopsided Wins}
 
