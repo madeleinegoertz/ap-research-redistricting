@@ -43,7 +43,7 @@ The second automated redistricting algorithm that I'm going to discuss is an imp
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.3\linewidth]{img/4x4_grid_spanning_tree.png}
+    \includegraphics[width=0.3\linewidth]{img/spantree.png}
     \caption{An example spanning tree. The spanning tree consists of all nodes and the blue edges, where the complete graph includes the grid edges as well. \parencite{eppstein2007}}
     \label{fig:spantree}
 \end{figure}
@@ -73,7 +73,7 @@ After this procedure, the districts are somewhat compact due to the geographic p
 To satisfy the population parity requirements, CRSG does the following. First, it identifies the two adjacent districts that have the greatest difference in total population. Then the precinct in the more-populous district that is furthest from the center of said district is reassigned to the less-populous district.\footnote{Provided that this reassignment doesn't break either district into parts.} This process is repeated until all of the districts are within some desired percentage of the mean district population.\textcite[249-50]{chen2013}.
 
 One run of CRSG will produce one set of districts, but separate runs of CRSG with the same input data may produce slightly different districts given the random choice of districts to merge in the first pass of the algorithm. 
-p
+
 \subsection{Measures of Partisan Fairness}
 
 The following provides an overview of the measures of partisan fairness that exist within the political science literature, as well as their merits and disadvantages. 
@@ -87,9 +87,7 @@ Seats-votes curves are used to plot the relationship between the population vote
     \includegraphics[width=0.8\linewidth]{img/seatsvotes.png}
     \caption{Types of Seats-Votes Curves. Left panel: Symmetric (fair) curves with differing
     levels of electoral responsiveness. Right panel: Asymmetric (biased) curves, including
-    one consistently biased toward the Democrats (blue) and one with biases favoring different
-    parties depending on V (red); the inset graph is for (V ) for V 2 [0:5; 1] with the vertical
-    axis scaled to be the same as the main plot, and lines color coded to the seats-votes curves. \parencite[175]{katz2020}}
+    one consistently biased toward the Democrats (blue) and one with biases favoring different parties depending on V (red); the inset graph is for (V ) for V 2 [0:5; 1] with the vertical axis scaled to be the same as the main plot, and lines color coded to the seats-votes curves. \parencite[175]{katz2020}}
     \label{fig:seatsvotes1}
 \end{figure}
 
@@ -123,9 +121,17 @@ A legislative is said to have partisan symmetry if both parties can receive $m$ 
 
 Partisan Bias is the deviation from partisan symmetry at a vote proportion of 0.5. If Democrats with 50\% of the average district vote but only win 40\% of the seats, there is a partisan bias of -0.1. In elections where the average vote proportion does not equal 0.5, partisan bias must be computed using the \hyperref[sec:ups]{Uniform Partisan Swing} assumption. \parencite{katz2020}
 
+\subsubsection{Responsiveness}
+
+\textcite{katz2020} defines responsiveness as how much the seat proportion changes in response to a change in the average district vote. Mathematically speaking, responsiveness is directly related to the derivate (the slope) of the seats-votes curve.\footnote{Since seats-votes curve are step functions (and are therefore not differentiable), measuring responsiveness requires applying a smoothing function to the seats-votes curve first to make it continuous \parencite{katz2020}.} Typically, responsiveness is measured at an average district vote of 0.5 or at the observed average district vote \parencite{katz2020}.
+
+\subsubsection{Lopsided Outcomes}
+
+The lopsided outcomes measures, proposed by \textcite{wang2016}, is the difference in the average win size for each party.  \textcite{katz2020} refutes the claim by \textcite{wang2016} that the lopsided outcomes measure is a measure of partisan symmetry because it breaks down in noncompetitive elections. In such elections, the "packing" and "cracking" that normally indicate gerrymandering are merely a consequence of the political geography. However, the lopsided outcomes measure does serve as an indication of the skewness of the average vote distribution. 
+
 \subsubsection{Declination}
 
-Declination is another proposed measure of partisan asymmetry that "...relies only on the fraction of seats each party wins in conjunction with the aggregate vote each party uses to win those seats" \parencite[3]{warrington2018}. Broadly, it measures the declination in the line connecting the average vote proportions of one party in districts controlled by the other party. See Figure \ref{fig:dec} for a visualization. 
+Declination is another proposed measure of partisan asymmetry that "...relies only on the fraction of seats each party wins in conjunction with the aggregate vote each party uses to win those seats" \parencite[3]{warrington2018}. Broadly, it measures the declination in the line connecting the average vote proportions of one party in districts controlled by the other party. It is essentially the normalized version of the declination measure \parencite{katz2020}. See Figure \ref{fig:dec} for a visualization. 
 
 \begin{figure}
     \centering
@@ -152,7 +158,7 @@ Declination is another proposed measure of partisan asymmetry that "...relies on
     \label{fig:dec}
 \end{figure}
 
-\textcite{katz2020} refutes the claim of \textcite{warrington2018} that declination is a measure of partisan symmetry, but acknowledges that it is a useful measure of the skewness of the distribution of district vote proportions. 
+\textcite{katz2020} refutes the claim of \textcite{warrington2018} that declination is a measure of partisan symmetry for the same reason that they refute the claim of partisan symmetry of declination, but acknowledges that it is a useful measure of the skewness of the distribution of district vote proportions. 
 
 \subsubsection{Efficiency Gap} 
 
@@ -173,17 +179,14 @@ Figure \ref{fig:ceg} illustrates how the equal population efficiency gap could d
     \label{fig:ceg}
 \end{figure}
 
-\subsubsection{Lopsided Wins}
+\subsubsection{Tau Gap}
+The tau gap, a variation of the efficiency gap proposed by \textcite{warrington2018}, takes a different view on wasted votes. Instead of defining every vote by the winning party in a winning district over the "50\%-plus-one" hurdle to be wasted, the order the votes, and declare votes 0-50\% not wasted, 50-$\tau$\% partially wasted, and $\tau$-100\% wasted, where $\tau$ is an chosen percentage between 50\% and 100\%. This is supposedly more in-line with the idea that it would be very risky for a party to aim for 50\%-plus-one votes, and that "buffer votes" more closely resemble reality \parencite{warrington2018}.
 
 \subsubsection{Mean-Median Difference}
 
 The mean-median difference $MM$ is defined as the difference between the mean Democratic vote share (DVS) of each district and median democratic vote share of each district (first proposed by \textcite{mcdonald2015}). If $MM = 0$, the districts are said to be fair. 
 
 \textcite{katz2020} finds that the mean-median difference is a reliable estimator of partisan bias when the average DVS is 0.5. In the language of seats-votes curves, this means it can detect partisan bias at the average DVS = 0.5 level, but not at any other. Essentially, they find that mean-median difference is a reliable estimate of partisan bias as the average DVS changes, but not as the seat share changes (i.e. can measure bias along x-axis but not y-axis of seats-votes curve). \parencite[27-9]{katz2020}
-
-\subsubsection{Responsiveness}
-
-\subsubsection{Tau Gap}
 
 \subsection{Measures of Compactness}
 
