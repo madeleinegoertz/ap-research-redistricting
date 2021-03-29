@@ -2,22 +2,9 @@
 library(redist)
 library(tidyverse)
 
-load("data/data.RData")
-load("data/mcmc.RData")
-load("data/smc.RData")
-
-# MCMC
-mcmc.fair <-
-  redist.metrics(
-    district_membership = mcmc.out$partitions,
-    measure = "all",
-    rvote = df$G18HORREP,
-    dvote = df$G18HORDEM,
-    ncores = 4
-  )
-mcmc.fair$alg <- "mcmc"
-# remove results from last run that always have NaNs
-mcmc.fair <- mcmc.fair[-c(1101:1111),]
+load("data/data_va.RData")
+load("data/smc.100.RData")
+load("data/crsg.100.RData")
 
 # SMC
 smc.fair <-
@@ -27,9 +14,21 @@ smc.fair <-
     rvote = df$G18HORREP,
     dvote = df$G18HORDEM,
     ncores = 4
-  )
-smc.fair$alg <- "smc"
+  ) %>%
+  mutate(alg = "smc")
 
+# CRSG
+crsg.fair <-
+  redist.metrics(
+    district_membership = crsg.out$partitions,
+    measure = "all",
+    rvote = df$G18HORREP,
+    dvote = df$G18HORDEM,
+    ncores = 4
+  ) %>%
+  mutate(alg = "crsg")
+
+df$CON_DIST <- as.numeric(df$CON_DIST)
 # Control
 control.fair <-
   redist.metrics(
@@ -40,16 +39,16 @@ control.fair <-
     rvote = df$G18HORREP,
     dvote = df$G18HORDEM,
     ncores = 4
-  )
+  ) %>%
+  mutate(alg = "control")
 # delete said nonsense data. 
 control.fair <- control.fair[-c(12:22),]
-control.fair$alg <- "control"
 
 raw.fair <-
   list(
-    mcmc = mcmc.fair,
     smc = smc.fair,
+    crsg = crsg.fair,
     control = control.fair
   )
 
-save(raw.fair, file = "data/raw.fair.RData")
+save(raw.fair, file = "data/raw.fair.100.RData")
