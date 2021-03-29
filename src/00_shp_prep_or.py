@@ -1,5 +1,5 @@
-# This script takes a precincts shapefile with election data and aggregates in population 
-# data from the block level using maup. 
+# # This script takes a precincts shapefile with election data and aggregates in population 
+# # data from the block level using maup. 
 
 import geopandas
 import pandas as pd
@@ -45,4 +45,5 @@ precincts[columns] = maup.prorate(
 
 out_file = "shp/or_ushouse_2018_precincts_race.shp"
 precincts.to_file(out_file)
-#shutil.make_archive(out_file, 'zip', root_dir="src/va_ushouse_2018_precincts_data")
+# #shutil.make_archive(out_file, 'zip', root_dir="src/va_ushouse_2018_precincts_data")
+
