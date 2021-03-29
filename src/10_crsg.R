@@ -4,9 +4,9 @@
 
 library(redist)
 
-load("data/data.RData")
+load("data/data_va.RData")
 
-nsims <- 10
+nsims <- 100
 crsg <- vector(mode = "list", length = nsims)
 for (i in 1:nsims) {
   crsg[[i]] <- 
@@ -27,4 +27,4 @@ for (i in 2:length(crsg)) { # already included col 1
 
 crsg.out <- list(partitions = partitions)
 
-save(crsg.out, file = "data/crsg.RData")
+save(crsg.out, file = "data/crsg.100.RData")
