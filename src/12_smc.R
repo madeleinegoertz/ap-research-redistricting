@@ -3,17 +3,12 @@
 
 library(redist)
 
-load("data/data.RData")
+load("data/data_race.RData")
 
 start.time <- Sys.time()
-smc.out <- redist.smc(
-  adjobj = adjlist,
-  popvec = df$pop,
-  ndists = 11,
-  nsims = 100,
-  popcons = 0.01
-)
+# run smc
+va_plans <- redist_smc(va_map, nsims=1000, compactness=1)
 end.time <- Sys.time()
 print(end.time - start.time)
 
-save(smc.out, file = "data/smc.RData")
+save(va_plans, file = "data/smc_race.RData")
