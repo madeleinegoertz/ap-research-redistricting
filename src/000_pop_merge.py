@@ -2,9 +2,9 @@ import geopandas
 import pandas as pd
 
 # read in block groups shapefile
-blocks = geopandas.read_file("zip://shp/va_2018_blck_grp_shp.zip")
+bg = geopandas.read_file("zip://shp/va_2018_blck_grp_shp.zip")
 # keep only the useful cols
-blocks = blocks[["GEOID", "GISJOIN", "geometry"]].copy()
+bg = bg[["GEOID", "GISJOIN", "geometry"]].copy()
 # read in population data csv
 data = pd.read_csv("shp/va_2018_blck_grp_pop.zip")
 # keep only the relevant columns for total population by race.
@@ -23,10 +23,10 @@ data = data[["GISJOIN", "AJWNE001", "AJWNE002", "AJWNE003", "AJWNE004", "AJWNE00
 # rename these cols to something more intelligible
 data.columns = ["GISJOIN", "pop", "white_pop", "black_pop", "aian_pop", "asian_pop", 
                 "nhopi_pop", "sor_pop", "2more_pop", "2morenosor_pop", "2morenot3more_pop"]
-# merge the population data into the blocks shapefile
-blocks = blocks.merge(data, on='GISJOIN')
+# merge the population data into the bg shapefile
+bg = bg.merge(data, on='GISJOIN')
 
-# write blocks to file
+# write bg to file
 out_file = "shp/va_2018_blck_grp_shp_pop.shp"
-blocks.to_file(out_file)
+bg.to_file(out_file)
 # best to zip manually now (too lazy to use shutil)
