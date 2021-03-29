@@ -2,24 +2,9 @@
 # all the algorithm and the existing plan.
 
 library(redist)
-load("data/data.RData")
-load("data/mcmc.RData")
-load("data/smc.RData")
-
-# MCMC
-start.time <- Sys.time()
-mcmc.compact <-
-  redist.compactness(
-    shp = df,
-    district_membership = mcmc.out$partitions,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
-    population = df$pop,
-    adjacency = adjlist,
-    counties = df$COUNTYFP,
-    ncores = 4
-  )
-end.time <- Sys.time()
-print(end.time - start.time)
+load("data/data_va.RData")
+load("data/smc.100.RData")
+load("data/crsg.100.RData")
 
 # SMC
 start.time <- Sys.time()
@@ -27,25 +12,38 @@ smc.compact <-
   redist.compactness(
     shp = df,
     district_membership = smc.out$cdvec,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+    measure = c("PolsbyPopper", "EdgesRemoved"),
     population = df$pop,
     adjacency = adjlist,
-    counties = df$COUNTYFP,
     ncores = 4
   )
 end.time <- Sys.time()
 print(end.time - start.time)
 
+# CRSG
+start.time <- Sys.time()
+crsg.compact <-
+  redist.compactness(
+    shp = df,
+    district_membership = crsg.out$partitions,
+    measure = c("PolsbyPopper", "EdgesRemoved"),
+    population = df$pop,
+    adjacency = adjlist,
+    ncores = 4
+  )
+end.time <- Sys.time()
+print(end.time - start.time)
+
+df$CON_DIST <- as.numeric(df$CON_DIST)
 # Control
 start.time <- Sys.time()
 control.compact <-
   redist.compactness(
     shp = df,
     district_membership = df$CON_DIST,
-    measure = c("PolsbyPopper", "FryerHolden", "EdgesRemoved"),
+    measure = c("PolsbyPopper", "EdgesRemoved"),
     population = df$pop,
     adjacency = adjlist,
-    counties = df$COUNTYFP,
     ncores = 4
   )
 end.time <- Sys.time()
@@ -53,9 +51,9 @@ print(end.time - start.time)
 
 raw.compact <-
   list(
-    mcmc = mcmc.compact,
     smc = smc.compact,
+    crsg = crsg.compact,
     control = control.compact
   )
 
-save(raw.compact, file = "data/compact.raw.RData")
+save(raw.compact, file = "data/compact.raw.100.RData")
