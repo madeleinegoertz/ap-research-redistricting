@@ -13,8 +13,8 @@ maup.progress.enabled = True
 warnings.filterwarnings('ignore', 'GeoSeries.isna', UserWarning)
 
 # read in files
-bg = geopandas.read_file("zip://src/va_acs_2018_blockgroup.zip")
-precincts = geopandas.read_file("zip://src/va_2018_ushouse_precincts.zip")
+bg = geopandas.read_file("zip://shp/va_2018_blck_grp_shp_pop.zip")
+precincts = geopandas.read_file("zip://shp/va_2018_ushouse_precincts.zip")
 # reproject files to north va CRS
 precincts = precincts.to_crs(epsg=2283)
 bg = bg.to_crs(epsg=2283)
@@ -26,7 +26,7 @@ precincts = precincts.reset_index(drop = True)
 bg = bg.reset_index(drop = True)
 
 # choose data column being reaggregated.
-columns = ["pop"]
+columns = ["pop", "white_pop", "black_pop", "aian_pop", "asian_pop", "nhopi_pop", "sor_pop", "2more_pop"]
 # Include area_cutoff=0 to ignore any intersections with no area,
 # like boundary intersections, which we do not want to include in
 # our proration.
@@ -43,6 +43,6 @@ precincts[columns] = maup.prorate(
     weights=weights
 )
 
-out_file = "src/va_ushouse_2018_precincts_data.shp"
+out_file = "shp/va_ushouse_2018_precincts_race.shp"
 precincts.to_file(out_file)
-shutil.make_archive(out_file, 'zip', root_dir="src/va_ushouse_2018_precincts_data")
+#shutil.make_archive(out_file, 'zip', root_dir="src/va_ushouse_2018_precincts_data")
