@@ -2,7 +2,7 @@
 
 library(tidyverse)
 #library(pscl) # must use my version of pscl via install_github("madeleinegoertz/pscl")
-load("data/fair.raw.RData")
+load("data/raw.fair.100.RData")
 
 dvs <- function(data) {
   data %>%
@@ -15,34 +15,42 @@ dvs <- function(data) {
 
 plot_mean_sv <- function(data, desc) {
   data %>%
-    dvs() %>%
-    rowwise(districts) %>%
-    summarise(
-      mean = mean(c_across()),
-      median = median(c_across())
-    ) %>%
-    pull(mean) %>%
-    as.matrix() %>%
-    seatsVotes(desc=desc) %>%
-    plot(type="seatsVotes")
+   dvs() %>%
+   rowwise(districts) %>%
+   summarise(
+     mean = mean(c_across()),
+     median = median(c_across())
+   ) %>%
+   pull(mean) %>%
+   as.matrix() %>%
+   seatsVotes(desc=desc) %>%
+   plot(type="seatsVotes")
 }
-
 plot_all_sv <- function(data, desc) {
-  data %>%
-    dvs() %>%
-    select(-districts) %>%
-    as.matrix() %>%
-    seatsVotes(desc=desc) %>%
-    plot(type="seatsVotes")
+ data %>%
+   dvs() %>%
+   select(-districts) %>%
+   as.matrix() %>%
+   seatsVotes(desc=desc) %>%
+   plot(type="seatsVotes")
 }
 
 # par(mfrow=c(2,2))
 #plot_mean_sv(raw.fair$mcmc, "MCMC Mean simulated DVS")
 #smc <- plot_mean_sv(raw.fair$smc, "SMC Mean simulated DVS")
-mcmc<- plot_all_sv(raw.fair$mcmc, "MCMC all simulated DVS")
-smc <- plot_all_sv(raw.fair$smc, "SMC all simulated DVS")  
+#mcmc<- plot_all_sv(raw.fair$mcmc, "MCMC all simulated DVS")
+smc <- plot_all_sv(raw.fair$smc, "SMC all simulated DVS")
+crsg <- plot_all_sv(raw.fair$crsg, "CRSG all simulated DVS")
 control <- plot_all_sv(raw.fair$control, "Control Simulated DVS")
 
 # write to files manually. Export as png to
 # paper/img/sv.<alg>.png w/ aspect ratio 541:491
+
+# smc.dvs <- 
+#   dvs(raw.fair$smc)
+# smc.dvs.columns <- NULL
+# smc.dvs <-
+#   smc.dvs %>%
+#   select(-districts) %>%
+#   as.matrix
 
