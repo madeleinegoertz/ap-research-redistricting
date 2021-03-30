@@ -3,10 +3,10 @@
 library(tidyverse)
 library(sf)
 
-load("data/data.RData")
-load("data/mcmc.RData")
-load("data/smc.RData")
-load("data/compact.calc.RData")
+load("data/data_va.RData")
+load("data/smc.100.RData")
+load("data/crsg.100.RData")
+load("data/compact.calc.100.RData")
 
 plot_mean_dists <- function(data, alg) {
   data %>%
@@ -69,14 +69,14 @@ plot_highest_ecc <- function(data, compact, alg, savename) {
   plot_dist(data, alg, n, measure = "Edge-Cut Compactness", savename=savename)
 }
 
-mcmc.pp <- plot_highest_pp(
-  mcmc.out$partitions, calc.compact$mcmc, "MCMC", "map.mcmc.pp")
-mcmc.ecc <- plot_highest_ecc(
-  mcmc.out$partitions, calc.compact$mcmc, "MCMC", "map.mcmc.ecc")
-
 smc.pp <- plot_highest_pp(
   smc.out$cdvec, calc.compact$smc, "SMC", "map.smc.pp")
 smc.ecc <- plot_highest_ecc(
   smc.out$cdvec, calc.compact$smc, "SMC", "map.smc.ec")
+
+crsg.pp <- plot_highest_pp(
+  crsg.out$partitions, calc.compact$crsg, "CRSG", "map.crsg.pp")
+crsg.ecc <- plot_highest_ecc(
+  crsg.out$partitions, calc.compact$crsg, "CRSG", "map.crsg.ecc")
 
 control <- plot_dist(df$CON_DIST, "Control", 1, savename="map.control")
