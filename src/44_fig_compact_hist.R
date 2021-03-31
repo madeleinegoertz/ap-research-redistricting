@@ -4,10 +4,13 @@ library(patchwork)
 
 load("data/compact.calc.100.RData")
 
-compact_hist <- function(x, control, measure, alg, lab) {
+compact_hist <- function(x, control, measure, alg, lab, min, max) {
   ggplot(mapping = aes(x = x)) +
     theme_bw(base_size = 7) +
-    geom_histogram(bins = 25) +
+    #geom_histogram(bins = 25) +
+    geom_density() + 
+    xlim(min, max) + 
+    ylim(0, 40) + 
     geom_vline(
       aes(xintercept = control),
       color = "red", size = 1
@@ -34,7 +37,9 @@ smc.pp <- compact_hist(
   control = calc.compact$control$pp,
   measure = "Polsby-Popper score",
   alg = "SMC", 
-  lab = "a)"
+  lab = "a)",
+  min = 0, 
+  max = 0.3
 )
 
 smc.ecc <- compact_hist(
@@ -42,7 +47,9 @@ smc.ecc <- compact_hist(
   control = calc.compact$control$ecc,
   measure = "Edge-Cut compactness",
   alg = "SMC", 
-  lab = "b)"
+  lab = "b)",
+  min = 0.6, 
+  max = 1
 )
 
 crsg.pp <- compact_hist(
@@ -50,7 +57,9 @@ crsg.pp <- compact_hist(
   control = calc.compact$control$pp,
   measure = "Polsby-Popper score",
   alg = "CRSG", 
-  lab = "c)"
+  lab = "c)",
+  min = 0, 
+  max = 0.3
 )
 
 crsg.ecc <- compact_hist(
@@ -58,7 +67,9 @@ crsg.ecc <- compact_hist(
   control = calc.compact$control$ecc,
   measure = "Edge-Cut compactness",
   alg = "CRSG", 
-  lab = "d)"
+  lab = "d)",
+  min = 0.6, 
+  max = 1
 )
 
 p <- (smc.pp | smc.ecc) / (crsg.pp | crsg.ecc) 
