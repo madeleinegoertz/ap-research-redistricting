@@ -73,4 +73,4 @@ crsg.ecc <- compact_hist(
 )
 
 p <- (smc.pp | smc.ecc) / (crsg.pp | crsg.ecc) 
-ggsave("paper/img/compact_hist.png", p, units = "in", width = 6.5, height=6.5)
+ggsave("paper/img/compact.density.png", p, units = "in", width = 6.5, height=6.5)
