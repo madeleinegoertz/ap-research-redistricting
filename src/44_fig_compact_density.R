@@ -7,22 +7,33 @@ load("data/compact.calc.100.RData")
 compact_hist <- function(x, control, measure, alg, lab, min, max) {
   ggplot(mapping = aes(x = x)) +
     theme_bw(base_size = 7) +
-    #geom_histogram(bins = 25) +
     geom_density() + 
     xlim(min, max) + 
     ylim(0, 40) + 
     geom_vline(
       aes(xintercept = control),
-      color = "red", size = 1
+      color = "red", size = 0.5
     ) +
-    annotate(
-      geom = 'text', 
-      label = paste("control =", format(control, digits=3)), 
-      x = -Inf, 
-      y = Inf, 
+    geom_vline(
+      aes(xintercept = mean(x, na.rm=TRUE)),
+      color = "darkgreen", size = 0.5
+    ) +
+    geom_text(
+      aes(label = paste("control:\n", format(control, digits=3)), 
+        x = -Inf, 
+        y = Inf), 
       hjust = 0, 
       vjust = 1,
       color = "red",
+      size = 3
+    ) + 
+    geom_text(
+      aes(label = paste("mean:\n", format(mean(x, na.rm=TRUE), digits=3)), 
+          x = Inf, 
+          y = Inf), 
+      hjust = 1, 
+      vjust = 1,
+      color = "darkgreen",
       size = 3
     ) + 
     labs(
