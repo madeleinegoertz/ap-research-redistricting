@@ -1,4 +1,5 @@
 \section{Literature Review}
+\label{sec:litreview}
 
 I will provide an overview of some of the current political science research into automated redistricting algorithms as well as measures of partisan fairness and of compactness as they pertain to my research. 
 
@@ -9,6 +10,7 @@ The purpose of automated redistricting algorithms is to generate a set of redist
 First, I explain how these algorithms conceptualize the redistricting problem. 
 
 \subsubsection{Redistricting as Graph Cutting}
+\label{sec:redistasgraphcut}
 
 The following redistricting algorithms all conceptualize redistricting precincts as a graph-cutting problem. For the uninitiated, a graph is a network of different interconnected points, where the points are called "nodes" and the lines connecting them are called "edges" \parencite{fifield2020}. Every precinct is a node, and geographically-adjacent precincts have their corresponding nodes connected by edges. Since the goal of redistricting is to assign every precinct a district, the algorithms imagine that edges between nodes are "cut" until "islands" (known as "sub graphs") are formed, which each is disconnected from the rest. The disconnected "sub graphs" then become the districts. Figure \ref{fig:graphcut} provides a nice visualization of this representation with a sample set of 50 precincts\parencite{fifield2020}. 
 
