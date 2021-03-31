@@ -1,13 +1,20 @@
 # This script makes the pretty maps for my results section.
 
-library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(purrr)
 library(sf)
+library(patchwork)
 
 load("data/data.RData")
-load("data/mcmc.RData")
 load("data/smc.RData")
-load("data/fair.calc.RData") # for picking a map
-load("data/fair.raw.RData") # for getting DVS
+load("data/crsg.RData")
+load("data/fair.calc.100.RData") # for picking a map
+load("data/raw.fair.100.RData") # for getting DVS
+
+df$CON_DIST <- as.numeric(df$CON_DIST)
+
+pop_vote <- sum(df$G18HORDEM) / (sum(df$G18HORDEM) + sum(df$G18HORREP))
 
 plot_election <- function(fair, raw, maps, alg, savename = NULL) {
   map <- which.min(abs(fair$bias))
@@ -58,8 +65,8 @@ plot_election <- function(fair, raw, maps, alg, savename = NULL) {
       lon = map_dbl(centroid, 1),
       lat = map_dbl(centroid, 2)
     )
-  df_plot <-
-    df_elect %>%
+
+  df_elect %>%
     ggplot() +
     geom_sf(size = .1, aes(fill = DVS), color = "black") +
     geom_label(
@@ -74,30 +81,27 @@ plot_election <- function(fair, raw, maps, alg, savename = NULL) {
     ) +
     theme_void() +
     labs(
-      title = paste("2018 Virginia Congressional Election under Fairest", alg, "District"),
-      subtitle = paste("Compared to", scales::percent(mean(df_elect$DVS), accuracy = .1), "DVS at-large"),
+      title = paste("Election under Fairest", alg, "District"),
+      subtitle = paste("Compared to", scales::percent(pop_vote, accuracy = .1), "popular DVS"),
       fill = "DVS",
       caption = paste0(sum(df_elect$DVS > 0.5), "/11 Democratic Seats")
     )
-  if (!is.null(savename)) {
-    ggsave(paste0("paper/img/", savename, ".png"))
-  }
 }
-
-mcmc <- plot_election(
-  fair = calc.fair$mcmc,
-  raw = raw.fair$mcmc,
-  maps = mcmc.out$partitions,
-  alg = "MCMC",
-  savename = "elec.mcmc"
-)
 
 smc <- plot_election(
   fair = calc.fair$smc,
   raw = raw.fair$smc,
   maps = smc.out$cdvec,
   alg = "SMC",
-  savename = "elec.smc"
+  #savename = "elec.smc"
+)
+
+crsg <- plot_election(
+  fair = calc.fair$crsg,
+  raw = raw.fair$crsg,
+  maps = crsg.out$partitions,
+  alg = "CRSG",
+  #savename = "elec.mcmc"
 )
 
 control <- plot_election(
@@ -105,5 +109,12 @@ control <- plot_election(
   raw = raw.fair$control,
   maps = as_tibble(df$CON_DIST),
   alg = "Control",
-  savename = "elec.control"
+  #savename = "elec.control"
 )
+
+p <-
+  (smc) / 
+  (crsg) / 
+  (control)
+
+ggsave("paper/img/election.png", p, units = "in", width = 6.5, height = 9.75)
