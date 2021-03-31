@@ -2913,11 +2913,32 @@
     <bcf:citekey order="98">mccartan2020</bcf:citekey>
     <bcf:citekey order="99">fifield2020d</bcf:citekey>
     <bcf:citekey order="100">katz2020</bcf:citekey>
-    <bcf:citekey order="101">breyer2016</bcf:citekey>
+    <bcf:citekey order="101">2016a</bcf:citekey>
     <bcf:citekey order="102">mansonsteven2020</bcf:citekey>
     <bcf:citekey order="103">hully</bcf:citekey>
     <bcf:citekey order="104">votingandelectionscienceteam2019c</bcf:citekey>
     <bcf:citekey order="105">katz2020</bcf:citekey>
+    <bcf:citekey order="106">polsby1991</bcf:citekey>
+    <bcf:citekey order="107">dube2016</bcf:citekey>
+    <bcf:citekey order="108">mccartan2020</bcf:citekey>
+    <bcf:citekey order="109">mccartan2020</bcf:citekey>
+    <bcf:citekey order="110">mccartan2020</bcf:citekey>
+    <bcf:citekey order="111">unitedstatesgeologicalsurvey2021</bcf:citekey>
+    <bcf:citekey order="112">katz2020</bcf:citekey>
+    <bcf:citekey order="113">katz2020</bcf:citekey>
+    <bcf:citekey order="114">stephanopoulos2014</bcf:citekey>
+    <bcf:citekey order="115">veomett2018</bcf:citekey>
+    <bcf:citekey order="116">veomett2018</bcf:citekey>
+    <bcf:citekey order="117">katz2020</bcf:citekey>
+    <bcf:citekey order="118">katz2020</bcf:citekey>
+    <bcf:citekey order="119">warrington2018</bcf:citekey>
+    <bcf:citekey order="120">katz2020</bcf:citekey>
+    <bcf:citekey order="121">katz2020</bcf:citekey>
+    <bcf:citekey order="122">mcdonald2015</bcf:citekey>
+    <bcf:citekey order="123">katz2020</bcf:citekey>
+    <bcf:citekey order="124">katz2020</bcf:citekey>
+    <bcf:citekey order="125">katz2020</bcf:citekey>
+    <bcf:citekey order="126">katz2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
