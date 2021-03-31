@@ -117,4 +117,4 @@ p <-
   (crsg) / 
   (control)
 
-ggsave("paper/img/election.png", p, units = "in", width = 6.5, height = 9.75)
+ggsave("paper/img/election.map.png", p, units = "in", width = 6.5, height = 9.75)
