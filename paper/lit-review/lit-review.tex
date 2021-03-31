@@ -118,6 +118,7 @@ The benefit of seats-votes curves is that they allow a complete view of the bias
 A legislative is said to have partisan symmetry if both parties can receive $m$ proportion of the overall votes and therefore have $n$ proportion of the seats in the legislative body.An example would be that if Republicans win 60\% of the votes but control 65\% of the seats, then in a symmetrical system, Democrats should also be able to control 65\% of the seats by winning 60\% of the votes. \textcite{katz2020}
 
 \subsubsection{Partisan Bias}
+\label{sec:bias}
 
 Partisan Bias is the deviation from partisan symmetry at a vote proportion of 0.5. If Democrats with 50\% of the average district vote but only win 40\% of the seats, there is a partisan bias of -0.1. In elections where the average vote proportion does not equal 0.5, partisan bias must be computed using the \hyperref[sec:ups]{Uniform Partisan Swing} assumption. \parencite{katz2020}
 
@@ -130,6 +131,7 @@ Partisan Bias is the deviation from partisan symmetry at a vote proportion of 0.
 The lopsided outcomes measures, proposed by \textcite{wang2016}, is the difference in the average win size for each party.  \textcite{katz2020} refutes the claim by \textcite{wang2016} that the lopsided outcomes measure is a measure of partisan symmetry because it breaks down in noncompetitive elections. In such elections, the "packing" and "cracking" that normally indicate gerrymandering are merely a consequence of the political geography. However, the lopsided outcomes measure does serve as an indication of the skewness of the average vote distribution. 
 
 \subsubsection{Declination}
+\label{sec:declination}
 
 Declination is another proposed measure of partisan asymmetry that "...relies only on the fraction of seats each party wins in conjunction with the aggregate vote each party uses to win those seats" \parencite[3]{warrington2018}. Broadly, it measures the declination in the line connecting the average vote proportions of one party in districts controlled by the other party. It is essentially the normalized version of the declination measure \parencite{katz2020}. See Figure \ref{fig:dec} for a visualization. 
 
@@ -160,7 +162,8 @@ Declination is another proposed measure of partisan asymmetry that "...relies on
 
 \textcite{katz2020} refutes the claim of \textcite{warrington2018} that declination is a measure of partisan symmetry for the same reason that they refute the claim of partisan symmetry of declination, but acknowledges that it is a useful measure of the skewness of the distribution of district vote proportions. 
 
-\subsubsection{Efficiency Gap} 
+\subsubsection{Efficiency Gap}
+\label{sec:effgap}
 
 The efficiency gap is the difference between the number of wasted votes for each party, normalized to the total number of votes, where "wasted votes" are all votes for losing candidates and all votes for winning candidates over the 50\%-plus-one threshold. The idea is that wasted votes are a sign of "packing" or "cracking," where a gerrymander has intentionally grouped voters together into the same district or diluted their political power across several districts. \parencite{stephanopoulos2014}
 
@@ -183,6 +186,7 @@ Figure \ref{fig:ceg} illustrates how the equal population efficiency gap could d
 The tau gap, a variation of the efficiency gap proposed by \textcite{warrington2018}, takes a different view on wasted votes. Instead of defining every vote by the winning party in a winning district over the "50\%-plus-one" hurdle to be wasted, the order the votes, and declare votes 0-50\% not wasted, 50-$\tau$\% partially wasted, and $\tau$-100\% wasted, where $\tau$ is an chosen percentage between 50\% and 100\%. This is supposedly more in-line with the idea that it would be very risky for a party to aim for 50\%-plus-one votes, and that "buffer votes" more closely resemble reality \parencite{warrington2018}.
 
 \subsubsection{Mean-Median Difference}
+\label{sec:meanmed}
 
 The mean-median difference $MM$ is defined as the difference between the mean Democratic vote share (DVS) of each district and median democratic vote share of each district (first proposed by \textcite{mcdonald2015}). If $MM = 0$, the districts are said to be fair. 
 
@@ -193,6 +197,7 @@ The mean-median difference $MM$ is defined as the difference between the mean De
 A universal requirement of districts is that they be "reasonably compact." There is no legally accepted universal definition of compactness, and the scholarship is not united behind one measure either. The following is a brief overview of several different, commonly-used compactness measures that vary in approach, benefits, and weaknesses. 
 
 \subsubsection{Polsby-Popper Score}
+\label{sec:polsbypopper}
 
 Our first measure of district compactness is the Polsby-Popper score. \textcite{polsby1991} introduces this measure of compactness first development in paleontology to the problem of gerrymandering. It calculates the ratio of the area of the district to the area of the circle with the same perimeter as the district. It is calculated as follows.
 
@@ -253,6 +258,7 @@ The Fryer-Holden score takes a different approach to quantifying compactness, as
 This measure is robust to some of the weaknesses of the previous measures, namely that it isn't affected by coastal geography, map resolution, or population density. It can also be compared across states. \parencite{fryer2007}
 
 \subsubsection{Edge-Cut Compactness}
+\label{sec:edgecut}
 
 Edge-Cut Compactness takes a graph-theory perspective to district compactness. Imagine a graph where each precinct is a node, some vertex of the graph, and every adjacent precinct shares an edge, a line connecting the points. The Edge-Cut compactness score is the number of edges that must be "cut" (removed) from the original graph to form subgraphs, or districts. The theory is that compacter districts will require fewer edges to be cut. \parencite{dube2016} If normalized to the number of edges and subtracted from 1, a score of 1 indicates the most compact district. 
 
