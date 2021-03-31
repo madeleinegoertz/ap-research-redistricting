@@ -6,22 +6,37 @@ load("data/fair.calc.100.RData")
 
 fair_hist <- function(x, control, measure, alg, lab) {
   ggplot(mapping = aes(x = x)) +
-    theme_bw(base_size = 7) +
-    geom_histogram(bins = 25) +
+    theme_bw(base_size = 6.5) +
+    #geom_histogram(bins = 25) +
+    geom_density() + 
+    xlim(-0.5, 0.5) + 
+    ylim(0, 20) + 
     geom_vline(
       aes(xintercept = control),
-      color = "red", size = 1
+      color = "red", size = 0.5
     ) +
-    annotate(
-      geom = 'text', 
-      label = paste("control =", format(control, digits=3)), 
-      x = -Inf, 
-      y = Inf, 
+    geom_vline(
+      aes(xintercept = mean(x, na.rm = TRUE)),
+      color = "darkgreen", size = 0.5
+    ) + 
+    geom_text(
+      aes(label = paste("control:\n", format(control, digits=3)), 
+        x = -Inf, 
+        y = Inf), 
       hjust = 0, 
       vjust = 1,
       color = "red",
-      size = 3
+      size = 3,
     ) + 
+    geom_text(
+      aes(label = paste("mean:\n", format(mean(x, na.rm = TRUE), digits=3)),
+        x = Inf,
+        y = Inf),
+      hjust = 1,
+      vjust = 1,
+      color = "darkgreen",
+      size = 3,
+    ) +
     labs(
       x = measure,
       y = "Number of plans",
@@ -91,6 +106,6 @@ crsg.meanmed <- fair_hist(
   lab = "h)"
 )
 
-p <- (smc.bias | smc.dec | smc.effgap | smc.meanmed) / 
-     (crsg.bias | crsg.dec | crsg.effgap | crsg.meanmed) 
-ggsave("paper/img/fair_hist.png", p, units = "in", width = 9, height=4.5)
+p <- (smc.bias | smc.effgap | smc.dec | smc.meanmed) / 
+     (crsg.bias | crsg.effgap | crsg.dec | crsg.meanmed) 
+ggsave("paper/img/fair.density.png", p, units = "in", width = 9, height=4.5)
