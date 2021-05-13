@@ -1,88 +1,48 @@
 \section{Discussion}
 \label{sec:disc}
 
-The goal of my research is to compare two different automated redistricting algorithms in an empirical context and to evaluate the results using a variety of compactness and partisan fairness standards that have been established in the literature. 
+The goal of my research is to compare two different automated redistricting algorithms in an empirical context and to evaluate the maps they generate using a variety of compactness and partisan fairness measures that exist in the literature. 
 
-I will begin by analyzing the compactness metrics and then the partisan fairness metrics. I will end by discussing the limitations of my findings. 
+I begin by analyzing the compactness and then the partisan fairness metrics. I will end by discussing the limitations of my findings. 
 
-\subsection{Compactness}
+\subsection{Compactness Measures}
 
-Beginning with compactness measures, I'm analyzing the results presented in Figure \ref{fig:compact.density}. 
+The compactness measures are presented in Figure \ref{fig:compact.density}. 
 
-\subsubsection{Polsby-Popper score}
+The \hyperref[sec:polsbypopper]{Polsby-Popper score} compares the area of the district to the area of a circle with the same perimeter as the district \parencite{polsby1991}. It ranges from 0 to 1, where higher values indicate a compacter district. The SMC maps averaged a Polsby-Popper score of $0.155$, which is slightly less compact than the existing district ($0.186$). The CRSG maps also averaged a score just slightly less than the existing district ($0.179$). Through the lens of this measure, CRSG produced maps as compact as the existing map, and SMC's maps were slightly less compact. 
 
-The Polsby-Popper score compares the area of the district to the area of a circle with the same perimeter as the district \parencite{polsby1991}. It ranges from 0 to 1, where higher values indicate a compacter district. 
+The second compactness metric measured was the \hyperref[sec:edgecut]{edge-cut compactness measure}, a measure grounded in graph theory. It measure the proportion of edges that had to be cut from the initial precinct graph to form the district, and has been normalized to the total number of districts \parencite{dube2016}. Through the lends of edge-cut compactness, SMC maps were more compact than the existing map ($0.811 > 0.777$), and CRSG maps were just as compact as existing maps ($0.778 \approx 0.777$). 
 
-The SMC plans averaged a Polsby-Popper score of $0.155$, which is slightly less compact than the real district ($0.186$). The CRSG plans also averaged a score just slightly less than the control plan ($0.179$). Through the lens of this measure, CRSG produced plans as compact as the control, and SMC's plans were slightly less compact. 
+Both compactness measures did not reach the same conclusions. Polsby-Popper found the SMC plans to be less compact on average than the control, while edge-cut compactness found SMC to be more compact. This is likely because Polsby-Popper scores are very sensitive to resolution and geography \parencite{mccartan2020}. Virginia is a state with high-perimeter borders, defined by the Blue Ridge Mountains and the Chesapeake Bay. Additionally, Accomack County includes the Virginia Barrier Islands, which are separately from the mainland of the state \parencite{unitedstatesgeologicalsurvey2021}. Therefore, the very uneven geographic border of Virginia likely interfered with the ability of the Polsby-Popper score to fairly quantify compactness. With that in mind, if we only consider edge-cut compactness, SMC was able to generate compacter plans than both CRSG and the existing map. However, both distributions were reasonably compact, and there are no worrying differences between compactness between the three proposals. 
 
-\subsubsection{Edge-Cut compactness}
+\subsection{Partisan Fairness Measures}
 
-The second compactness metric measured was the edge-cut compactness score, a measure grounded in graph theory. It measure the proportion of edges that had to be cut from the initial precinct graph to form the district, and has been normalized to the total number of districts\footnote{For an explanation of the graph of precincts, please see the \hyperref[sec:redistasgraphcut]{Redistricting as Graph Cutting} section.} \parencite{dube2016}. This measure isn't affected by geographic features such as coastlines or mountain ranges, which makes it a more reliable measure of compactness than Polsby-Popper to some (see \textcite{mccartan2020}). 
-
-Through the lends of edge-cut compactness, SMC plans were more compact than the control ($0.811 > 0.777$), and CRSG plans were just as compact as CRSG plans ($0.778 \approx 0.777$). 
-
-\subsubsection{Conclusion}
-
-Both compactness measures did not reach the same conclusions. Polsby-Popper found the SMC plans to be less compact on average than the control, while edge-cut compactness found SMC to be more compact. This is likely due to the fact that Polsby-Popper scores are very sensitive to resolution and geography \parencite{mccartan2020}. Virginia is a states with high-perimeter borders, defined by the Blue Ridge Mountains and the Chesapeake Bay. Additionally, Accomack County includes the Virginia Barrier Islands, which are separately from the mainland of the state \parencite{unitedstatesgeologicalsurvey2021}. All this is to say that the very uneven border of Virginia due to geography likely interfere with the ability of the Polsby-Popper score to accurately quantify compactness. 
-
-With that in mind, if we only consider edge-cut compactness, SMC was able to generate compacter plans the CRSG or the control. However, both distributions were reasonably compact, and there are no worrying differences between compactness between the three proposals. 
-
-\subsection{Partisan Fairness}
-
-Moving on to the partisan fairness results, I'll first analyze the seats-votes curves, and then the single-value measures outlined in the \hyperref[sec:litreview]{Literature Review}. 
+Continuing with the partisan fairness measures, I'll first analyze the seats-votes curves, and then the single-value measures outlined in the \hyperref[sec:litreview]{Literature Review}. 
 
 \subsubsection{Seats-Votes Curves}
 
-Figure \ref{fig:sv} includes the seats-votes curves that I'm going to analyze. When viewed as a whole, the 100 curves for SMC in a) form a Majoritarian seats-votes curve (see Figure \ref{fig:seatsvotes1}). Partisan symmetry is the symmetry about the point $(0.5, 0.5)$ on this graph \parencite{katz2020}, and the SMC plan curves display partisan symmetry. The same is true for the 100 curves from CRSG in b). This indicates that both algorithms generated plans that, when taken together, do not advantage one party over the other. 
+When viewing the seats-votes curves in Figure \ref{fig:sv} in aggregate, the 100 curves for SMC in a) form a Majoritarian seats-votes curve (see Figure \ref{fig:seatsvotes}). Partisan symmetry is the symmetry about the point $(0.5, 0.5)$ on this graph \parencite{katz2020}, and the SMC map curves display partisan symmetry. The same is true for the 100 curves from CRSG in b). This indicates that both algorithms generated maps that, when taken together, do not advantage one party over the other. Compared to the curve for the existing district map in 2018 (shown in c)), the two algorithms generated more-symmetrical maps. The existing mpa is still Majoritarian (see Figure \ref{fig:seatsvotes}), but it favors Republicans from DVS $[0, 0.53]$ and Democrats from $[0.53, 1]$. If Democrats won 50\% of the average district vote, they'd win about 38\% of the seats, not 50\%. In summary, both algorithms generated more-symmetrical maps on average when compared to the existing map. 
 
-Compared to the curve for the existing district map in 2018 (shown in c)), the two algorithms generated more-symmetrical plans. The control plan is still Majoritarian, but it favors Republicans from DVS $[0, 0.53]$ and Democrats from $[0.53, 1]$. To illustrate this, we can see that if Democrats won 50\% of the average district vote, they'd win about 38\% of the seats, not 50\%. 
-
-In summary, both algorithms generated more symmetrical plans on average when compared to the existing plan. 
-
-\subsubsection{Single-Valued Measures}
+\subsubsection{Single-Valued Partisan Fairness Measures}
 
 Next I will analyze the partisan bias, efficiency gap, declination, and mean-median difference score distributions for the two algorithms. These results are visualized in Figure \ref{fig:fair.density}.
 
-\paragraph{Partisan Bias}
+Partisan bias is the deviation from partisan symmetry at an average DVS of 0.5. On a seats-votes curve (see Figure \ref{fig:sv}), this is the difference between 0.5 and the y-coordinate of the curve at $x=0.5$. As shown in a), the SMC maps on average were very fair ($0.0045 \approx 0$). e) shows this to be true for the CRSG maps as well, though they do slightly favor Democrats ($0.0364 > 0$). Both algorithms generated less biased maps on average than the existing maps, which significantly favored Republicans ($-0.136 < 0$). These results align with the the conclusions drawn from the seats-votes curve. Interestingly, the existing map is biased towards Republicans, but this is not evident in the election map, as the actual DVS is greater than 0.5. Nevertheless, both algorithms generated less biased maps on average than the existing map. 
 
-Partisan bias is the distance from partisan symmetry at an average DVS of 0.5. On a seats-votes curve (see Figure \ref{fig:sv}), this is the difference between 0.5 and the y-coordinate of the curve at $x=0.5$. It ranges from -0.5 to 0.5, with values of 0 being least biased. \parencite{katz2020}
+The next measure is the efficiency gap, which measure the difference in "wasted votes" between majority-Democrat and majority-Republican districts, normalized to the total vote count, and it ranges from -1 to 1 \parencite{stephanopoulos2014}. All three sets of maps; SMC, CRSG, and the existing map; have an efficiency gap within the acceptable margin ($\pm 0.07$). The efficiency gap doesn't find evidence of significant differences in the number of wasted votes between Democratic and Republican districts between the algorithms and the existing districts. This aligns with the literature, as most criticisms of the efficiency gap point out that is mischaracterizes "wasted votes" in highly non-competitive elections (see \textcite{veomett2018} and \textcite{katz2020}). However, Virginia is a very competitive state, so this does not appear to apply here.
 
-As shown in a), the SMC plans on average were very fair ($0.0045 \approx 0$). e) shows this to be true for the CRSG plans as well, though they do slightly favor Democrats ($0.0364 > 0$). Both algorithms generated less biases plans on average than the control, which significantly favored Republicans ($-0.136 < 0$). 
+The next measure is declination, which quantifies the concavity of the the line on the plot of districts by ascending DVS; see Figure \ref{fig:dec} for a visualization. It ranges from -1 to 1, with values of 0 indicating fairness \parencite{warrington2018}. The SMC maps are on average fair ($0.00523 \approx 0$), as is the existing map ($0.0406 \approx 0$). However, the declination of the CRSG favors Democrats ($-0.163 < 0$). Seeing as the seats-votes curves for SMC and CRSG were found to be symmetrical, these results agree with the findings of \textcite{katz2020} that declination is not a measure of symmetry, but rather of the skewness of the district vote proportion distribution. This district-level vote proportion distribution appears to be skewed towards Democrats on average in the CRSG maps, and centered in the average SMC maps and the existing map. 
 
-These results align with the the conclusions drawn from the seats-votes curve. Interestingly, the control plan is biased towards Republicans, but this is not evident in the election map, as the actual DVS is greater than 0.5. Nevertheless, both algorithms generated less-biased plans on average than the control plan. 
+The next measure is the mean-median difference, which is the difference between the mean and median district DVS. It ranges in value from -1 to 1, with values of 0 indicating a non-skewed distribution \parencite{mcdonald2015}. \textcite{katz2020} finds that at an averaged DVS of 0.5 (a tied election), the mean-median difference measures partisan bias. The result that the existing map slightly favors Republicans ($0.068 > 0$) while the average SMC maps and CRSG maps are essentially fair ($-0.0118 \approx 0, -0.0109 \approx 0$) aligns with the results from the partisan bias measure, which supports the finding of \textcite{katz2020}. 
 
-\paragraph{Efficiency Gap}
-
-The next measure is the efficiency gap, which measure the difference in "wasted votes" between majority-Democrat and majority-Republican districts, normalized to the total vote count. It ranges from -1 to 1. \parencite{stephanopoulos2014}
-
-All three sets of plans; SMC, CRSG, and the control; have an efficiency gap within the acceptable margin ($\pm 0.07$). 
-
-The efficiency gap doesn't find evidence of significant differences in the number of wasted votes between Democratic and Republican districts between the algorithms and the control. This aligns with the literature, as most criticisms of the efficiency gap point out that is mischaracterizes "wasted votes" in highly non-competitive elections (see \textcite{veomett2018} and \textcite{katz2020}). However, Virginia is a very competitive state, so this does not appear to apply in this situation.
-
-\paragraph{Declination}
-
-The next measure is declination, which quantifies the concavity of the the line on the plot of districts by ascending DVS; see Figure \ref{fig:dec} for a visualization. It ranges from -1 to 1, with values of 0 indicating fairness. \parencite{warrington2018}
-
-The SMC plans are on average fair ($0.00523 \approx 0$), as is the control plan ($0.0406 \approx 0$). However, the declination of the CRSG is biased towards Democrats ($-0.163 < 0$). Seeing as the seats-votes curves for SMC and CRSG were found to be symmetrical, these results agree with the findings of \textcite{katz2020} that declination is not a measure of symmetry, but rather of the skewness of the district vote proportion distribution. 
-
-This district-level vote proportion distribution appears to be skewed towards Democrats on average in the CRSG plans, and centered in the average SMC plans and the control plan. 
-
-\paragraph{Mean-Median Difference}
-
-The next measure is the mean-median difference, which is the difference between the mean district DVS and the median district DVS. It ranges in value from -1 to 1, with values of 0 indicating a non-skewed distribution \parencite{mcdonald2015}. \textcite{katz2020} finds that at an averaged DVS of 0.5, the mean-median difference measures partisan bias. 
-
-The result that the control plan slightly favors Republicans ($0.068 > 0$) while the average SMC plans and CRSG plans are basically fair ($-0.0118 \approx 0, -0.0109 \approx 0$), aligns with the results from the partisan bias measure, which supports the finding of \textcite{katz2020}. 
-
-\subsubsection{Conclusion}
-
-When viewed together, the partisan fairness measures illustrate the following conclusions. SMC generated fair and symmetrical districts from the perspective of all four measures. CRSG also generated on average fair districts, with only a skew in the district-level Democratic vote proportion. Both algorithms produced on average fairer districts than the control plan, which was found to be biased towards Republicans by all fairness measures. 
+When viewed together, the partisan fairness measures illustrate the following conclusions. SMC generated fair and symmetrical districts from the perspective of all four measures. CRSG also generated on average fair districts, with only a skew in the district-level DVS distribution. Both algorithms produced on average fairer districts than the existing map, which was found to be biased towards Republicans by all fairness measures. 
 
 \subsection{Limitations}
 
-The limitations of the compactness measures largely are due to their sensitivity to geography. Additionally, the seats-votes curves are very sensitive to the idiosyncrasies of the particular election since the number of seats is so small. Each algorithm generated 100 districts, so the possibility of randomly generated biased districts could be reduced by having a larger sample size. Finally, every district vote proportion was calculated using only the votes for the Democratic and Republican parties, ignoring third-party candidates, though this is unlikely to have had a significant effect as the United States has first-past-the-post elections. 
+The limitations of the compactness measures derives largely from their sensitivity to geography. Additionally, the seats-votes curves are very sensitive to the idiosyncrasies of the particular election since the number of seats is so small. Each algorithm generated 100 districts, so the possibility of randomly generated biased districts could be reduced by increasing the sample size. Finally, every district-level DVS was calculated using only the votes for the Democratic and Republican parties, ignoring third-party candidates.
 
 \subsection{Conclusions}
 
-There were not significant differences in the average compactness of plans generated by the algorithms and the control plan. The compactness measures provided additional evidence that the Polsby-Popper score cannot accurately measure compactness when faced with districts that have lengthy perimeters due to their geography. 
+There were not significant differences in the average compactness of maps generated by the algorithms and the existing map. The compactness measures provided additional evidence that the Polsby-Popper score cannot accurately measure compactness when faced with districts that have lengthy perimeters due to their geography. 
 
-SMC was found to generate fair, symmetrical districts. CRSG districts were mostly fair, though they showed a slight Democratic bias in some cases. The control districts were found to be biased towards Republicans by all measures of fairness. 
+SMC was found to generate fair, symmetrical districts. CRSG districts were mostly fair, though they showed a slight Democratic bias in some cases. The control districts were found to be biased towards Republicans by all measures of partisan fairness. 
