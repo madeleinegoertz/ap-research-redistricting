@@ -13,7 +13,7 @@ The purpose of automated redistricting algorithms is to generate a set of redist
 
 The following redistricting algorithms, SMC and CRSG, both conceptualize redistricting precincts as a graph-cutting problem. A graph is a network of different interconnected points, where the points are "nodes" and the lines connecting them "edges" \parencite{fifield2020}. Every precinct is a node, and geographically-adjacent precincts have their corresponding nodes connected by edges. This is known as the "adjacency graph." Since the goal of redistricting is to assign every precinct a district, the algorithms imagine that edges between nodes are "cut" until "islands" (known as "subgraphs") are formed, where each is disconnected from the others. The disconnected subgraphs then become the districts. See Figure \ref{fig:graphcut} for a visualization \parencite{fifield2020}. 
 
-\begin{figure}[ht]
+\begin{figure}[t]
     \caption{Redistricting as Graph Cutting}
     \includegraphics[width=0.8\linewidth]{img/graphcut.png}
     \label{fig:graphcut}
@@ -118,7 +118,7 @@ The efficiency gap is the difference between the number of wasted votes for each
 
 Declination is another proposed measure of partisan asymmetry that "...relies only on the fraction of seats each party wins in conjunction with the aggregate vote each party uses to win those seats" \parencite[3]{warrington2018}. Broadly, it measures the declination in the line connecting the average vote proportions of one party in districts controlled by the other party. See Figure \ref{fig:dec} for a visualization. 
 
-\begin{figure}[h]
+\begin{figure}[b]
     \caption{Sample Declination Plots}
     \includegraphics[width=0.8\textwidth]{img/dec.PNG}
     \label{fig:dec}
