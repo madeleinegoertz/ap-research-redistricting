@@ -11,13 +11,16 @@ fair_hist <- function(x, control, measure, alg, lab) {
     geom_density() + 
     xlim(-0.5, 0.5) + 
     ylim(0, 20) + 
+    theme(
+      text = element_text(size=9)
+    ) +
     geom_vline(
       aes(xintercept = control),
-      color = "red", size = 0.5
+      color = "red", size = 0.5, linetype = "longdash"
     ) +
     geom_vline(
       aes(xintercept = mean(x, na.rm = TRUE)),
-      color = "darkgreen", size = 0.5
+      color = "blue", size = 0.5
     ) + 
     geom_text(
       aes(label = paste("control:\n", format(control, digits=3)), 
@@ -34,13 +37,13 @@ fair_hist <- function(x, control, measure, alg, lab) {
         y = Inf),
       hjust = 1,
       vjust = 1,
-      color = "darkgreen",
+      color = "blue",
       size = 3,
     ) +
     labs(
       x = measure,
-      y = "Number of plans",
-      title = paste(lab, measure, "distr. of", alg, "plans")
+      y = "Number of maps",
+      title = paste(alg, measure, "distr.")
     )
 }
 
