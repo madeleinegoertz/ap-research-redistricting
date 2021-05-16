@@ -5,7 +5,7 @@ I will provide an overview of some of the current research into automated redist
 
 \subsection{Automated Redistricting Algorithms}
 
-The purpose of automated redistricting algorithms is to generate a set of redistricting plans that are as "impartial" as possible \parencite{chen2013}. While many different algorithms have been proposed (see \textcite{altman2009}, \textcite{haas2020}, \textcite{lara-caballero2019}, \textcite{macmillan2001}, \textcite{weaver1963}, and \textcite{xiao2008}), I will provide high-level overviews of two algorithms: \hyperref[sec:smc]{Sequential Monte Carlo (SMC)} and \hyperref[sec:crsg]{Compact Random Seed Growth (CRSG)}. 
+The purpose of automated redistricting algorithms is to generate a set of redistricting plans that are as "impartial" as possible \parencite{chen2013}. While many different algorithms have been proposed (see \textcite{altman2011}, \textcite{haas2020}, \textcite{lara-caballero2019}, \textcite{macmillan2001}, \textcite{weaver1963}, and \textcite{xiao2008}), I will provide high-level overviews of two algorithms: \hyperref[sec:smc]{Sequential Monte Carlo (SMC)} and \hyperref[sec:crsg]{Compact Random Seed Growth (CRSG)}. 
 
 \subsubsection{Redistricting as Graph Cutting}
 \label{sec:redistasgraphcut}
@@ -109,7 +109,7 @@ The following measures compute a single number to assess the partisan fairness o
 \paragraph{Efficiency Gap}
 \label{sec:effgap}
 
-The efficiency gap is the difference between the number of wasted votes for each party, normalized to the total number of votes, where "wasted votes" are all votes for losing candidates and all votes for winning candidates over the 50\%-plus-one threshold. Theoretically, wasted votes are a sign of "packing" or "cracking," where a gerrymandered district intentionally grouped voters together into the same district or diluted their political power across several districts. \parencite{stephanopoulos2014}
+The efficiency gap is the difference between the number of wasted votes for each party, normalized to the total number of votes, where "wasted votes" are all votes for losing candidates and all votes for winning candidates over the 50\%-plus-one threshold. Theoretically, wasted votes are a sign of "packing" or "cracking," where a gerrymandered district intentionally grouped voters together into the same district or diluted their political power across several districts. \parencite{stephanopoulos2015}
 
 \textcite{veomett2018} found that the efficiency gap is not a measure of partisan symmetry, as the measure becomes confused in highly non-competitive elections (e.g. party wins 80\% of the vote and 100\% of the seats). 
 

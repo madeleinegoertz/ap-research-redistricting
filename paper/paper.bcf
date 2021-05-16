@@ -2811,12 +2811,12 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">paper.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">princetongerrymanderingproject</bcf:citekey>
+    <bcf:citekey order="1">princetongerrymanderingproject2021</bcf:citekey>
     <bcf:citekey order="2">1964</bcf:citekey>
     <bcf:citekey order="3">1986</bcf:citekey>
     <bcf:citekey order="4">vickrey1961</bcf:citekey>
     <bcf:citekey order="5">hu1995</bcf:citekey>
-    <bcf:citekey order="5">altman2009</bcf:citekey>
+    <bcf:citekey order="5">altman2011</bcf:citekey>
     <bcf:citekey order="5">chen2013</bcf:citekey>
     <bcf:citekey order="6">lara-caballero2019</bcf:citekey>
     <bcf:citekey order="6">fifield2020</bcf:citekey>
@@ -2829,7 +2829,7 @@
     <bcf:citekey order="7">boyce1964</bcf:citekey>
     <bcf:citekey order="8">dube2016</bcf:citekey>
     <bcf:citekey order="9">tufte1973</bcf:citekey>
-    <bcf:citekey order="10">stephanopoulos2014</bcf:citekey>
+    <bcf:citekey order="10">stephanopoulos2015</bcf:citekey>
     <bcf:citekey order="10">katz2020</bcf:citekey>
     <bcf:citekey order="10">warrington2018</bcf:citekey>
     <bcf:citekey order="10">mcdonald2015</bcf:citekey>
@@ -2840,9 +2840,10 @@
     <bcf:citekey order="13">duchin2018a</bcf:citekey>
     <bcf:citekey order="14">fifield2020a</bcf:citekey>
     <bcf:citekey order="15">chen2013</bcf:citekey>
-    <bcf:citekey order="16">altman2009</bcf:citekey>
-    <bcf:citekey order="17">altman2009</bcf:citekey>
+    <bcf:citekey order="16">altman2011</bcf:citekey>
+    <bcf:citekey order="17">altman2011</bcf:citekey>
     <bcf:citekey order="18">haas2020</bcf:citekey>
+    <bcf:citekey order="19">haas2020</bcf:citekey>
     <bcf:citekey order="20">lara-caballero2019</bcf:citekey>
     <bcf:citekey order="21">lara-caballero2019</bcf:citekey>
     <bcf:citekey order="22">macmillan2001</bcf:citekey>
@@ -2883,7 +2884,7 @@
     <bcf:citekey order="56">gelman1994</bcf:citekey>
     <bcf:citekey order="57">warrington2018</bcf:citekey>
     <bcf:citekey order="58">katz2020</bcf:citekey>
-    <bcf:citekey order="59">stephanopoulos2014</bcf:citekey>
+    <bcf:citekey order="59">stephanopoulos2015</bcf:citekey>
     <bcf:citekey order="60">veomett2018</bcf:citekey>
     <bcf:citekey order="61">veomett2018</bcf:citekey>
     <bcf:citekey order="62">warrington2018</bcf:citekey>
@@ -2898,7 +2899,7 @@
     <bcf:citekey order="71">katz2020</bcf:citekey>
     <bcf:citekey order="72">katz2020</bcf:citekey>
     <bcf:citekey order="73">2016a</bcf:citekey>
-    <bcf:citekey order="74">ballotpediastaff2020</bcf:citekey>
+    <bcf:citekey order="74">ballotpedia2020</bcf:citekey>
     <bcf:citekey order="75">chen2013</bcf:citekey>
     <bcf:citekey order="76">mccartan2020</bcf:citekey>
     <bcf:citekey order="77">fifield2020d</bcf:citekey>
@@ -2906,13 +2907,13 @@
     <bcf:citekey order="79">dube2016</bcf:citekey>
     <bcf:citekey order="80">tufte1973</bcf:citekey>
     <bcf:citekey order="81">katz2020</bcf:citekey>
-    <bcf:citekey order="82">stephanopoulos2014</bcf:citekey>
+    <bcf:citekey order="82">stephanopoulos2015</bcf:citekey>
     <bcf:citekey order="83">warrington2018</bcf:citekey>
     <bcf:citekey order="84">mcdonald2015</bcf:citekey>
     <bcf:citekey order="85">katz2020</bcf:citekey>
     <bcf:citekey order="86">fifield2020d</bcf:citekey>
     <bcf:citekey order="87">mansonsteven2020</bcf:citekey>
-    <bcf:citekey order="88">hully</bcf:citekey>
+    <bcf:citekey order="88">hully2020</bcf:citekey>
     <bcf:citekey order="89">votingandelectionscienceteam2019c</bcf:citekey>
     <bcf:citekey order="90">votingandelectionscienceteam2019c</bcf:citekey>
     <bcf:citekey order="91">katz2020</bcf:citekey>
@@ -2921,7 +2922,7 @@
     <bcf:citekey order="94">mccartan2020</bcf:citekey>
     <bcf:citekey order="95">unitedstatesgeologicalsurvey2021</bcf:citekey>
     <bcf:citekey order="96">katz2020</bcf:citekey>
-    <bcf:citekey order="97">stephanopoulos2014</bcf:citekey>
+    <bcf:citekey order="97">stephanopoulos2015</bcf:citekey>
     <bcf:citekey order="98">veomett2018</bcf:citekey>
     <bcf:citekey order="99">veomett2018</bcf:citekey>
     <bcf:citekey order="100">katz2020</bcf:citekey>
