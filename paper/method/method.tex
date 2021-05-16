@@ -11,13 +11,27 @@
 
 My research method simulates the 2021 redistricting of the congressional districts in Virginia using two different algorithms supplied with data from 2018. Figure \ref{fig:flowchart} provides and overview of this process.
 
+\subsection{Choice of Research Focus}
+
+I chose Virginia as my case state because 
+\begin{seriate}
+    \item it has had to redistrict mid-decade due to gerrymandering \parencite[see][]{2016a},
+    \item it is a competitive state from an electoral perspective, 
+    \item it recently approved a constitutional amendment that institutes a redistricting process driven by a hybrid commission \parencite{ballotpediastaff2020}, and
+    \item it has a complex geography.
+\end{seriate}
+
+With the goal of comparing the performance of different automated redistricting algorithms, I chose two algorithms of different levels of complexity that could both meet the real-world requirements of equal population and compactness. The Compact Random Seed Growth algorithm (CRSG) \parencite{chen2013} and the Sequential Monte Carlo algorithm (SMC) \parencite{mccartan2020} were chosen as they both satisfy the aforementioned requirement, are implemented by an open-source software package \parencite{fifield2020d}, and represent the evolution in the scholarship on such algorithms. 
+
+Since there is no single measure of partisan fairness nor compactness agreed upon by the scholarship, I selected representative samples of the different perspectives on each measure. For compactness, one geometry-based measure (the Polsby-Popper score \parencite{polsby1991}) and one graph-theory-based measure (the edge-cut compactness score \parencite{dube2016}) were chosen. For partisan fairness, the simulated election measure (the seats-votes curve \parencite{tufte1973}) and four single-valued fairness measures (partisan bias \parencite{katz2020}, the efficiency gap \parencite{stephanopoulos2014}, declination \parencite{warrington2018}, and the mean-median difference \parencite{mcdonald2015}) were chosen. Together, these five partisan fairness measures represent differing and disputed views on how "fairness" should be quantified \parencite{katz2020}. 
+
 \subsection{Choice of Research Method}
 
 I chose the experimental design method because it allowed me to isolate the impact of the redistricting algorithm on map quality from possible confounding variables. This method also includes the use of a control group, which allows the researcher to establish causation. 
 
 \subsection{Components of Experimental Design}
 
-The experimental unit is the complete dataset for 2018 in Virginia. Every row in each dataset corresponds to a precinct, the smallest geographical unit by which votes are tabulated in Virginia. For each precinct, I also have the total population and the number of votes cast for the 2018 Democratic and Republican candidates. Additionally, each precinct has a polygon associated with it that represents its geographical shape.
+The experimental unit is the complete dataset (with geographic, population, and election data) for 2018 in Virginia. Every row in each dataset corresponds to a precinct, the smallest geographical unit by which votes are tabulated in Virginia. For each precinct, I also have the total population and the number of votes cast for the 2018 Democratic and Republican candidates. Additionally, each precinct has a polygon associated with it that represents its geographical shape.
 
 The treatments  are the two different redistricting algorithm that I'm comparing: SMC and CRSG. I'm using the implementations in the R programming language "redist" package v2.0-2 \parencite{fifield2020d}. The algorithms were chosen because they represent an evolution in the design of algorithms within the scholarship while still meeting the equal population and compactness requirements.
 
@@ -27,7 +41,7 @@ The control group is the official Virginia Congressional district map from 2015-
 
 \subsubsection{Principles of Experimental Design}
 
-Every experimental unit will receive each treatment, and every experimental unit can be replicated many times without issue, so there’s no error from a lack of randomization. 
+Every experimental unit will receive each treatment, and every experimental unit can be replicated many times without issue, so there's no error from a lack of randomization. 
 
 Each algorithm will generate 100 sample redistricting plans. This is large enough to allow for inferences, but small enough to still be computationally feasible. 
 
@@ -37,8 +51,8 @@ All of the redistricting will be happening in controlled environments, so there 
 
 To create my datasets, I cleaned and compiled three different types of data: demographic data, Geographic Information Systems (GIS) data, and election data.
 
-One required piece of data in order to redistrict is demographic data at the precinct level. For my purposes, this means the total population of each precinct. To run the most accurate redistricting simulations, these data needed to be as recent as possible. Comprehensive population counts are only conducted by the US Census Bureau every 10 years, so I instead used the 5-year American Community Survey results at the block-group level. This is a sample survey, not a population count, but that is offset by the aggregation of sample data over a 5 year period. I downloaded this data from the IPUMS National Historic GIS project \parencite{mansonsteven2020}. Using the "maup" Python Library \parencite{hully}, I disaggregated the data from the block-group level to the block level, prorating the demographic data based on population. This data was then aggregated up to the precinct level, resulting in a total population count for each precinct.
+One required piece of data required to redistrict is demographic data at the precinct level. For my purposes, this means the total population of each precinct. To run the most accurate redistricting simulations, these data needed to be as recent as possible. Comprehensive population counts are only conducted by the US Census Bureau every 10 years, so I instead used the 5-year American Community Survey results at the block-group level. This is a sample survey, not a population count, but that is offset by the aggregation of sample data over a 5 year period. I downloaded this data from the IPUMS National Historic GIS project \parencite{mansonsteven2020}. Using the "maup" Python Library \parencite{hully}, I disaggregated the data from the block-group level to the block level, prorating the demographic data based on population. This data was then aggregated up to the precinct level, resulting in a total population count for each precinct.
 
 To redistrict, the algorithms need to know the shape and relative location of each precinct. In practice, this means every precinct has a polygon associated with it and a Coordinate Reference System that describes where these polygons fall in space. These data tables with the geometry column are known as "shapefiles." I accessed these shapefiles from the Voting and Election Science Team on their Harvard Dataverse \parencite{votingandelectionscienceteam2019c}. I then merged in my precinct-level demographic data tables to create shapefiles with the necessary demographic data. Since election administrators are free to change the precincts between elections, precinct shapefiles are unique to both a place and a time. I therefore used shapefile data (and demographic and eleciton data) from 2018, the most recent year it was available for.
 
-The last required data type is the count of votes for each party in each precicnt. The shapefile dataset from the Voting and Election Science Team already included this data, which was gathered from the Virginia Department of Legislative Services \parencite{votingandelectionscienceteam2019c}.
+The last required data type is the count of votes for each party in each precinct. The shapefile dataset from the Voting and Election Science Team already included this data, which was gathered from the Virginia Department of Legislative Services \parencite{votingandelectionscienceteam2019c}.
