@@ -9,7 +9,7 @@ I begin by analyzing the compactness and then the partisan fairness metrics. I w
 
 The compactness measures are presented in Figure \ref{fig:compact.density}. 
 
-The \hyperref[sec:polsbypopper]{Polsby-Popper score} compares the area of the district to the area of a circle with the same perimeter as the district \parencite{polsby1991}. It ranges from 0 to 1, where higher values indicate a compacter district. The SMC maps averaged a Polsby-Popper score of $0.155$, which is slightly less compact than the existing district ($0.186$). The CRSG maps also averaged a score just slightly less than the existing district ($0.179$). Through the lens of this measure, CRSG produced maps as compact as the existing map, and SMC's maps were slightly less compact. 
+The \hyperref[sec:polsbypopper]{Polsby-Popper score} compares the area of the district to the area of a circle with the same perimeter as the district \parencite{polsby1991}. It ranges from 0 to 1, where higher values indicate a compacter district. The \hyperref[sec:smc]{SMC} maps averaged a Polsby-Popper score of $0.155$, which is slightly less compact than the existing district ($0.186$). The \hyperref[sec:crsg]{CRSG} maps also averaged a score just slightly less than the existing district ($0.179$). Through the lens of this measure, CRSG produced maps as compact as the existing map, and SMC's maps were slightly less compact. 
 
 The second compactness metric measured was the \hyperref[sec:edgecut]{edge-cut compactness measure}, a measure grounded in graph theory. It measure the proportion of edges that had to be cut from the initial precinct graph to form the district, and has been normalized to the total number of districts \parencite{dube2016}. Through the lens of edge-cut compactness, SMC maps were more compact than the existing map ($0.811 > 0.777$), and CRSG maps were just as compact as existing maps ($0.778 \approx 0.777$). 
 
@@ -17,7 +17,7 @@ Both compactness measures did not reach the same conclusions. Polsby-Popper foun
 
 \subsection{Partisan Fairness Measures}
 
-Continuing with the partisan fairness measures, I'll first analyze the seats-votes curves, and then the single-value measures outlined in the \hyperref[sec:litreview]{Literature Review}. 
+Continuing with the partisan fairness measures, I'll first analyze the \hyperref[sec:seatsvotes]{seats-votes curves}, and then the single-value measures outlined in the \hyperref[sec:litreview]{Literature Review}. 
 
 \subsubsection{Seats-Votes Curves}
 
@@ -25,7 +25,7 @@ When viewing the seats-votes curves in Figure \ref{fig:sv} in aggregate, the 100
 
 \subsubsection{Single-Valued Partisan Fairness Measures}
 
-Next I will analyze the partisan bias, efficiency gap, declination, and mean-median difference score distributions for the two algorithms. These results are visualized in Figure \ref{fig:fair.density}.
+Next I will analyze the \hyperref[sec:bias]{partisan bias}, \hyperref[sec:effgap]{efficiency gap}, \hyperref[sec:declination]{declination}, and \hyperref[sec:meanmed]{mean-median difference} score distributions for the two algorithms. These results are visualized in Figure \ref{fig:fair.density}.
 
 Partisan bias is the deviation from partisan symmetry at an average district-level Democratic vote share (DVS) of 0.5. On a seats-votes curve (see Figure \ref{fig:sv}), this is the difference between 0.5 and the y-coordinate of the curve at $x=0.5$. As shown in a), the SMC maps on average were very fair ($0.0045 \approx 0$). e) shows this to be true for the CRSG maps as well, though they do slightly favor Democrats ($0.0364 > 0$). Both algorithms generated less biased maps on average than the existing maps, which significantly favored Republicans ($-0.136 < 0$). These results align with the conclusions drawn from the seats-votes curve. Interestingly, the existing map is biased towards Republicans, but this is not evident in the election map, as the actual DVS is greater than 0.5. Nevertheless, both algorithms generated less biased maps on average than the existing map. 
 
