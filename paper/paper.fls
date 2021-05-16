@@ -24,11 +24,10 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cl
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
@@ -66,7 +65,7 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
@@ -951,9 +950,6 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3bac
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.aux
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.aux
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.aux
 OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.aux
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
@@ -1027,18 +1023,8 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestrin
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.pdf
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
 OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
+OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.pdf
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\apa7\config\APA7american.txt
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\apa7\config\APA7american.txt
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\apa7\config\APA7american.txt
@@ -1098,13 +1084,7 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-ca
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-case-latex2e.sty
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-case-latex2e.sty
 OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.bcf
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT c:\Users\madie\ap-research-redistricting\paper\paper.bbl
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Users\madie\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT c:\Users\madie\ap-research-redistricting\paper\intro\intro.tex
 INPUT c:\Users\madie\ap-research-redistricting\paper\intro\intro.tex
@@ -1121,38 +1101,38 @@ INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr7.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi12.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi7.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmex10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx12.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx8.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx6.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx7.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy5.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT c:\Users\madie\ap-research-redistricting\paper\lit-review\lit-review.tex
 INPUT c:\Users\madie\ap-research-redistricting\paper\lit-review\lit-review.tex
 INPUT c:\Users\madie\ap-research-redistricting\paper\lit-review\lit-review.tex
@@ -1172,29 +1152,24 @@ INPUT c:\Users\madie\ap-research-redistricting\paper\img\graphcut.png
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\graphcut.png
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\graphcut.png
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\graphcut.png
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr7.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx5.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx8.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx6.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib5.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy7.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy5.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr7.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
@@ -1202,6 +1177,7 @@ INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\smc.PNG
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx8.tfm
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\seatsvotes.png
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\seatsvotes.png
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\seatsvotes.png
@@ -1216,10 +1192,10 @@ INPUT c:\Users\madie\ap-research-redistricting\paper\img\dec.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\dec.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\dec.PNG
 INPUT c:\Users\madie\ap-research-redistricting\paper\img\dec.PNG
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy9.tfm
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmbx9.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmib10.tfm
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT c:\Users\madie\ap-research-redistricting\paper\method\method.tex
@@ -1313,28 +1289,36 @@ INPUT c:\Users\madie\ap-research-redistricting\paper\paper.out
 INPUT c:\Users\madie\ap-research-redistricting\paper\paper.run.xml
 OUTPUT c:\Users\madie\ap-research-redistricting\paper\paper.run.xml
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx8.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx8.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi12.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi9.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi9.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
-INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri9.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri9.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy9.pfb
+INPUT C:\Users\madie\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy9.pfb

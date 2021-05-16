@@ -1,0 +1,1909 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{altman2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72e63fa802a6381aed89f98ef0dc039d}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={Micah},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ccd5ec349640b172fe624aef7589d01}{%
+           family={Mcdonald},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \strng{fullhash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \strng{bibnamehash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \strng{authorbibnamehash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \strng{authornamehash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \strng{authorfullhash}{32626ebbb4d09ca7d029b651c6daa93d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{BARD is the first (and at time of writing, only) open source software package for general redistricting and redistricting analysis. BARD provides methods to create, display, compare, edit, automatically refine, evaluate, and profile political districting plans. BARD aims to provide a framework for scientific analysis of redistricting plans and to facilitate wider public participation in the creation of new plans. BARD facilitates map creation and refinement through command-line, graphical user interface, and automatic methods. Since redistricting is a computationally complex partitioning problem not amenable to an exact optimization solution, BARD implements a variety of selectable metaheuristics that can be used to refine existing or randomlygenerated redistricting plans based on user-determined criteria. Furthermore, BARD supports automated generation of redistricting plans and profiling of plans by assigning different weights to various criteria, such as district compactness or equality of population. This functionality permits exploration of trade-offs among criteria. The intent of a redistricting authority may be explored by examining these trade-offs and inferring which reasonably observable plans were not adopted. Redistricting is a computationally-intensive problem for even modest-sized states. Performance is thus an important consideration in BARD's design and implementation. The program implements performance enhancements such as evaluation caching, explicit memory management, and distributed computing across snow clusters.}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{shorttitle}{Bard}
+      \field{title}{Bard: {{Better Automated Redistricting}}}
+      \field{year}{2009}
+      \keyw{algorithm,bard}
+    \endentry
+    \entry{boyce1964}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c1fdb10f38f0b28d263a374f799164f1}{%
+           family={Boyce},
+           familyi={B\bibinitperiod},
+           given={Ronald\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=9a7714e75e2f2da70a6113e29d255be4}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi A.\bibnamedelimi V.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \strng{fullhash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \strng{bibnamehash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \strng{authorbibnamehash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \strng{authornamehash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \strng{authorfullhash}{b5dbeff8ee5c9bd5164c0fba9b545c41}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00167428}
+      \field{journaltitle}{Geographical Review}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{The {{Concept}} of {{Shape}} in {{Geography}}}
+      \field{urlday}{15}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{54}
+      \field{year}{1964}
+      \field{urldateera}{ce}
+      \field{pages}{561}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/212982
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\WTUGT7QC\\Boyce and Clark - 1964 - The Concept of Shape in Geography.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/212982?origin=crossref
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/212982?origin=crossref
+      \endverb
+    \endentry
+    \entry{chen2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ffc34d0e7cff63716966e5afc7ae46d9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jowei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e45e84dd5a00f5ce7c2db2028fd542db}{%
+           family={Rodden},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1334d4b83a17526295825dd26fbdf3de}
+      \strng{fullhash}{1334d4b83a17526295825dd26fbdf3de}
+      \strng{bibnamehash}{1334d4b83a17526295825dd26fbdf3de}
+      \strng{authorbibnamehash}{1334d4b83a17526295825dd26fbdf3de}
+      \strng{authornamehash}{1334d4b83a17526295825dd26fbdf3de}
+      \strng{authorfullhash}{1334d4b83a17526295825dd26fbdf3de}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{15540634}
+      \field{journaltitle}{Quarterly Journal of Political Science}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shorttitle}{Unintentional {{Gerrymandering}}}
+      \field{title}{Unintentional Gerrymandering: {{Political}} Geography and Electoral Bias in Legislatures}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{8}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{239\bibrangedash 269}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1561/100.00012033
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\9A52NAZ6\\chen_2013_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nowpublishers.com/article/Details/QJPS-12033
+      \endverb
+      \verb{url}
+      \verb http://www.nowpublishers.com/article/Details/QJPS-12033
+      \endverb
+      \keyw{algorithm,RSG}
+    \endentry
+    \entry{cox1927}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=babe576a27cead754a5a8e83167cb3d0}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={E\bibnamedelima P},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{babe576a27cead754a5a8e83167cb3d0}
+      \strng{fullhash}{babe576a27cead754a5a8e83167cb3d0}
+      \strng{bibnamehash}{babe576a27cead754a5a8e83167cb3d0}
+      \strng{authorbibnamehash}{babe576a27cead754a5a8e83167cb3d0}
+      \strng{authornamehash}{babe576a27cead754a5a8e83167cb3d0}
+      \strng{authorfullhash}{babe576a27cead754a5a8e83167cb3d0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{3}
+      \field{title}{A {{Method}} of {{Assigning Numerical}} and {{Percentage Values}} to the {{Degree}} of {{Roundness}} of {{Sand Grains}}}
+      \field{volume}{1}
+      \field{year}{1927}
+      \field{pages}{179\bibrangedash 183}
+      \range{pages}{5}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\7XAGH7JR\\Cox - 2021 - A Method of Assigning Numerical and Percentage Val.pdf
+      \endverb
+    \endentry
+    \entry{1986}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Did Indiana's 1981 state apportionment violate the Equal Protection Clause of the Fourteenth Amendment?}
+      \field{month}{6}
+      \field{number}{84-1244}
+      \field{title}{Davis v. {{Bandemer}}}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1986}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.oyez.org/cases/1985/84-1244
+      \endverb
+      \verb{url}
+      \verb https://www.oyez.org/cases/1985/84-1244
+      \endverb
+    \endentry
+    \entry{dube2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6b3b5cd5406aa5ccbd02b33a42a2dd78}{%
+           family={Dube},
+           familyi={D\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=df2dff5242b62aa71c615e9cb1557a0e}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{92af343950956cb3459a327d910e44c8}
+      \strng{fullhash}{92af343950956cb3459a327d910e44c8}
+      \strng{bibnamehash}{92af343950956cb3459a327d910e44c8}
+      \strng{authorbibnamehash}{92af343950956cb3459a327d910e44c8}
+      \strng{authornamehash}{92af343950956cb3459a327d910e44c8}
+      \strng{authorfullhash}{92af343950956cb3459a327d910e44c8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{For decades, legislative districts have been drawn with two general mandates, contiguity and compactness. While contiguity is easily discernible, a single accepted measure of district compactness has not been found. Due to the various effects that gerrymandering and noncompact districts have on the aggregation of voter preferences, questions surrounding district compactness have direct implications of representation in democratic theory. Empirical political science has attempted on numerous occasions to formulate a single method by which to measure district compactness. These include various geometric measures such as circularity, convex hulls, and path connectedness, as well as methods that attempt to encompass voter dispersion. The real-world implementation of these compactness measures has been fraught with issues, however. Most apparent among these are natural and state boundaries, which greatly interfere with the implementation of geometric compactness measures. Examples of noncompactness induced by natural boundaries can be seen in the coast of Maine and the Chesapeake Bay in Maryland, while noncompactness induced by state boundaries can be seen in West Virginia and Louisiana. Further implementation issues may be found in methods that rely on voter dispersion. This is due to the boundaries that are used to collect apportionment data, namely census tracts, blocks, and precincts. U.S. Census Bureau delineations (tracts, blocks, and precincts) are the spatial granularity by which legislative districts are drawn, and have rigid boundaries. These boundaries not only proscribe the full use of most voter dispersion metrics of compactness, but also lead districts to be naturally conducive to irregular geometry. In this paper, we seek to overcome these geometric issues by using a different discipline of mathematics---graph theory---to formulate a new metric of district compactness. This method utilizes graph partitioning with the established goal of balancing the population while minimizing the number of shapes that share an edge with one another. In doing so we formulate a new approach to compactness that is more reflective of the redistricting process, and overcomes traditional issues surrounding natural boundaries, disconnects, and population distribution.}
+      \field{month}{11}
+      \field{shorttitle}{Beyond the {{Circle}}}
+      \field{title}{Beyond the {{Circle}}: {{Measuring District Compactness}} Using {{Graph Theory}}}
+      \field{year}{2016}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\BMSQAJ22\\dube_2016_.pdf
+      \endverb
+    \endentry
+    \entry{duchin2018a}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=067f9e2cc1effa77a470791987cf80ba}{%
+           family={Duchin},
+           familyi={D\bibinitperiod},
+           given={Moon},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Metric Geometry and Gerrymandering Group}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{067f9e2cc1effa77a470791987cf80ba}
+      \strng{fullhash}{067f9e2cc1effa77a470791987cf80ba}
+      \strng{bibnamehash}{067f9e2cc1effa77a470791987cf80ba}
+      \strng{authorbibnamehash}{067f9e2cc1effa77a470791987cf80ba}
+      \strng{authornamehash}{067f9e2cc1effa77a470791987cf80ba}
+      \strng{authorfullhash}{067f9e2cc1effa77a470791987cf80ba}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Outlier Analysis for {{Pennsylvania}} Congressional Redistricting}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\CMTE73RP\\Duchin - Outlier analysis for Pennsylvania congressional re.pdf
+      \endverb
+    \endentry
+    \entry{fifield2020d}{misc}{}
+      \name{author}{7}{ul=2}{%
+        {{un=0,uniquepart=base,hash=851171356ba9cd814e8bbaf21ae1684b}{%
+           family={Fifield},
+           familyi={F\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d78af1891654ac644b9aadd519f0a70}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={Christopher\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43c370e6d4dec6aba0830fcc55c7082d}{%
+           family={McCartan},
+           familyi={M\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20de493a3c71cb2ab9ee06f903d4829c}{%
+           family={Tarr},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce396603be9c0f4033e373ba1c898c4d}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4055162ceb9ef0906dcda535af5d5733}{%
+           family={Kawahara},
+           familyi={K\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           familyi={I\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b3c2ee1a2f1d9bf079b88225bae242ef}
+      \strng{fullhash}{0b6b05ca6902d50e221b425f024e92b5}
+      \strng{bibnamehash}{0b6b05ca6902d50e221b425f024e92b5}
+      \strng{authorbibnamehash}{0b6b05ca6902d50e221b425f024e92b5}
+      \strng{authornamehash}{b3c2ee1a2f1d9bf079b88225bae242ef}
+      \strng{authorfullhash}{0b6b05ca6902d50e221b425f024e92b5}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Enables researchers to sample redistricting plans from a pre-specified target distribution using Sequential Monte Carlo and Markov Chain Monte Carlo algorithms. The package allows for the implementation of various constraints in the redistricting process such as geographic compactness and population parity requirements. Tools for analysis such as computation of various summary statistics and plotting functionality are also included. The package implements methods described in Fifield, Higgins, Imai and Tarr (2020) {$<$}doi:10.1080/10618600.2020.1739532{$>$}, Fifield, Imai, Kawahara, and Kenny (2020) {$<$}doi:10.1080/2330443X.2020.1791773{$>$}, and McCartan and Imai (2020) {$<$}arXiv: 2008.06131{$>$}.}
+      \field{month}{10}
+      \field{shorttitle}{Redist}
+      \field{title}{Redist: {{Simulation Methods}} for {{Legislative Redistricting}}}
+      \field{urlday}{29}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=redist
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=redist
+      \endverb
+    \endentry
+    \entry{fifield2020a}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=124ab18d8907d3a247593f553982e7dd}{%
+           family={Fifield},
+           familyi={F\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{124ab18d8907d3a247593f553982e7dd}
+      \strng{fullhash}{124ab18d8907d3a247593f553982e7dd}
+      \strng{bibnamehash}{124ab18d8907d3a247593f553982e7dd}
+      \strng{authorbibnamehash}{124ab18d8907d3a247593f553982e7dd}
+      \strng{authornamehash}{124ab18d8907d3a247593f553982e7dd}
+      \strng{authorfullhash}{124ab18d8907d3a247593f553982e7dd}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As granular data about elections and voters become available, redistricting simulation methods are playing an increasingly important role when legislatures adopt redistricting plans and courts determine their legality. These simulation methods are designed to yield a representative sample of all redistricting plans that satisfy statutory guidelines and requirements such as contiguity, population parity, and compactness. A proposed redistricting plan can be considered gerrymandered if it constitutes an outlier relative to this sample according to partisan fairness metrics. Despite their growing use, an insufficient effort has been made to empirically validate the accuracy of the simulation methods. We apply a recently developed computational method that can efficiently enumerate all possible redistricting plans and yield an independent sample from this population. We show that this algorithm scales to a state with a couple of hundred geographical units. Finally, we empirically examine how existing simulation methods perform on realistic validation datasets.}
+      \field{journaltitle}{STATISTICS AND PUBLIC POLICY}
+      \field{title}{The {{Essential Role}} of {{Empirical Validation}} in {{Legislative Redistricting Simulation}}*}
+      \field{year}{2020}
+      \field{pages}{17}
+      \range{pages}{1}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\XSR2R468\\fifield_2020_.pdf
+      \endverb
+    \endentry
+    \entry{fifield2020}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=124ab18d8907d3a247593f553982e7dd}{%
+           family={Fifield},
+           familyi={F\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce396603be9c0f4033e373ba1c898c4d}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           familyi={I\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20de493a3c71cb2ab9ee06f903d4829c}{%
+           family={Tarr},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{eed6bb138267fdf9afb4b79b8e9428ee}
+      \strng{fullhash}{e1226ea36f705cf1b9107e4507a2e402}
+      \strng{bibnamehash}{e1226ea36f705cf1b9107e4507a2e402}
+      \strng{authorbibnamehash}{e1226ea36f705cf1b9107e4507a2e402}
+      \strng{authornamehash}{eed6bb138267fdf9afb4b79b8e9428ee}
+      \strng{authorfullhash}{e1226ea36f705cf1b9107e4507a2e402}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Legislative redistricting is a critical element of representative democracy. A number of political scientists have used simulation methods to sample redistricting plans under various constraints to assess their impact on partisanship and other aspects of representation. However, while many optimization algorithms have been proposed, surprisingly few simulation methods exist in the published scholarship. Furthermore, the standard algorithm has no theoretical justification, scales poorly, and is unable to incorporate fundamental constraints required by redistricting processes in the real world. To fill this gap, we formulate redistricting as a graph-cut problem and for the first time in the literature propose a new automated redistricting simulator based on Markov chain Monte Carlo. The proposed algorithm can incorporate contiguity and equal population constraints at the same time. We apply simulated and parallel tempering to improve the mixing of the resulting Markov chain. Through a small-scale validation study, we show that the proposed algorithm can approximate a target distribution more accurately than the standard algorithm. We also apply the proposed methodology to data from Pennsylvania to demonstrate the applicability of our algorithm to real-world redistricting problems. The open-source software package is available so that researchers and practitioners can implement the proposed methodology. Supplementary materials for this article are available online.}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{0}
+      \field{title}{Automated Redistricting Simulation Using {{Markov}} Chain {{Monte Carlo}}}
+      \field{volume}{0}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/10618600.2020.1739532
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\ESXR4TCI\\fifield_2020_.pdf
+      \endverb
+      \keyw{algorithm,markov_chains,monte_carlo}
+    \endentry
+    \entry{gelman1994}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \strng{fullhash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \strng{bibnamehash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \strng{authorbibnamehash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \strng{authornamehash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \strng{authorfullhash}{1ca01b937b6eb4bc5f1b4f2586fe7a6e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{number}{3}
+      \field{title}{Enhancing {{Democracy Through Legislative Redistricting}}}
+      \field{volume}{88}
+      \field{year}{1994}
+      \field{pages}{541\bibrangedash 559}
+      \range{pages}{19}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\WKUE9LM2\\Gelman - 1994 - ENHANCING DEMOCRACY THROUGH LEGISLATIVE REDISTRICT.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://gking.harvard.edu/files/abs/red-abs.shtml
+      \endverb
+      \verb{url}
+      \verb https://gking.harvard.edu/files/abs/red-abs.shtml
+      \endverb
+    \endentry
+    \entry{harris1964}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=deb9884493a6f18c2df8ab6ce4eb3c20}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Curtis\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \strng{fullhash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \strng{bibnamehash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \strng{authorbibnamehash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \strng{authornamehash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \strng{authorfullhash}{deb9884493a6f18c2df8ab6ce4eb3c20}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00057940, 10991743}
+      \field{journaltitle}{Behavioral Science}
+      \field{number}{3}
+      \field{title}{A Scientific Method of Districting}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{9}
+      \field{year}{1964}
+      \field{urldateera}{ce}
+      \field{pages}{219\bibrangedash 225}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1002/bs.3830090303
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\SA3753Z3\\harris_1964_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1002/bs.3830090303
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1002/bs.3830090303
+      \endverb
+    \endentry
+    \entry{herschlag2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=90807e2ee04c2cd21d1bf90027bf4cb5}{%
+           family={Herschlag},
+           familyi={H\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97329a34bac05eb0a0573556b947095e}{%
+           family={Ravier},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05a4bd46137b7325220c32d4da3682a2}{%
+           family={Mattingly},
+           familyi={M\bibinitperiod},
+           given={Jonathan\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a2e91091c39cdc553279992dc6ac2629}
+      \strng{fullhash}{a596bb037f45291264f95070a26dbf9d}
+      \strng{bibnamehash}{a596bb037f45291264f95070a26dbf9d}
+      \strng{authorbibnamehash}{a596bb037f45291264f95070a26dbf9d}
+      \strng{authornamehash}{a2e91091c39cdc553279992dc6ac2629}
+      \strng{authorfullhash}{a596bb037f45291264f95070a26dbf9d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine the extent of gerrymandering for the 2010 General Assembly district map of Wisconsin. We find that there is substantial variability in the election outcome depending on what maps are used. We also found robust evidence that the district maps are highly gerrymandered and that this gerrymandering likely altered the partisan make up of the Wisconsin General Assembly in some elections. Compared to the distribution of possible redistricting plans for the General Assembly, Wisconsin's chosen plan is an outlier in that it yields results that are highly skewed to the Republicans when the statewide proportion of Democratic votes comprises more than 50-52\% of the overall vote (with the precise threshold depending on the election considered). Wisconsin's plan acts to preserve the Republican majority by providing extra Republican seats even when the Democratic vote increases into the range when the balance of power would shift for the vast majority of redistricting plans.}
+      \field{eprintclass}{physics, stat}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1709.01596 [physics, stat]}
+      \field{month}{9}
+      \field{title}{Evaluating {{Partisan Gerrymandering}} in {{Wisconsin}}}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1709.01596
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\749XCG9U\\Herschlag et al. - 2017 - Evaluating Partisan Gerrymandering in Wisconsin.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1709.01596
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1709.01596
+      \endverb
+      \keyw{97A40; 91F10; 65C05,Physics - Physics and Society,Statistics - Applications}
+    \endentry
+    \entry{hu1995}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6c0caffde0f48f4e41e19ca975fd8f61}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a7f61a45b961f97097db7ac60e7ce52}{%
+           family={Kahng},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a75d4306c188f7f28080d9e06460394}{%
+           family={Tsao},
+           familyi={T\bibinitperiod},
+           given={Chung-Wen\bibnamedelima Albert},
+           giveni={C\bibinithyphendelim W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f3176e07ed6063a037bcf0659185d1f1}
+      \strng{fullhash}{708ca6a134677e17dc2c4dad5c24ea81}
+      \strng{bibnamehash}{708ca6a134677e17dc2c4dad5c24ea81}
+      \strng{authorbibnamehash}{708ca6a134677e17dc2c4dad5c24ea81}
+      \strng{authornamehash}{f3176e07ed6063a037bcf0659185d1f1}
+      \strng{authorfullhash}{708ca6a134677e17dc2c4dad5c24ea81}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Stochastic hill-climbing algorithms, particularly simulated annealing SA and threshold acceptance TA , have become very popular for global optimization applications. Typical implementations of SA or TA use monotone temperature or threshold schedules, and are not formulated to accommodate practical time limits. We present a new threshold acceptance strategy called Old Bachelor Acceptance OBA which has three distinguishing features: i it is specifically motivated by the practical requirement of optimization within a prescribed time bound, ii the threshold schedule is self-tuning, and iii the threshold schedule is non-monotone, with threshold values even allowed to become negative. The standard implementation of the TA method of Dueck and Scheuer is a special case of OBA. Experiments using several classes of symmetric traveling salesman problem instances show that OBA can outperform previous hillclimbing methods for time-critical optimizations. A number of directions for future work are suggested.}
+      \field{issn}{0899-1499, 2326-3245}
+      \field{journaltitle}{ORSA Journal on Computing}
+      \field{month}{11}
+      \field{number}{4}
+      \field{shorttitle}{Old {{Bachelor Acceptance}}}
+      \field{title}{Old {{Bachelor Acceptance}}: {{A New Class}} of {{Non}}-{{Monotone Threshold Accepting Methods}}}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{7}
+      \field{year}{1995}
+      \field{urldateera}{ce}
+      \field{pages}{417\bibrangedash 425}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1287/ijoc.7.4.417
+      \endverb
+      \verb{urlraw}
+      \verb http://pubsonline.informs.org/doi/abs/10.1287/ijoc.7.4.417
+      \endverb
+      \verb{url}
+      \verb http://pubsonline.informs.org/doi/abs/10.1287/ijoc.7.4.417
+      \endverb
+      \keyw{algorithm,old_bachelor_acceptance}
+    \endentry
+    \entry{hully}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d660d427a5a6ce6c3a01be7b2449628d}{%
+           family={Hully},
+           familyi={H\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \strng{fullhash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \strng{bibnamehash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \strng{authorbibnamehash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \strng{authornamehash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \strng{authorfullhash}{d660d427a5a6ce6c3a01be7b2449628d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Maup}
+      \field{title}{Maup: {{The}} Geospatial Toolkit for Redistricting Data}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/mggg/maup
+      \endverb
+      \verb{url}
+      \verb https://github.com/mggg/maup
+      \endverb
+    \endentry
+    \entry{katz2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d367ae7accd68d2fe1561a556ef5904d}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Jonathan\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81e715eb699661ce597c38ec8a686972}{%
+           family={Rosenblatt},
+           familyi={R\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c662d8afca5f2d5f679a5372166e3b95}
+      \strng{fullhash}{e61bcf9f404ec36f91bbc9fe9d9413d7}
+      \strng{bibnamehash}{e61bcf9f404ec36f91bbc9fe9d9413d7}
+      \strng{authorbibnamehash}{e61bcf9f404ec36f91bbc9fe9d9413d7}
+      \strng{authornamehash}{c662d8afca5f2d5f679a5372166e3b95}
+      \strng{authorfullhash}{e61bcf9f404ec36f91bbc9fe9d9413d7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We clarify the theoretical foundations of partisan fairness standards for district-based democratic electoral systems, including essential assumptions and definitions that have not been formalized or in some cases even discussed. We pare assumptions down to their minimal essential components and add extensive empirical evidence for those with observable implications. Throughout, we follow a fundamental principle of statistics too often ignored ---{} defining the quantity of interest separately so its measures are vulnerable to being proven wrong, evaluated, and improved. This enables us to prove which approaches ---{} claimed in the literature to be estimators of partisan symmetry, the most widely accepted standard ---{} are statistically appropriate and which are biased, limited, or not measures of symmetry at all. Because real world redistricting involves complicated politics with numerous participants and conflicting goals, measures biased for partisan fairness sometimes still provide useful descriptions of other aspects of electoral systems.}
+      \field{issn}{0003-0554, 1537-5943}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Theoretical {{Foundations}} and {{Empirical Evaluations}} of {{Partisan Fairness}} in {{District}}-{{Based Democracies}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{114}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{164\bibrangedash 178}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1017/S000305541900056X
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\7L3R8PJ7\\Katz et al. - 2020 - Theoretical Foundations and Empirical Evaluations .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S000305541900056X/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S000305541900056X/type/journal_article
+      \endverb
+      \keyw{efficiency_gap,gerrymandering-based_fairness_standards,measure,noncompetitive_party_system_fairness_standards,partisan_symmetry}
+    \endentry
+    \entry{lara-caballero2019}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8151f9bac6fad2e165b35aaa179b3573}{%
+           family={{Lara-Caballero}},
+           familyi={L\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eb72935ca5d4f618a1f2481e7c5c0b5}{%
+           family={{de-los-Cobos-Silva}},
+           familyi={l\bibinitperiod},
+           given={Sergio\bibnamedelima Gerardo},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6012a3372cfdbd4064b72e8b9c3f0498}{%
+           family={{Mora-Guti\'{e}rrez}},
+           familyi={M\bibinitperiod},
+           given={Roman\bibnamedelima Anselmo},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=549b5641ce70603307ec003bc44d645f}{%
+           family={{Rinc\'{o}n-Garc\'{\i}a}},
+           familyi={R\bibinitperiod},
+           given={Eric\bibnamedelima Alfredo},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=658d12e96cd2dd3fb868946352cf0758}{%
+           family={{Guti\'{e}rrez-Andrade}},
+           familyi={G\bibinitperiod},
+           given={Miguel\bibnamedelima \'{A}ngel},
+           giveni={M\bibinitperiod\bibinitdelim \'{A}\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a236d9b96dfd8db96c441ed290982116}{%
+           family={{Lara-Vel\'{a}zquez}},
+           familyi={L\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi Limited}%
+      }
+      \strng{namehash}{a2763978bc8dd21051d1b5f9286a7e77}
+      \strng{fullhash}{f8f78fe3d72a073e058933156131e784}
+      \strng{bibnamehash}{f8f78fe3d72a073e058933156131e784}
+      \strng{authorbibnamehash}{f8f78fe3d72a073e058933156131e784}
+      \strng{authornamehash}{a2763978bc8dd21051d1b5f9286a7e77}
+      \strng{authorfullhash}{f8f78fe3d72a073e058933156131e784}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Redistricting is the process of partitioning a set of basic units into a given number of larger groups for electoral purposes. These groups must follow federal and state requirements to enhance fairness and minimize the impact of manipulating boundaries for political gain. In redistricting tasks, one of the most important criteria is equal population. As a matter of fact, redistricting plans can be rejected when the population deviation exceeds predefined limits. In the literature, there are several methods to balance population among districts. However, further discussion is needed to assess the effectiveness of these strategies. In this paper, we considered two different strategies, mean deviation and overall range. Additionally, a compactness measure is included to design well-shaped districts. In order to provide a wide set of redistricting plans that achieve good trade-offs between mean deviation, overall range, and compactness, we propose four multiobjective metaheuristic algorithms based on NSGA-II and SPEA-II. The proposed strategies were applied in California, Texas, and New York. Numerical results show that the proposed multiobjective approach can be a very valuable tool in any real redistricting process.}
+      \field{issn}{1024123X}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{title}{Multiobjective {{Genetic Algorithms}} for {{Reinforcing Equal Population}} in {{Congressional Districts}}}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1155/2019/2825854
+      \endverb
+      \verb{urlraw}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=138882185&site=ehost-live
+      \endverb
+      \verb{url}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=138882185&site=ehost-live
+      \endverb
+      \keyw{algorithm,GENETIC algorithms,genetic_algorithm,GEOGRAPHIC boundaries,METAHEURISTIC algorithms,POPULATION,TEXAS}
+    \endentry
+    \entry{maceachren1985}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=67b3b54d286b1aa1c572e73daeb0d1b7}{%
+           family={Maceachren},
+           familyi={M\bibinitperiod},
+           given={Alan\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \strng{fullhash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \strng{bibnamehash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \strng{authorbibnamehash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \strng{authornamehash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \strng{authorfullhash}{67b3b54d286b1aa1c572e73daeb0d1b7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Geographic shape compactness is of concern in such contexts as urban morphology, political districting, and accuracy of enumeration unit values. The purpose of the present paper is to compare, categorize, and evaluate the various methods suggested for measuring compactness. Review of suggested compactness indices resulted in the identification of four categories, based upon: 1) perimeter-area measurement, 2) single parameters of related circles, 3) direct comparison to a standard shape, and 4) dispersion of elements of a shape's area. In all, eleven indices were calculated for a sample of U.S. counties and their frequency distributions were compared. Additionally, similarities and differences in the units of high, median, and low compactness were identified. Within each category, indices exhibited considerable similarity while significant differences were evident from category to category. These differences suggested variation in accuracy with which the indices measure compactness. It was hypothesized that measures based upon dispersion of elements of a shape's area would provide the most accurate measure because they consider the shape as a whole while the other indices do not. Determination of the accuracy with which each index measures compactness supported this hypothesis. Indices based upon direct comparison to a standard shape were found to be of similar accuracy and, therefore, also judged to be suitable compactness measures. Those measures based upon perimeter-area measurement and single parameters of related circles were determined to be considerably less accurate measures of compactness.}
+      \field{annotation}{\_eprint: https://doi.org/10.1080/04353684.1985.11879515}
+      \field{issn}{0435-3684}
+      \field{journaltitle}{Geografiska Annaler: Series B, Human Geography}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shorttitle}{Compactness of {{Geographic Shape}}}
+      \field{title}{Compactness of {{Geographic Shape}}: {{Comparison}} and {{Evaluation}} of {{Measures}}}
+      \field{urlday}{15}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{67}
+      \field{year}{1985}
+      \field{urldateera}{ce}
+      \field{pages}{53\bibrangedash 67}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/04353684.1985.11879515
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\FEWBQ4HA\\maceachren_1985_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/04353684.1985.11879515
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/04353684.1985.11879515
+      \endverb
+    \endentry
+    \entry{macmillan2001}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e28322de1a95362111cb20052ceb6bec}{%
+           family={Macmillan},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{e28322de1a95362111cb20052ceb6bec}
+      \strng{fullhash}{e28322de1a95362111cb20052ceb6bec}
+      \strng{bibnamehash}{e28322de1a95362111cb20052ceb6bec}
+      \strng{authorbibnamehash}{e28322de1a95362111cb20052ceb6bec}
+      \strng{authornamehash}{e28322de1a95362111cb20052ceb6bec}
+      \strng{authorfullhash}{e28322de1a95362111cb20052ceb6bec}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper gives details of an algorithm whose purpose is to partition a set of populated zones into contiguous regions in order to minimise the difference in population size between the regions. The algorithm, known as SARA, uses simulated annealing and a new method for checking the contiguity of regions. It is the latter which allows the algorithm to be used to tackle large problems with modest computing resources. The paper describes the new contiguity checking procedure, based on the concept of switching points, and compares it with the connectivity method developed by Openshaw and Rao [1]. It goes on to give a detailed description of the algorithm, then concludes with a brief discussion of possible extensions to accommodate additional zone-design criteria.}
+      \field{issn}{14355930}
+      \field{journaltitle}{Journal of Geographical Systems}
+      \field{month}{8}
+      \field{number}{2}
+      \field{shorttitle}{Redistricting in a {{GIS}} Environment}
+      \field{title}{Redistricting in a {{GIS}} Environment: {{An}} Optimisation Algorithm Using Switching-Points}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{3}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{167}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/PL00011473
+      \endverb
+      \verb{urlraw}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=5349652&site=ehost-live
+      \endverb
+      \verb{url}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=5349652&site=ehost-live
+      \endverb
+      \keyw{algorithm,ALGORITHMS,connectivity_measure,MATHEMATICAL models,measure,POPULATION,SARA}
+    \endentry
+    \entry{mansonsteven2020}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=31f7ae81e874156775d5feadde8be8a9}{%
+           family={Manson},
+           familyi={M\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fe880a83819ae0b378aa7b9ea509f8}{%
+           family={Schroeder},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c210f59e5663ee17ae4f9de8b525c29}{%
+           family={Van\bibnamedelima Riper},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6aa85cc05b37fe46361efabbe7363c11}{%
+           family={Kugler},
+           familyi={K\bibinitperiod},
+           given={Tracy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7387f51a82f67bf6afaf06e50696a5ba}{%
+           family={Ruggles},
+           familyi={R\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Minneapolis, MN: IPUMS}%
+      }
+      \strng{namehash}{501623bdfe3fffa0e4c0b3e7b6a3cb99}
+      \strng{fullhash}{49104979e4611137c4eb32abc63e0c1d}
+      \strng{bibnamehash}{49104979e4611137c4eb32abc63e0c1d}
+      \strng{authorbibnamehash}{49104979e4611137c4eb32abc63e0c1d}
+      \strng{authornamehash}{501623bdfe3fffa0e4c0b3e7b6a3cb99}
+      \strng{authorfullhash}{49104979e4611137c4eb32abc63e0c1d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The National Historical Geographic Information System (NHGIS) provides free online access to summary statistics and GIS boundary files for U.S. censuses and other nationwide surveys from 1790 through the present. GIS files include: counties and states since 1790, census tracts since 1910, metropolitan areas since 1950, place and county subdivision boundaries since 1980, place points since 1900, all standard census reporting areas since 1990, 200 and 2010 centers of population for four geographic levels, and SABINS school attendance areas for 2009-12. Summary tables from decennial censuses and the American Community Survey include county and state tables since 1790; census tract tables since 1910; and tables for all original census summary levels, down to census blocks, since 1970. Highlights of additional summary tables include County Business Patterns data (annual, 1970-2002), vital statistics for counties and states (births and deaths: annual, 1915-2007; marriages and divorces: selected years, 1867-2010), agricultural census data (1840-1950), religious bodies data (1850-1952), manufacturing census data (1840-1940), and 2010 census data for SABINS school attendance areas. NHGIS also includes geographic crosswalks summarizing associations between 190-2010 census blocks, environmental summaries describing land cover by county and census tract and climate characteristics by county, and time series tables providing comparable statistics from multiple source years with standardized categories and geography. NHGIS data are available through an online access system and are available free of charge to registered users at http://nhgis.org.}
+      \field{shorttitle}{National {{Historical Geographic Information System}}}
+      \field{title}{National {{Historical Geographic Information System}}: {{Version}} 15.0}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.18128/D050.V15.0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nhgis.org/
+      \endverb
+      \verb{url}
+      \verb https://www.nhgis.org/
+      \endverb
+    \endentry
+    \entry{mccartan2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=43c370e6d4dec6aba0830fcc55c7082d}{%
+           family={McCartan},
+           familyi={M\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           familyi={I\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \strng{fullhash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \strng{bibnamehash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \strng{authorbibnamehash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \strng{authornamehash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \strng{authorfullhash}{df03731d5a4bef2ff1acb8e45db7495c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Random sampling of graph partitions under constraints has become a popular tool for evaluating legislative redistricting plans. Analysts detect partisan gerrymandering by comparing a proposed redistricting plan with an ensemble of sampled alternative plans. For successful application, sampling methods must scale to large maps with many districts, incorporate realistic legal constraints, and accurately and efficiently sample from a selected target distribution. Unfortunately, most existing methods struggle in at least one of these three areas. We present a new Sequential Monte Carlo (SMC) algorithm that draws representative redistricting plans from a realistic target distribution of choice. Because it samples directly, the SMC algorithm can efficiently explore the relevant space of redistricting plans better than the existing Markov chain Monte Carlo algorithms that yield dependent samples. Our algorithm can simultaneously incorporate several constraints commonly imposed in real-world redistricting problems, including equal population, compactness, and preservation of administrative boundaries. We validate the accuracy of the proposed algorithm by using a small map where all redistricting plans can be enumerated. We then apply the SMC algorithm to evaluate the partisan implications of several maps submitted by relevant parties in a recent high-profile redistricting case in the state of Pennsylvania. We find that the proposed algorithm is roughly 40 times more efficient in sampling from the target distribution than a state-of-the-art MCMC algorithm. Open-source software is available for implementing the proposed methodology.}
+      \field{eprintclass}{cs, math, stat}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:2008.06131 [cs, math, stat]}
+      \field{month}{12}
+      \field{title}{Sequential {{Monte Carlo}} for {{Sampling Balanced}} and {{Compact Redistricting Plans}}}
+      \field{urlday}{18}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2008.06131
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\KRI32QBN\\McCartan and Imai - 2020 - Sequential Monte Carlo for Sampling Balanced and C.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2008.06131
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2008.06131
+      \endverb
+      \keyw{algorithm,Computer Science - Computers and Society,Mathematics - Probability,Statistics - Applications}
+    \endentry
+    \entry{mcdonald2015}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=653152e93c2b2dfdec5676bd1fc8a6ef}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ccfbba8e6d2ef507268bdde8b0fee02}{%
+           family={Best},
+           familyi={B\bibinitperiod},
+           given={Robin\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Mary Ann Liebert, Inc., publishers}%
+      }
+      \strng{namehash}{48fe8c7918218a4504aa9d596b226519}
+      \strng{fullhash}{48fe8c7918218a4504aa9d596b226519}
+      \strng{bibnamehash}{48fe8c7918218a4504aa9d596b226519}
+      \strng{authorbibnamehash}{48fe8c7918218a4504aa9d596b226519}
+      \strng{authornamehash}{48fe8c7918218a4504aa9d596b226519}
+      \strng{authorfullhash}{48fe8c7918218a4504aa9d596b226519}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We propose standards for detecting partisan gerrymandering as a finding of fact and for determining whether the factual finding is legally significant. The standard is grounded in the U.S. constitutional principle of equal voting rights and is easily manageable inasmuch as its prime analytical feature requires comparing a party's district median vote percentage to its district mean vote percentage. Equally important, the median-mean comparison serves as an effective indicator of whether gerrymandering is the cause of the inequitable treatment. We apply the standard to six alleged cases of gerrymandering of congressional districts and find three cases are not gerrymanders, three are gerrymanders, and one of the three gerrymanders crosses the threshold to legal significance.}
+      \field{issn}{1533-1296}
+      \field{journaltitle}{Election Law Journal: Rules, Politics, and Policy}
+      \field{month}{11}
+      \field{number}{4}
+      \field{shorttitle}{Unfair {{Partisan Gerrymanders}} in {{Politics}} and {{Law}}}
+      \field{title}{Unfair {{Partisan Gerrymanders}} in {{Politics}} and {{Law}}: {{A Diagnostic Applied}} to {{Six Cases}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{14}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{312\bibrangedash 330}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1089/elj.2015.0358
+      \endverb
+      \verb{urlraw}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/elj.2015.0358
+      \endverb
+      \verb{url}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/elj.2015.0358
+      \endverb
+    \endentry
+    \entry{polsby1991}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7f10c0de6823680c640156a6c554e452}{%
+           family={Polsby},
+           familyi={P\bibinitperiod},
+           given={Daniel\bibnamedelima D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0ca6a33cd7afae71db0f614ea90bdd1}{%
+           family={Popper},
+           familyi={P\bibinitperiod},
+           given={Robert\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Yale Law \& Policy Review, Inc.}%
+      }
+      \strng{namehash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \strng{fullhash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \strng{bibnamehash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \strng{authorbibnamehash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \strng{authornamehash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \strng{authorfullhash}{fdce9dc1e1ff8b257d12e7dbfecce6f5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0740-8048}
+      \field{journaltitle}{Yale Law \& Policy Review}
+      \field{number}{2}
+      \field{shorttitle}{The {{Third Criterion}}}
+      \field{title}{The {{Third Criterion}}: {{Compactness}} as a {{Procedural Safeguard}} against {{Partisan Gerrymandering}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{9}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{301\bibrangedash 353}
+      \range{pages}{53}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\44K5ZK9K\\polsby_1991_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/40239359
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/40239359
+      \endverb
+    \endentry
+    \entry{princetongerrymanderingproject}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3a6e9c2f15c84105e4f16a26d395f55}{%
+           family={Project},
+           familyi={P\bibinitperiod},
+           given={Princeton\bibnamedelima Gerrymandering},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \strng{fullhash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \strng{bibnamehash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \strng{authorbibnamehash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \strng{authornamehash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \strng{authorfullhash}{a3a6e9c2f15c84105e4f16a26d395f55}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Princeton Gerrymandering Project}
+      \field{title}{Home}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://gerrymander.princeton.edu/
+      \endverb
+      \verb{url}
+      \verb https://gerrymander.princeton.edu/
+      \endverb
+    \endentry
+    \entry{reock1961}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dd37f7c1d079bdc7365fd39bb004c366}{%
+           family={Reock},
+           familyi={R\bibinitperiod},
+           given={Ernest\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Midwest Political Science Association]}%
+      }
+      \strng{namehash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \strng{fullhash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \strng{bibnamehash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \strng{authorbibnamehash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \strng{authornamehash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \strng{authorfullhash}{dd37f7c1d079bdc7365fd39bb004c366}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0026-3397}
+      \field{journaltitle}{Midwest Journal of Political Science}
+      \field{number}{1}
+      \field{shorttitle}{A {{Note}}}
+      \field{title}{A {{Note}}: {{Measuring Compactness}} as a {{Requirement}} of {{Legislative Apportionment}}}
+      \field{urlday}{15}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{5}
+      \field{year}{1961}
+      \field{urldateera}{ce}
+      \field{pages}{70\bibrangedash 74}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.2307/2109043
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\FAUHA78A\\Reock - 1961 - A Note Measuring Compactness as a Requirement of .pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2109043
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2109043
+      \endverb
+    \endentry
+    \entry{schwartzberg1966}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c61d959942e080bee3d972a0ece1c30e}{%
+           family={Schwartzberg},
+           familyi={S\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c61d959942e080bee3d972a0ece1c30e}
+      \strng{fullhash}{c61d959942e080bee3d972a0ece1c30e}
+      \strng{bibnamehash}{c61d959942e080bee3d972a0ece1c30e}
+      \strng{authorbibnamehash}{c61d959942e080bee3d972a0ece1c30e}
+      \strng{authornamehash}{c61d959942e080bee3d972a0ece1c30e}
+      \strng{authorfullhash}{c61d959942e080bee3d972a0ece1c30e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Minnesota Law Review}
+      \field{month}{1}
+      \field{title}{Reapportionment, {{Gerrymanders}}, and the {{Notion}} of {{Compactness}}}
+      \field{volume}{50}
+      \field{year}{1966}
+      \field{pages}{443\bibrangedash 452}
+      \range{pages}{10}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\MVZGNN4X\\schwartzberg_1966_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://scholarship.law.umn.edu/mlr/1701
+      \endverb
+      \verb{url}
+      \verb https://scholarship.law.umn.edu/mlr/1701
+      \endverb
+    \endentry
+    \entry{ballotpediastaff2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5cfb76a1faa934819d03416a48c2be99}{%
+           family={Staff},
+           familyi={S\bibinitperiod},
+           given={Ballotpedia},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5cfb76a1faa934819d03416a48c2be99}
+      \strng{fullhash}{5cfb76a1faa934819d03416a48c2be99}
+      \strng{bibnamehash}{5cfb76a1faa934819d03416a48c2be99}
+      \strng{authorbibnamehash}{5cfb76a1faa934819d03416a48c2be99}
+      \strng{authornamehash}{5cfb76a1faa934819d03416a48c2be99}
+      \strng{authorfullhash}{5cfb76a1faa934819d03416a48c2be99}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ballotpedia: The Encyclopedia of American Politics}
+      \field{journaltitle}{Ballotpedia}
+      \field{title}{Virginia {{Question}} 1, {{Redistricting Commission Amendment}} (2020)}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ballotpedia.org/Virginia_Question_1,_Redistricting_Commission_Amendment_(2020)
+      \endverb
+      \verb{url}
+      \verb https://ballotpedia.org/Virginia_Question_1,_Redistricting_Commission_Amendment_(2020)
+      \endverb
+    \endentry
+    \entry{stephanopoulos2014}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ca1f5207cbd44816794b9330ea554d15}{%
+           family={Stephanopoulos},
+           familyi={S\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76150b6d0be2fa7c9abe851507f2ba6a}{%
+           family={McGhee},
+           familyi={M\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{ba2b6965e284e641821809e76f564926}
+      \strng{fullhash}{ba2b6965e284e641821809e76f564926}
+      \strng{bibnamehash}{ba2b6965e284e641821809e76f564926}
+      \strng{authorbibnamehash}{ba2b6965e284e641821809e76f564926}
+      \strng{authornamehash}{ba2b6965e284e641821809e76f564926}
+      \strng{authorfullhash}{ba2b6965e284e641821809e76f564926}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The usual legal story about partisan gerrymandering is relentlessly pessimistic. The courts did not even recognize the cause of action until the 1980s; they have never struck down a district plan on this basis; and four sitting Justices want to vacate the field altogether. The Supreme Court's most recent gerrymandering decision, however, is the most encouraging development in this area in a generation. Several Justices expressed interest in the concept of partisan symmetry ---{} the idea that a plan should treat the major parties symmetrically in terms of the conversion of votes to seats ---{} and suggested that it could be shaped into a legal test.}
+      \field{month}{10}
+      \field{number}{ID 2457468}
+      \field{title}{Partisan {{Gerrymandering}} and the {{Efficiency Gap}}}
+      \field{type}{{{SSRN Scholarly Paper}}}
+      \field{urlday}{26}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\CAF3633M\\stephanopoulos_2014_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=2457468
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=2457468
+      \endverb
+      \keyw{Eric McGhee,Nicholas Stephanopoulos,Partisan Gerrymandering and the Efficiency Gap,SSRN}
+    \endentry
+    \entry{tufte1973}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41187f886abb9d98f33e5b3f52276d12}{%
+           family={Tufte},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An enduring fact of life in democratic electoral systems is that the party winning the largest share of the votes almost always receives a still larger share of the seats. This paper tests three models describing the inflation of the legislative power of the victorious party and then develops explanations of the observed differences in the swing ratio and the partisan bias of an electoral system. The ``cube law'' is rejected as a description, since it assumes uniformity (which is not observed in the data) across electoral systems. Explanations for differences in swing ratio and bias are found in variations in turnout over districts, the extent of the ``nationalization'' of politics, and, most importantly, in who does the districting or reapportionment. The measures of swing ratio and partisan bias appear useful for the judicial evaluation of redistricting schemes and may contribute to the reduction of partisan and incumbent gerrymandering.}
+      \field{issn}{0003-0554, 1537-5943}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{The {{Relationship}} between {{Seats}} and {{Votes}} in {{Two}}-{{Party Systems}}}
+      \field{urlday}{26}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{67}
+      \field{year}{1973}
+      \field{urldateera}{ce}
+      \field{pages}{540\bibrangedash 554}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.2307/1958782
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\L5F9XD8K\\Tufte - 1973 - The Relationship between Seats and Votes in Two-Pa.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S0003055400142418/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S0003055400142418/type/journal_article
+      \endverb
+    \endentry
+    \entry{unitedstatesgeologicalsurvey2021}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3656b8563a30800aec8ca3b2d02ac62b}{%
+           family={\{United\bibnamedelimb States\bibnamedelimb Geological\bibnamedelimb Survey\}},
+           familyi={\\bibinitperiod}}}%
+      }
+      \strng{namehash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \strng{fullhash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \strng{bibnamehash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \strng{authorbibnamehash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \strng{authornamehash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \strng{authorfullhash}{3656b8563a30800aec8ca3b2d02ac62b}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NationalMap.gov}
+      \field{month}{3}
+      \field{title}{The {{National Map Services}}}
+      \field{urlday}{31}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://apps.nationalmap.gov/services/
+      \endverb
+      \verb{url}
+      \verb https://apps.nationalmap.gov/services/
+      \endverb
+    \endentry
+    \entry{veomett2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9fe346a22df5972ef48ebdd88bf9a8ac}{%
+           family={Veomett},
+           familyi={V\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Mary Ann Liebert, Inc., publishers}%
+      }
+      \strng{namehash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \strng{fullhash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \strng{bibnamehash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \strng{authorbibnamehash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \strng{authornamehash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \strng{authorfullhash}{9fe346a22df5972ef48ebdd88bf9a8ac}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, scholars from law and political science have introduced metrics which use only election outcomes (and not district geometry) to assess the presence of partisan gerrymandering. The most high-profile example of such a tool is the efficiency gap (EG). Some scholars have suggested that such tools should be sensitive enough to alert us when two election outcomes have the same percentage of votes going to political party A, but one of the two awards party A more seats. When a metric is able to distinguish election outcomes in this way, that metric is said to satisfy the efficiency principle. In this article, we show that the efficiency gap fails to satisfy the efficiency principle. We show precisely how the efficiency principle breaks down in the presence of unequal voter turnout. To do this, we first present a construction that, given any rationals 1/4 {$<$} V\,{$<$}\,3/4 and 0\,{$<$}\,S\,{$<$}\,1, constructs an election outcome with vote share V, seat share S, and EG\,=\,0. (For instance, one party can get 26\% of the vote and anywhere from 1\% to 99\% of the seats while the efficiency gap remains zero.) Then, for any election with vote share 1/4 {$<$} V\,{$<$}\,3/4, seat share S, and EG\,=\,0, we express the ratio {$\rho$} of average turnout in districts party A lost to average turnout in districts party A won as a function in only V and S. It is well known that when all districts have equal turnout, EG can be expressed as a simple formula in V and S; we express the efficiency gap of any election as an equation only in V, S, and {$\rho$}. We also report on the values of {$\rho$} that can be observed in actual elections.}
+      \field{issn}{1533-1296}
+      \field{journaltitle}{Election Law Journal: Rules, Politics, and Policy}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Efficiency {{Gap}}, {{Voter Turnout}}, and the {{Efficiency Principle}}}
+      \field{urlday}{27}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{17}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{249\bibrangedash 263}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1089/elj.2018.0488
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\UUAXUT99\\veomett_2018_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.liebertpub.com/doi/full/10.1089/elj.2018.0488
+      \endverb
+      \verb{url}
+      \verb https://www.liebertpub.com/doi/full/10.1089/elj.2018.0488
+      \endverb
+    \endentry
+    \entry{vickrey1961}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae3c60d8c94ccf50c57a46630c2c42e1}{%
+           family={Vickrey},
+           familyi={V\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{fullhash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{bibnamehash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{authorbibnamehash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{authornamehash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{authorfullhash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00323195}
+      \field{journaltitle}{Political Science Quarterly}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{On the {{Prevention}} of {{Gerrymandering}}}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{volume}{76}
+      \field{year}{1961}
+      \field{urldateera}{ce}
+      \field{pages}{105}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/2145973
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\H7VFXCUM\\Vickrey - 1961 - On the Prevention of Gerrymandering.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2145973?origin=crossref
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2145973?origin=crossref
+      \endverb
+    \endentry
+    \entry{votingandelectionscienceteam2019c}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6fb89142b836f54bb0062e2bdce2e49}{%
+           family={Voting},
+           familyi={V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3df19fdd10046bb9782aa0f6afc17a31}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={Election\bibnamedelima Science},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Dataverse}%
+      }
+      \strng{namehash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \strng{fullhash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \strng{bibnamehash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \strng{authorbibnamehash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \strng{authornamehash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \strng{authorfullhash}{df1f1ec973447ad673fe77bcacb6e5cc}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{State-by-state ESRI shapefiles of 2018 precinct-level general election results.}
+      \field{shorttitle}{Vest}
+      \field{title}{2018 {{Precinct}}-{{Level Election Results}}}
+      \field{urlday}{26}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.7910/DVN/UBKYRU
+      \endverb
+      \verb{urlraw}
+      \verb https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/UBKYRU
+      \endverb
+      \verb{url}
+      \verb https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/UBKYRU
+      \endverb
+    \endentry
+    \entry{wang2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f11d6d1eb1a378e694067083fef72bfb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Samuel\bibnamedelima S.-H},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f11d6d1eb1a378e694067083fef72bfb}
+      \strng{fullhash}{f11d6d1eb1a378e694067083fef72bfb}
+      \strng{bibnamehash}{f11d6d1eb1a378e694067083fef72bfb}
+      \strng{authorbibnamehash}{f11d6d1eb1a378e694067083fef72bfb}
+      \strng{authornamehash}{f11d6d1eb1a378e694067083fef72bfb}
+      \strng{authorfullhash}{f11d6d1eb1a378e694067083fef72bfb}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stanford Law Review}
+      \field{title}{Three {{Tests}} for {{Practical Evaluation}} of {{Partisan Gerrymandering}}}
+      \field{volume}{68}
+      \field{year}{2016}
+      \field{pages}{1263\bibrangedash 1321}
+      \range{pages}{59}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\UYZF4HAA\\Wang - 2016 - Three Tests for Practical Evaluation of Partisan G.pdf
+      \endverb
+    \endentry
+    \entry{warrington2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f3fe34f0fdf5ce4bbbbc0265ae80c82}{%
+           family={Warrington},
+           familyi={W\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \strng{fullhash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \strng{bibnamehash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \strng{authorbibnamehash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \strng{authornamehash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \strng{authorfullhash}{1f3fe34f0fdf5ce4bbbbc0265ae80c82}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1533-1296, 1557-8062}
+      \field{journaltitle}{Election Law Journal: Rules, Politics, and Policy}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Quantifying {{Gerrymandering Using}} the {{Vote Distribution}}}
+      \field{urlday}{16}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{volume}{17}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{39\bibrangedash 57}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1089/elj.2017.0447
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\GHEY2ECN\\warrington_2018_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.liebertpub.com/doi/10.1089/elj.2017.0447
+      \endverb
+      \verb{url}
+      \verb http://www.liebertpub.com/doi/10.1089/elj.2017.0447
+      \endverb
+    \endentry
+    \entry{weaver1963}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c9cba53b092f1ac8e8b57f2a114a9759}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba4a106329d923ee245c5b70bb64af8d}{%
+           family={Hess},
+           familyi={H\bibinitperiod},
+           given={Sidney\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6729da34b0d9b850b6fed862cfa25407}
+      \strng{fullhash}{6729da34b0d9b850b6fed862cfa25407}
+      \strng{bibnamehash}{6729da34b0d9b850b6fed862cfa25407}
+      \strng{authorbibnamehash}{6729da34b0d9b850b6fed862cfa25407}
+      \strng{authornamehash}{6729da34b0d9b850b6fed862cfa25407}
+      \strng{authorfullhash}{6729da34b0d9b850b6fed862cfa25407}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00440094}
+      \field{journaltitle}{The Yale Law Journal}
+      \field{month}{12}
+      \field{number}{2}
+      \field{shorttitle}{A {{Procedure}} for {{Nonpartisan Districting}}}
+      \field{title}{A {{Procedure}} for {{Nonpartisan Districting}}: {{Development}} of {{Computer Techniques}}}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{volume}{73}
+      \field{year}{1963}
+      \field{urldateera}{ce}
+      \field{pages}{288\bibrangedash 308}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.2307/794769
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\MTXCSMXD\\weaver_1963_.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/794769?origin=crossref
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/794769?origin=crossref
+      \endverb
+      \keyw{algorithm,historical_view,R}
+    \endentry
+    \entry{1964}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A case in which the Court ruled that Georgia's apportionment system, which allowed for uneven distribution of voters among different congressional districts, violated the Fourteenth Amendment by depriving citizens the full benefit of their right to vote.}
+      \field{month}{2}
+      \field{number}{22}
+      \field{title}{Wesberry v. {{Sanders}}}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1964}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.oyez.org/cases/1963/22
+      \endverb
+      \verb{url}
+      \verb https://www.oyez.org/cases/1963/22
+      \endverb
+    \endentry
+    \entry{2016a}{misc}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{number}{14-1504}
+      \field{title}{Wittman v. {{Personhuballah}}}
+      \field{year}{2016}
+      \verb{file}
+      \verb C\:\\Users\\madie\\Zotero\\storage\\3QJRLFBU\\breyer_2016_.pdf
+      \endverb
+    \endentry
+    \entry{xiao2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ebdfe17a1ddad1e379928531ef11b003}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Ningchuan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis Ltd}%
+      }
+      \strng{namehash}{ebdfe17a1ddad1e379928531ef11b003}
+      \strng{fullhash}{ebdfe17a1ddad1e379928531ef11b003}
+      \strng{bibnamehash}{ebdfe17a1ddad1e379928531ef11b003}
+      \strng{authorbibnamehash}{ebdfe17a1ddad1e379928531ef11b003}
+      \strng{authornamehash}{ebdfe17a1ddad1e379928531ef11b003}
+      \strng{authorfullhash}{ebdfe17a1ddad1e379928531ef11b003}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the last two decades, evolutionary algorithms (EAs) have been applied to a wide range of optimization and decision-making problems. Work on EAs for geographical analysis, however, has been conducted in a problem-specific manner, which prevents an EA designed for one type of problem from being used on others. In this article, a formal, conceptual framework is developed to unify the design and implementation of EAs for many geographical optimization problems. The key element in this framework is a graph representation that defines the spatial structure of a broad range of geographical problems. Based on this representation, four types of geographical optimization problems are discussed and a set of algorithms is developed for problems in each type. These algorithms can be used to support the design and implementation of EAs for geographical optimization. Knowledge specific to geographical optimization problems can also be incorporated into the framework. An example of solving political redistricting problems is used to demonstrate the application of this framework. (English)}
+      \field{issn}{00045608}
+      \field{journaltitle}{Annals of the Association of American Geographers}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{A {{Unified Conceptual Framework}} for {{Geographical Optimization Using Evolutionary Algorithms}}}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{98}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{795\bibrangedash 817}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1080/00045600802232458
+      \endverb
+      \verb{urlraw}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=35498849&site=ehost-live
+      \endverb
+      \verb{url}
+      \verb http://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=35498849&site=ehost-live
+      \endverb
+      \keyw{algorithm,ALGORITHMS,algoritmos evolutivos,an\'{a}alisis de ubicaci\'{o}n-asignaci\'{o}n,an\'{a}lisis de ubicaci\'{o}n-asignaci\'{o}n,evolutionary algorithms,evolutionary_redistricting,geographical optimization problems,location-allocation analysis,location--allocation analysis,MATHEMATICAL analysis,MATHEMATICAL geography,MATHEMATICAL optimization,political redistricting,PROBLEM solving,problemas de optimizaci\'{o}n geogr\'{a}fica,reasignaci\'{o}n de distritos pol\'{\i}ticos,representaci\'{o}n espacial,SPATIAL analysis (Statistics),spatial representation}
+    \endentry
+  \enddatalist
+  \missing{haas2020}
+\endrefsection
+\endinput
+
