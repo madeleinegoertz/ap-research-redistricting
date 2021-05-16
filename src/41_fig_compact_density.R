@@ -10,13 +10,16 @@ compact_hist <- function(x, control, measure, alg, lab, min, max) {
     geom_density() + 
     xlim(min, max) + 
     ylim(0, 40) + 
+    theme(
+      text = element_text(size=10)
+    ) +
     geom_vline(
       aes(xintercept = control),
-      color = "red", size = 0.5
+      color = "red", size = 0.5, linetype = "longdash"
     ) +
     geom_vline(
       aes(xintercept = mean(x, na.rm=TRUE)),
-      color = "darkgreen", size = 0.5
+      color = "blue", size = 0.5
     ) +
     geom_text(
       aes(label = paste("control:\n", format(control, digits=3)), 
@@ -25,7 +28,7 @@ compact_hist <- function(x, control, measure, alg, lab, min, max) {
       hjust = 0, 
       vjust = 1,
       color = "red",
-      size = 3
+      size = 5
     ) + 
     geom_text(
       aes(label = paste("mean:\n", format(mean(x, na.rm=TRUE), digits=3)), 
@@ -33,20 +36,20 @@ compact_hist <- function(x, control, measure, alg, lab, min, max) {
           y = Inf), 
       hjust = 1, 
       vjust = 1,
-      color = "darkgreen",
-      size = 3
+      color = "blue",
+      size = 5
     ) + 
     labs(
       x = measure,
-      y = "Number of plans",
-      title = paste(lab, measure, "distribution of", alg, "plans")
+      y = "Number of maps",
+      title = paste(alg, measure, "score distr.")
     )
 }
 
 smc.pp <- compact_hist(
   x = calc.compact$smc$pp,
   control = calc.compact$control$pp,
-  measure = "Polsby-Popper score",
+  measure = "Polsby-Popper",
   alg = "SMC", 
   lab = "a)",
   min = 0, 
@@ -56,7 +59,7 @@ smc.pp <- compact_hist(
 smc.ecc <- compact_hist(
   x = calc.compact$smc$ecc,
   control = calc.compact$control$ecc,
-  measure = "Edge-Cut compactness",
+  measure = "Edge-Cut",
   alg = "SMC", 
   lab = "b)",
   min = 0.6, 
@@ -66,7 +69,7 @@ smc.ecc <- compact_hist(
 crsg.pp <- compact_hist(
   x = calc.compact$crsg$pp,
   control = calc.compact$control$pp,
-  measure = "Polsby-Popper score",
+  measure = "Polsby-Popper",
   alg = "CRSG", 
   lab = "c)",
   min = 0, 
@@ -76,7 +79,7 @@ crsg.pp <- compact_hist(
 crsg.ecc <- compact_hist(
   x = calc.compact$crsg$ecc,
   control = calc.compact$control$ecc,
-  measure = "Edge-Cut compactness",
+  measure = "Edge-Cut",
   alg = "CRSG", 
   lab = "d)",
   min = 0.6, 
