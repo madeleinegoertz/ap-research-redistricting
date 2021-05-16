@@ -1,6 +1,6 @@
 library(tidyverse)
 
-load("data/raw.fair.100.RData")
+load("data/fair.raw.RData")
 
 calc_fair <- function(data, alg) {
   data %>%
@@ -35,14 +35,5 @@ calc.fair <- list(
   crsg = table.crsg, 
   control = table.control
 )
-save(calc.fair, file = "data/fair.calc.100.RData")
+save(calc.fair, file = "data/fair.calc.RData")
 
-longtbl <-
-  bind_rows(table.smc, table.crsg, table.control) %>%
-  pivot_longer(
-    !c(alg, nloop),
-    names_to = "measure",
-    values_to = "value"
-  )
-# R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "data/fair.100.csv")

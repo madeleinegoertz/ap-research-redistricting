@@ -1,5 +1,5 @@
 library(dplyr)
-load("data/compact.raw.100.RData")
+load("data/compact.raw.RData")
 
 num_edges <-6991
 
@@ -30,17 +30,6 @@ calc.compact <- list (
   crsg = table.crsg,
   control = table.control
 )
-save(calc.compact, file = "data/compact.calc.100.RData")
+save(calc.compact, file = "data/compact.calc.RData")
 
-longtbl <-
-  bind_rows(
-    table.smc, table.crsg, table.control
-  ) %>%
-  pivot_longer(
-    !c(alg, nloop),
-    names_to = "measure",
-    values_to = "value"
-  )
-# R doesn't set me use multiindex so I have to send this to python.
-write.csv(longtbl, file = "data/compact.100.csv")
 

@@ -2,9 +2,9 @@
 library(redist)
 library(tidyverse)
 
-load("data/data_va.RData")
-load("data/smc.100.RData")
-load("data/crsg.100.RData")
+load("data/data.RData")
+load("data/smc.RData")
+load("data/crsg.RData")
 
 # SMC
 smc.fair <-
@@ -51,4 +51,4 @@ raw.fair <-
     control = control.fair
   )
 
-save(raw.fair, file = "data/raw.fair.100.RData")
+save(raw.fair, file = "data/fair.raw.RData")

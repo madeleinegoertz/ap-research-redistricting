@@ -2,9 +2,9 @@
 # all the algorithm and the existing plan.
 
 library(redist)
-load("data/data_va.RData")
-load("data/smc.100.RData")
-load("data/crsg.100.RData")
+load("data/data.RData")
+load("data/smc.RData")
+load("data/crsg.RData")
 
 # SMC
 start.time <- Sys.time()
@@ -35,6 +35,7 @@ end.time <- Sys.time()
 print(end.time - start.time)
 
 df$CON_DIST <- as.numeric(df$CON_DIST)
+
 # Control
 start.time <- Sys.time()
 control.compact <-
@@ -56,4 +57,4 @@ raw.compact <-
     control = control.compact
   )
 
-save(raw.compact, file = "data/compact.raw.100.RData")
+save(raw.compact, file = "data/compact.raw.RData")
