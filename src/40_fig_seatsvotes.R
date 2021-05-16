@@ -1,7 +1,8 @@
 # This creates the seats votes curves. 
 
 library(tidyverse)
-#library(pscl) # must use my version of pscl via install_github("madeleinegoertz/pscl")
+# must use my version of pscl via install_github("madeleinegoertz/pscl")
+library(pscl) 
 load("data/fair.raw.RData")
 
 dvs <- function(data) {
@@ -36,10 +37,10 @@ plot_all_sv <- function(data, desc) {
 }
 
 
-smc <- plot_all_sv(raw.fair$smc, "SMC all simulated DVS")
-crsg <- plot_all_sv(raw.fair$crsg, "CRSG all simulated DVS")
-control <- plot_all_sv(raw.fair$control, "Control Simulated DVS")
+smc <- plot_all_sv(raw.fair$smc, "100 SMC-Generated Maps")
+crsg <- plot_all_sv(raw.fair$crsg, "100 CRSG-Generated Maps")
+control <- plot_all_sv(raw.fair$control, "Existing Map (Control)")
 
 # write to files manually. Export as png to
-# paper/img/sv.<alg>.png w/ aspect ratio 541:491
+# paper/img/sv.<alg>.png w/ aspect ratio 550:550
 
