@@ -2,7 +2,7 @@
 
 This repository contains all of my work for my AP Research project that compared the performance of two different automated redistricting algorithms, [Compact Random Seed Growth and Sequential Monte Carlo](https://github.com/alarm-redist/redist/releases/tag/v2.0-2), in a hypothetical redistricting scenario of the Virginia Congressional Districts for the 2020s.
 
-I used Python 3 to aggregate the shapefile data, R to run the redistricting algorithms, Python again to generate data tables, and LaTeX to typeset my paper.
+I used Python 3 to aggregate the shapefile data, R to run the redistricting algorithms and generate the figures, Zotero to track my references, LaTeX to typeset my paper, and PowerPoint to create the visuals for my presentation.
 
 ## Research Materials
 
