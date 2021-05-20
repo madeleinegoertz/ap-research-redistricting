@@ -18,16 +18,16 @@ I chose Virginia as my case state because
     \item it has had to redistrict mid-decade due to gerrymandering \parencite[see][]{wittmanvpersonhuballah2016},
     \item it is a competitive state from an electoral perspective \parencite{virginiadeparmentofelections2021}, 
     \item it recently approved a constitutional amendment that institutes a redistricting process driven by a hybrid commission \parencite{ballotpedia2020}, and
-    \item it has a complex geography.
+    \item it has a complex geography \parencite{unitedstatesgeologicalsurvey2021}.
 \end{seriate}
 
 With the goal of comparing the performance of different automated redistricting algorithms, I chose two algorithms of different levels of complexity that could both meet the real-world requirements of equal population and compactness. The \hyperref[sec:crsg]{CRSG} \parencite{chen2013} and the \hyperref[sec:smc]{SMC} \parencite{mccartan2020} algorithms were chosen as they both satisfy the aforementioned requirement, are implemented by an open-source software package \parencite{fifield2020d}, and together they represent the evolution in the scholarship on such algorithms. 
 
-Since there is no single measure of partisan fairness nor compactness agreed upon by the scholarship \parencite{katz2020}, I selected representative samples of the different perspectives on each measure. For compactness, one geometry-based measure (the \hyperref[sec:polsbypopper]{Polsby-Popper} score) and one graph-theory-based measure (the \hyperref[sec:edgecut]{edge-cut compactness} score) were chosen. For partisan fairness, the simulated election measure (the \hyperref[sec:seatsvotes]{seats-votes curve}) and four single-valued fairness measures (\hyperref[sec:bias]{partisan bias}, the \hyperref[sec:effgap]{efficiency gap}, \hyperref[sec:declination]{declination}, and the \hyperref[sec:meanmed]{mean-median difference}) were chosen. Together, these five partisan fairness measures represent differing and disputed views on how "fairness" should be quantified \parencite{katz2020}. 
+Since there is no single measure of partisan fairness nor compactness agreed upon by the scholarship \parencite{katz2020}, I selected representative samples of the different perspectives on each measure. For compactness, one geometry-based measure (the \hyperref[sec:polsbypopper]{Polsby-Popper} score) and one graph-theory-based measure (the \hyperref[sec:edgecut]{edge-cut compactness} measure) were chosen. For partisan fairness, the simulated election measure (the \hyperref[sec:seatsvotes]{seats-votes curve}) and four single-valued fairness measures (\hyperref[sec:bias]{partisan bias}, the \hyperref[sec:effgap]{efficiency gap}, \hyperref[sec:declination]{declination}, and the \hyperref[sec:meanmed]{mean-median difference}) were chosen. Together, these five partisan fairness measures represent differing and disputed views on how "fairness" should be quantified \parencite{katz2020}. 
 
 \subsection{Choice of Research Method}
 
-I chose the experimental design method because it allowed me to isolate the impact of the redistricting algorithm on map quality from possible confounding variables. This method also includes the use of a control group, which allows the researcher to establish causation. \parencite{peirce2014}
+I chose the experimental design method because it isolates the impact of the redistricting algorithm on the compactness and fairness measures and includes a control, allowing one to establish causation \parencite{peirce2014}. I therefore could draw conclusions about the algorithms based on their empirical performance. 
 
 \subsection{Components of Experimental Design}
 
