@@ -39,9 +39,7 @@ Figure \ref{fig:smc} visualizes the iterative splitting procedure used by SMC. F
 \subsubsection{Compact Random Seed Growth (CRSG)}
 \label{sec:crsg}
 
-The following is a high-level overview of the CRSG algorithm\footnote{For more details, please see \textcite{chen2013}.}. 
-
-CRSG begins by declaring that every precinct is it's own district. A random precinct is chosen and is merged with its closest neighboring precinct, creating one fewer district. This process is repeated until the desired number of districts are formed. \parencite{chen2013}
+CRSG begins by declaring that every precinct is it's own district. A random precinct is chosen and is merged with its closest neighboring precinct, creating one fewer district. This process is repeated until the desired number of districts are formed.\footnote{For more details, please see \textcite{chen2013}.} \parencite{chen2013}
 
 After this procedure, the districts are relatively compact due to the geographic proximity requirement, but there is no guarantee that the districts satisfy the equal population requirement. To satisfy the population parity requirements, CRSG does the following. First, it identifies the two adjacent districts that have the greatest difference in total population. Then the precinct in the more populous district that is furthest from the center of said district is reassigned to the less populous district, provided that this reassignment doesn't split either district into parts. This process is repeated until all of the districts are within some desired percentage of the mean district population. \parencite{chen2013}
 
