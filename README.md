@@ -1,4 +1,4 @@
-# AP Research Redistricting Project
+# Evaluating Automated Redistricting Algorithms Using Measures of Compactness & Partisan Fairness: A Case Study of 2021 Congressional Redistricting in Virginia
 
 This repository contains all of my work for my AP Research project that compared the performance of two different automated redistricting algorithms, [Compact Random Seed Growth and Sequential Monte Carlo](https://github.com/alarm-redist/redist/releases/tag/v2.0-2), in a hypothetical redistricting scenario of the Virginia Congressional Districts for the 2020s.
 
@@ -65,10 +65,8 @@ The paper is typeset using LaTeX, which can be accomplished by building `paper/p
 
 ### Presentation
 
-The visuals for my oral presentation were put together using PowerPoint, and can be found in the `presentation/` directory. 
+The visuals for my oral presentation were put together using PowerPoint, and can be found in the `presentation/` directory.
 
 ### Sources
 
-The sources and respective notes consulted in this project can be found in this [Zotero library](https://www.zotero.org/groups/2728121/ap-research-redistricting/tags/cited/library). Select PDFs for cited research papers can be found in the `sources/` directory. 
-
-
+The sources and respective notes consulted in this project can be found in this [Zotero library](https://www.zotero.org/groups/2728121/ap-research-redistricting/tags/cited/library). Select PDFs for cited research papers can be found in the `sources/` directory.
