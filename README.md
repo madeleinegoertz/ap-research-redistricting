@@ -4,8 +4,8 @@ This repository contains all of my work for my AP Research project that compared
 
 I used Python 3 to aggregate the shapefile data, R to run the redistricting algorithms and generate the figures, Zotero to track my references, LaTeX to typeset my paper, and PowerPoint to create the visuals for my presentation.
 
-![Compactness Measures Density Plot](paper\img\compact.density.png)
-![Fairness Measures Density Plot](paper\img\fair.density.png)
+![Fairness Measures Density Plot](paper/img/fair.density.png)
+![Compactness Measures Density Plot](paper/img/compact.density.png)
 
 ## Research Materials
 
